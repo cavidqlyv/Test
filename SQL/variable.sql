@@ -1,6 +1,6 @@
 CREATE DATABASE db1;
 
-use db1;
+--use db1;
 
 DECLARE @someBit bit = 0;
 
@@ -8,7 +8,7 @@ SET @someBit = 1;
 
 PRINT @someBit;
 
-DROP TABLE v
+--DROP TABLE v
 
 CREATE TABLE v
 (
@@ -25,7 +25,7 @@ values(N'əəəə');
 
 SELECT *
 FROM v;
-use db1
+--use db1
 
 DECLARE @myDateTime DATETIME = '09-04-2018 19:38';
 
@@ -36,7 +36,7 @@ DECLARE @myInt DECIMAL(3,2) = 5.25;
 set @myDateTime = @myDateTime +@myInt;
 PRINT @myDateTime
 
-DROP TABLE a;
+--DROP TABLE a;
 
 CREATE TABLE a
 (
@@ -97,3 +97,35 @@ GO
 -- example to execute the stored procedure we just created
 EXECUTE dbo.Sample_Procedure 1 /*value_for_param1*/, 2 /*value_for_param2*/
 GO
+
+
+CREATE PROCEDURE dbo.student_insert
+    @name VARCHAR(20),
+    @surname VARCHAR(20),
+    @fin VARCHAR(20),
+    @contact VARCHAR(20),
+    @rdate date
+AS
+    INSERT into Student(name ,surname,fin,contact,registration_date)
+    VALUES(@name,@surname,@fin,@contact,@rdate)
+GO
+
+
+EXECUTE student_insert 'studenttest','studenttest1','123456','123456','05.09.2018';
+
+EXECUTE Sample_Procedure;
+
+
+GO
+CREATE PROCEDURE dbo.student_update
+    @id int,
+    @name VARCHAR(20),
+    @surname VARCHAR(20),
+    @fin VARCHAR(20),
+    @contact VARCHAR(20),
+    @rdate date
+AS
+    update Student set name=@name , surname = @surname , fin = @fin , contact = @contact , registration_date = @rdate where id = @id;
+GO
+
+EXECUTE student_update 1, 'updatestudenttest','updatestudenttest1','1234567','1234567','05.09.2018';

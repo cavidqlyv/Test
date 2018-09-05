@@ -278,18 +278,21 @@ VALUES(1, 'test1', 100)
 INSERT into test1
     (id,name)
 VALUES(2, 'test2')
-
+GO
 CREATE DEFAULT default_price AS 5
+GO
 CREATE RULE rule_default_price as @price in (1,3,5,7)
-
+GO
 CREATE DEFAULT default_age as 18;
+GO
 CREATE RULE rule_default_age as @age between 1 and 100;
-
+GO
 use c
-
-CREATE DEFAULT default_name as 'name'
-CREATE RULE rule_default_name as len(@name) >3
-
+GO
+CREATE DEFAULT default_name as 'name';
+GO
+CREATE RULE rule_default_name as len(@name) >3;
+GO
 
 CREATE TABLE test2
 (
