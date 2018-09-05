@@ -97,6 +97,17 @@ GO
 -- example to execute the stored procedure we just created
 EXECUTE dbo.Sample_Procedure 1 /*value_for_param1*/, 2 /*value_for_param2*/
 GO
+GO
+GO
+
+
+
+
+
+
+
+
+
 
 
 CREATE PROCEDURE dbo.student_insert
@@ -109,8 +120,8 @@ AS
     INSERT into Student(name ,surname,fin,contact,registration_date)
     VALUES(@name,@surname,@fin,@contact,@rdate)
 GO
-
-
+GO
+GO
 EXECUTE student_insert 'studenttest','studenttest1','123456','123456','05.09.2018';
 
 EXECUTE Sample_Procedure;
