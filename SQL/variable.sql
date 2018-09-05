@@ -157,3 +157,29 @@ EXEC getFullNameById 1 , @fullname output;
 
 PRINT @fullname;
 
+
+
+SELECT * from Lesson
+
+
+INSERT into Lesson VALUES('lesson5',100,1);
+
+GO
+CREATE PROCEDURE getMaxMinPrice
+    @max int OUTPUT,
+    @min int OUTPUT
+AS
+
+SELECT @max= max(default_price), @min = MIN(default_price)
+FROM Lesson
+RETURN 0
+GO
+DECLARE @max int;
+DECLARE @min int; 
+
+EXEC getMaxMinPrice @max output , @min output;
+
+PRINT @max;
+PRINT @min;
+
+
