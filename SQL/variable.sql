@@ -185,5 +185,19 @@ PRINT @max;
 PRINT @min;
 
 
+GO 
+CREATE PROCEDURE getInsertedIdFromLesson
+@id int OUTPUT,
+@name VARCHAR(30),
+@dprice FLOAT
+AS
+INSERT into Lesson
+VALUES('lesson5', 100, 1);
+set @id = @@IDENTITY;
 
+SELECT * FROM Lesson;
+GO
+DECLARE @id int;
+EXECUTE getInsertedIdFromLesson @id output ,'.Net' , 23; 
+PRINT @@IDENTITY;
 
