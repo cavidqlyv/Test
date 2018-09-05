@@ -2,8 +2,19 @@
     "version": "0.2.0",
     "configurations": [
       {
+        "name": "(Windows) Launch",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": true
+      },
+      {
         "name": "Run C/C++",
-        "type": "cppdbg",
+        "type": "cppvsdbg",
         "request": "launch",
         "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
         "args": [],
@@ -11,19 +22,12 @@
         "cwd": "${workspaceFolder}",
         "environment": [],
         "externalConsole": true,
-        "MIMode": "gdb",
-        "setupCommands": [
-          {
-            "description": "Enable pretty-printing for gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": false
-          }
-        ],
+        
         "preLaunchTask": "build & run file"
       },
       {
         "name": "Debug C/C++",
-        "type": "cppdbg",
+        "type": "cppvsdbg",
         "request": "launch",
         "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
         "args": [],
@@ -31,14 +35,7 @@
         "cwd": "${workspaceFolder}",
         "environment": [],
         "externalConsole": true,
-        "MIMode": "gdb",
-        "setupCommands": [
-          {
-            "description": "Enable pretty-printing for gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": false
-          }
-        ],
+        
         "preLaunchTask": "build & debug file"
       }
     ]

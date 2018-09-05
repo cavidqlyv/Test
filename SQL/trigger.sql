@@ -1,13 +1,16 @@
 use c
-
+GO
 CREATE DEFAULT default_phone as '+994551234567';
+GO
 CREATE RULE rule_default_phone as len(@phone) = 13;
+GO
 
 
 Create Type phonetype    
-from char(40) NOT NULL
-
+from char(40) NOT NULL;
+GO
 sp_bindrule rule_default_phone,'phonetype'; 
+GO
 sp_bindefault default_phone,'phonetype' ;
 
 CREATE TABLE test3
@@ -35,6 +38,7 @@ INSERT into student_count
 VALUES(3)
 
 use c
+GO
 
 CREATE TRIGGER increment
 on Student
@@ -53,7 +57,7 @@ FROM Student
 
 INSERT into Student
 VALUES('studentname4', 'studentsurname4', '1466', '12345678', '2018-4-2' , 1)
-
+GO
 CREATE TRIGGER decrement
 on Student
 after DELETE
@@ -63,9 +67,7 @@ BEGIN
 end
 GO
 
-
-DELETE FROM Gruopc
-WHERE 	
+	
 GO
 
 select *
@@ -96,7 +98,7 @@ FROM GroupStudnet gs
     join Groupc g on g.id = gs.group_id
     join Lesson l on l.id = g.lesson_id
 GROUP by  g.name , l.default_price
-
+GO
 CREATE TRIGGER deleteGroup
 on GroupStudnet
 after DELETE AS
@@ -106,10 +108,11 @@ BEGIN
 END
 
 DELETE from GroupStudnet WHERE group_id = 1004
-
+GO
 CREATE TRIGGER getPrice
 on GroupStudent
-after INSERT
+after INSERT AS
+
 BEGIN
     select g.name as Name, count(gs.student_id) as StudentCount , count(gs.student_id)* l.default_price
     FROM GroupStudnet gs
@@ -117,7 +120,7 @@ BEGIN
         join Groupc g on g.id = gs.group_id
         join Lesson l on l.id = g.lesson_id
     GROUP by  g.name , l.default_price
-    join
+
 END
 
 CREATE TABLE test4
@@ -127,14 +130,14 @@ CREATE TABLE test4
     amount int
 )
 
-use c
+--use c
 
 select *
 from test4
 
 SELECT*
 FROM Lesson
-
+GO
 CREATE TRIGGER sumLessonPrice
 on Lesson
 after INSERT as
@@ -148,7 +151,7 @@ END
 
 insert into Lesson
 VALUES('lesson3', 200, 1)
-
+GO
 CREATE TRIGGER showOld
 on Teacher
 after INSERT AS
@@ -158,7 +161,7 @@ BEGIN
 END
 
 DROP TRIGGER showNew
-
+GO
 CREATE TRIGGER showNew
 on Teacher
 INSTEAD of INSERT AS
