@@ -159,10 +159,12 @@ PRINT @fullname;
 
 
 
-SELECT * from Lesson
+SELECT *
+from Lesson
 
 
-INSERT into Lesson VALUES('lesson5',100,1);
+INSERT into Lesson
+VALUES('lesson5', 100, 1);
 
 GO
 CREATE PROCEDURE getMaxMinPrice
@@ -175,7 +177,7 @@ FROM Lesson
 RETURN 0
 GO
 DECLARE @max int;
-DECLARE @min int; 
+DECLARE @min int;
 
 EXEC getMaxMinPrice @max output , @min output;
 
