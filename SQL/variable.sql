@@ -79,7 +79,7 @@ FROM @myTable;
 -- Drop the stored procedure if it already exists
 IF EXISTS (
 SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
+FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'Sample_Procedure'
 )
@@ -87,27 +87,19 @@ DROP PROCEDURE dbo.Sample_Procedure
 GO
 -- Create the stored procedure in the specified schema
 CREATE PROCEDURE dbo.Sample_Procedure
-    @param1 /*parameter name*/ int /*datatype_for_param1*/ = 0, /*default_value_for_param1*/
-    @param2 /*parameter name*/ int /*datatype_for_param1*/ = 0 /*default_value_for_param2*/
+    @param1 /*parameter name*/ int /*datatype_for_param1*/ = 0,
+    /*default_value_for_param1*/
+    @param2 /*parameter name*/ int /*datatype_for_param1*/ = 0
+/*default_value_for_param2*/
 -- add more stored procedure parameters here
 AS
-    -- body of the stored procedure
-    SELECT * FROM Student
+-- body of the stored procedure
+SELECT *
+FROM Student
 GO
 -- example to execute the stored procedure we just created
 EXECUTE dbo.Sample_Procedure 1 /*value_for_param1*/, 2 /*value_for_param2*/
 GO
-GO
-GO
-
-
-
-
-
-
-
-
-
 
 
 CREATE PROCEDURE dbo.student_insert
@@ -117,8 +109,9 @@ CREATE PROCEDURE dbo.student_insert
     @contact VARCHAR(20),
     @rdate date
 AS
-    INSERT into Student(name ,surname,fin,contact,registration_date)
-    VALUES(@name,@surname,@fin,@contact,@rdate)
+INSERT into Student
+    (name ,surname,fin,contact,registration_date)
+VALUES(@name, @surname, @fin, @contact, @rdate)
 GO
 GO
 GO
@@ -136,7 +129,31 @@ CREATE PROCEDURE dbo.student_update
     @contact VARCHAR(20),
     @rdate date
 AS
-    update Student set name=@name , surname = @surname , fin = @fin , contact = @contact , registration_date = @rdate where id = @id;
+UPDATE Student SET name=@name , surname = @surname , fin = @fin , contact = @contact , registration_date = @rdate
+WHERE id = @id;
 GO
 
 EXECUTE student_update 1, 'updatestudenttest','updatestudenttest1','1234567','1234567','05.09.2018';
+
+GO
+
+GO
+CREATE PROCEDURE getFullNameById
+    @id int,
+    @fullname VARCHAR(40) OUTPUT
+AS
+DECLARE @name VARCHAR(20);
+DECLARE @surname VARCHAR(20);
+SELECT @name = name , @surname = surname
+FROM Student
+WHERE @id = id;
+SET @fullname = @name + ' ' + @surname
+RETURN 0
+
+GO
+DECLARE @fullname VARCHAR(40);
+
+EXEC getFullNameById 1 , @fullname output;
+
+PRINT @fullname;
+
