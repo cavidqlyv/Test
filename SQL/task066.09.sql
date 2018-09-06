@@ -22,6 +22,7 @@ GO
 EXECUTE dbo.InsertLesson 'test' , 100,1;
 GO
 
+
 CREATE PROCEDURE dbo.UpdateLesson
     @id int,
     @name VARCHAR(20),
