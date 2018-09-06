@@ -155,3 +155,24 @@ END ;
 RETURN @message;
 
 EXECUTE student_insert_result 'test' , 'test' , '7895565' , '1234567889123' , '06-09-2018',1
+
+
+GO
+CREATE PROCEDURE StudentUniqueName
+@name VARCHAR(20),
+@surname VARCHAR(20),
+@fin VARCHAR (20),
+@contact VARCHAR(20),
+@rdate DATE,
+@status INT
+AS
+DECLARE @message int= 0;
+DECLARE @count int= 0;
+
+SELECT @count = COUNT(*) FROM  Student  WHERE name = @name 
+IF @count =0
+BEGIN
+EXECUTE student_insert_result 'test' , 'test' , '7895565' , '1234567889123' , '06-09-2018',1;
+SET @message = 1;
+END;
+
