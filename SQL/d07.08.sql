@@ -255,11 +255,11 @@ select * FROM test
 INSERT into test(id,name) VALUES(1,'test1')
 INSERT into test(id,name,price) VALUES(1,'test2',3)
 INSERT into test(id,name,price) VALUES(1,'test2',4)
-
+GO
 CREATE DEFAULT default_age as 18;
-
+GO
 CREATE RULE rule_default_age as @age between 1 and 100;
-
+GO
 CREATE TABLE test1(
     id int not NULL,
     name VARCHAR(40),
