@@ -51,7 +51,3 @@ UPDATE Lesson SET [status] = 0 WHERE id = @id;
 GO
 
 EXECUTE dbo.DeleteLesson 1
-
-
-
-DBCC LOGINFO

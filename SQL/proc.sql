@@ -1,6 +1,9 @@
 
 
-CREATE PROC inser_teacher
+DROP PROCEDURE inser_teacher;
+GO
+
+CREATE PROCEDURE inser_teacher
 as
 BEGIN
     insert into Teacher
@@ -8,8 +11,10 @@ BEGIN
 END;
 
 EXEC inser_teacher;
+GO
+DROP PROCEDURE insert_update_teacher
 
-
+GO
 CREATE PROCEDURE insert_update_teacher
 AS
 BEGIN
@@ -28,17 +33,15 @@ WHERE id =1;
 
 END;
 
--- Get a list of tables and views in the current database
-SELECT table_catalog [c], table_schema [dbo], table_name name, table_type type
-FROM dbo.TABLES
 GO
 
-sql
 
 EXEC insert_update_teacher;
 
 drop PROC insert_update_teacher;
+Drop PROCEDURE delete_tables
 
+GO
 CREATE PROCEDURE delete_tables
 as
 BEGIN
@@ -54,7 +57,7 @@ END;
 EXEC delete_tables;
 
 
-
+GO
 CREATE PROCEDURE insert_table
 AS
 BEGIN
@@ -93,3 +96,23 @@ FROM
 WHERE
   xtype = 'U';
 GO
+
+
+use c
+
+SELECT *
+FROM teacher
+
+GO
+
+CREATE PROCEDURE dbo.TeacherInsertDefaultParam
+    @surname VARCHAR(20),
+    @contact VARCHAR(20),
+    @name VARCHAR(30) = 'DefaultTeacherName',
+    @status int = 1
+AS
+INSERT INTO Teacher
+VALUES(@name , @surname , @contact , @status);
+GO
+
+EXECUTE TeacherInsertDefaultParam 'TeacherSurname6' , '1234567' 
