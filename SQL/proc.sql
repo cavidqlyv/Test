@@ -115,4 +115,21 @@ INSERT INTO Teacher
 VALUES(@name , @surname , @contact , @status);
 GO
 
-EXECUTE TeacherInsertDefaultParam 'TeacherSurname6' , '1234567' 
+EXECUTE TeacherInsertDefaultParam 'TeacherSurname6' , '1234567';
+
+GO
+
+CREATE PROCEDURE LessonPriceAvg
+AS
+DECLARE @avg decimal(14,5);
+SELECT @avg  = AVG(default_price)
+FROM Lesson
+RETURN @avg
+
+DECLARE @result DECIMAL (14,5);
+
+--SET @result =
+EXECUTE  @result = LessonPriceAvg;
+PRINT @result;
+
+
