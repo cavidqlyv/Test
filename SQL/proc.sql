@@ -172,7 +172,10 @@ DECLARE @count int= 0;
 SELECT @count = COUNT(*) FROM  Student  WHERE name = @name 
 IF @count =0
 BEGIN
-EXECUTE student_insert_result 'test' , 'test' , '7895565' , '1234567889123' , '06-09-2018',1;
+INSERT INTO Student VALUES(@name , @surname , @fin , @contact , @rdate , @status);
 SET @message = 1;
 END;
 
+EXECUTE StudentUniqueName 'test' , 'test' , '789555565' , '1234567889123' , '06-09-2018',1
+
+Select * FROM Student
