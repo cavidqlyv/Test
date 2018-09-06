@@ -35,11 +35,12 @@ GO
 
 EXECUTE dbo.UpdateLesson 1, 'test' , 100,1;
 
-SELECT * FROM Groupc;
+SELECT *
+FROM Groupc;
 
 GO
-CREATE PROCEDURE dbo.DeleteLesson 
-@id INT
+CREATE PROCEDURE dbo.DeleteLesson
+    @id INT
 AS
 UPDATE Groupc SET lesson_id = 0, [status] = 0 WHERE lesson_id = @id;
 DELETE Lesson WHERE id = @id;
