@@ -9,6 +9,8 @@ SELECT *
 FROM Lesson;
 
 GO
+DROP PROCEDURE dbo.InsertLesson
+GO
 CREATE PROCEDURE dbo.InsertLesson
     @name VARCHAR(20),
     @dp int,
@@ -22,7 +24,8 @@ GO
 EXECUTE dbo.InsertLesson 'test' , 100,1;
 GO
 
-
+DROP PROCEDURE dbo.UpdateLesson
+GO
 CREATE PROCEDURE dbo.UpdateLesson
     @id int,
     @name VARCHAR(20),
@@ -38,14 +41,17 @@ EXECUTE dbo.UpdateLesson 1, 'test' , 100,1;
 SELECT *
 FROM Groupc;
 
+DROP PROCEDURE dbo.DeleteLesson
 GO
 CREATE PROCEDURE dbo.DeleteLesson
     @id INT
 AS
-UPDATE Groupc SET lesson_id = 0, [status] = 0 WHERE lesson_id = @id;
-DELETE Lesson WHERE id = @id;
+
+UPDATE Lesson SET [status] = 0 WHERE id = @id;
 GO
 
 EXECUTE dbo.DeleteLesson 1
+
+
 
 DBCC LOGINFO
