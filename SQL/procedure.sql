@@ -188,3 +188,4 @@ CREATE TABLE student_name_index(
 GO
 CREATE INDEX index_name
 ON Student (surname)
+

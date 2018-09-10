@@ -24,6 +24,12 @@ ON person
 
 SELECT * FROM person
 
+CREATE TABLE rand_table(
+    id INT NOT NULL,
+    rand_int INT NOT NULL,
+    rand_string VARCHAR(255)
+);
+
 DECLARE @count int =0;
 
 WHILE @count <100
