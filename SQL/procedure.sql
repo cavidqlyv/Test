@@ -102,9 +102,9 @@ use c
 
 SELECT *
 FROM teacher
-
 GO
-
+DROP PROCEDURE TeacherInsertDefaultParam
+GO
 CREATE PROCEDURE dbo.TeacherInsertDefaultParam
     @surname VARCHAR(20),
     @contact VARCHAR(20),
@@ -116,7 +116,7 @@ VALUES(@name , @surname , @contact , @status);
 GO
 
 EXECUTE TeacherInsertDefaultParam 'TeacherSurname6' , '1234567';
-
+DROP PROCEDURE LessonPriceAvg
 GO
 
 CREATE PROCEDURE LessonPriceAvg
@@ -135,7 +135,8 @@ PRINT @result;
 
 SELECT * FROM dbo.Student
 
-
+GO
+DROP PROCEDURE student_insert_result;
 GO
 CREATE PROCEDURE student_insert_result
 @name VARCHAR(20),
@@ -156,8 +157,8 @@ RETURN @message;
 
 EXECUTE student_insert_result 'test' , 'test' , '7895565' , '1234567889123' , '06-09-2018',1
 
+GO
 DROP PROCEDURE StudentUniqueName;
-
 GO
 CREATE PROCEDURE StudentUniqueName
 @name VARCHAR(20),

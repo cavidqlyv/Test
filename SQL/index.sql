@@ -22,13 +22,31 @@ CREATE CLUSTERED INDEX index_age
 ON person
 (age)
 
-SELECT * FROM person
 
 CREATE TABLE rand_table(
     id INT NOT NULL,
     rand_int INT NOT NULL,
     rand_string VARCHAR(255)
 );
+
+SELECT ROUND(RAND()*100 , 0) AS VALUE
+
+GO
+CREATE VIEW view_rand_int
+AS
+SELECT ROUND(RAND()*100 , 0) AS VALUE
+GO
+
+SELECT * FROM view_rand_int
+
+GO
+CREATE VIEW view_rand_string
+AS
+SELECT NEWID() as randString;
+GO
+
+SELECT * FROM view_rand_string;
+
 
 DECLARE @count int =0;
 
