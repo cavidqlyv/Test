@@ -1,4 +1,4 @@
-
+USE c;
 
 DROP PROCEDURE inser_teacher;
 GO
@@ -156,6 +156,7 @@ RETURN @message;
 
 EXECUTE student_insert_result 'test' , 'test' , '7895565' , '1234567889123' , '06-09-2018',1
 
+DROP PROCEDURE StudentUniqueName;
 
 GO
 CREATE PROCEDURE StudentUniqueName
@@ -176,6 +177,14 @@ INSERT INTO Student VALUES(@name , @surname , @fin , @contact , @rdate , @status
 SET @message = 1;
 END;
 
-EXECUTE StudentUniqueName 'test' , 'test' , '789555565' , '1234567889123' , '06-09-2018',1
+EXECUTE StudentUniqueName 'test' , 'test' , '789555565' , '1234567889123' , '06-09-2018',1;
 
-Select * FROM Student
+Select * FROM Student;
+
+CREATE TABLE student_name_index(
+    name VARCHAR(20),
+    rowindex int
+);
+GO
+CREATE INDEX index_name
+ON Student (surname)
