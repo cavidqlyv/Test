@@ -77,7 +77,7 @@ CREATE PROCEDURE student_insert_validate
     @status int =1
 AS
 BEGIN TRANSACTION
-EXECUTE insert_student @name , @surname , @fin , @contact ,@registration_date;
+EXECUTE insert_student @name , @surname , @fin , @contact ,@registration_date , @status;
 IF LEN(@contact) = 13
 BEGIN
     ROLLBACK TRANSACTION
@@ -87,4 +87,43 @@ BEGIN
     COMMIT
 END
 
-EXECUTE student_insert_validate 'name4' , 'surname4' , 'fin8' , '123456789101' ,'11-09-2018';
+EXECUTE student_insert_validate 'name4' , 'surname4' , 'fin9' , '1234567891011' ,'11-09-2018';
+GO
+CREATE TABLE employee
+(
+    id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+    name VARCHAR (40) NOT NULL,
+    amount INT NOT NULL,
+    year INT
+)
+GO
+CREATE PROCEDURE insert_employee
+    @name VARCHAR(40),
+    @amount INT,
+    @year INT
+AS
+INSERT INTO employee
+VALUES(@name, @amount , @year)
+
+EXECUTE insert_employee 'Name1' , 32 , 2016
+EXECUTE insert_employee 'Name1' , 23 , 2016
+EXECUTE insert_employee 'Name1' , 42 , 2016
+EXECUTE insert_employee 'Name1' , 23 , 2017
+EXECUTE insert_employee 'Name1' , 23 , 2017
+EXECUTE insert_employee 'Name1' , 27 , 2018
+EXECUTE insert_employee 'Name1' , 26 , 2018
+EXECUTE insert_employee 'Name1' , 23 , 2018
+
+EXECUTE insert_employee 'Name2' , 25 , 2016
+EXECUTE insert_employee 'Name2' , 23 , 2016
+EXECUTE insert_employee 'Name2' , 22 , 2016
+EXECUTE insert_employee 'Name2' , 32 , 2017
+EXECUTE insert_employee 'Name2' , 54 , 2017
+EXECUTE insert_employee 'Name2' , 23 , 2018
+EXECUTE insert_employee 'Name2' , 23 , 2018
+EXECUTE insert_employee 'Name2' , 23 , 2018
+
+SELECT name AS Name , SUM(amount) AS Amount , year AS Year
+FROM employee
+GROUP BY year , name
+
