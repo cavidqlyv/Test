@@ -91,7 +91,7 @@ EXECUTE student_insert_validate 'name4' , 'surname4' , 'fin9' , '1234567891011' 
 GO
 CREATE TABLE employee
 (
-    id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+    --id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     name VARCHAR (40) NOT NULL,
     amount INT NOT NULL,
     year INT
@@ -129,4 +129,4 @@ GROUP BY year , name
 
 SELECT name , [2016] , [2017] , [2018]
 FROM employee 
-PIVOT(SUM(amount) FOR year IN ([2016] , [2017] , [2018])) AS employee_pivot 
+PIVOT(SUM(amount) FOR year IN ([2016] , [2017] , [2018])) AS employee_pivot
