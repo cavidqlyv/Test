@@ -82,5 +82,9 @@ IF LEN(@contact) = 13
 BEGIN
     ROLLBACK TRANSACTION
 END;
+ELSE
+BEGIN
+    COMMIT
+END
 
-EXECUTE student_insert_validate 'name4' , 'surname4' , 'fin4' , '1234567891011' ,'11-09-2018';
+EXECUTE student_insert_validate 'name4' , 'surname4' , 'fin8' , '123456789101' ,'11-09-2018';
