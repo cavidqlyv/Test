@@ -127,3 +127,6 @@ SELECT name AS Name , SUM(amount) AS Amount , year AS Year
 FROM employee
 GROUP BY year , name
 
+SELECT name , [2016] , [2017] , [2018]
+FROM employee 
+PIVOT(SUM(amount) FOR year IN ([2016] , [2017] , [2018])) AS employee_pivot 
