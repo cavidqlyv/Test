@@ -61,3 +61,17 @@ END
 GO
 SELECT dbo.WeekDayAz(GETDATE());
 
+GO
+CREATE FUNCTION dbo.func_employee_amount
+(
+    @amount int
+)
+RETURNS TABLE AS RETURN
+(
+    SELECT *
+    FROM employee
+    WHERE amount > @amount
+)
+
+GO
+SELECT * FROM func_employee_amount(23)
