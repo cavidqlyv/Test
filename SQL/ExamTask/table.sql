@@ -49,7 +49,7 @@ CREATE TABLE dbo.Student
     registration_date DATE NOT NULL,
     username VARCHAR(40) NOT NULL,
     [password] VARCHAR(40) NOT NULL,
-    [status] BIT default 1
+    [status] BIT DEFAULT 1
 
 );
 GO
@@ -66,7 +66,20 @@ CREATE TABLE dbo.Teacher
     contact VARCHAR(20) NOT NULL,
     username VARCHAR(40) NOT NULL UNIQUE,
     [password] VARCHAR(40) NOT NULL,
-    [status] BIT default 1
+    [status] BIT DEFAULT 1
 );
 GO
+
+IF OBJECT_ID('dbo.Lesson', 'U') IS NOT NULL
+DROP TABLE dbo.Lesson
+GO
+CREATE TABLE dbo.Lesson
+(
+    id INT PRIMARY KEY IDENTITY(1,1),
+    [name] NVARCHAR(40) NOT NULL,
+    price INT NOT NULL,
+    [status] BIT DEFAULT 1
+);
+GO
+
 
