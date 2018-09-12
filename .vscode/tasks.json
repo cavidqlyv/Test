@@ -1,13 +1,17 @@
 {
   "version": "2.0.0",
+
   "tasks": [
       {
-          "label": "build hello world",
+          "label": "cmd",
           "type": "shell",
           "command": "g++",
           "args": [
               "-g", "C++\\test1.cpp"
           ],
+          "presentation": {
+            "panel": "new"
+          },
           "group": {
               "kind": "build",
               "isDefault": true

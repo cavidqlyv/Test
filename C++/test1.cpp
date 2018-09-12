@@ -1,8 +1,10 @@
 #include <iostream>
 
-int main()
-
+main(int argc, char const *argv[])
 {
-    std::cout << "asddf";
+    std::cout << "asddf\n";
+    int a;
+    std::cin >> a;
+    std::cout << a;
     return 0;
 }
