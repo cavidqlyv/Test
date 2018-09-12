@@ -69,3 +69,4 @@ CREATE TABLE dbo.Teacher
     [status] BIT default 1
 );
 GO
+
