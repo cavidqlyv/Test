@@ -12,31 +12,5 @@
         "environment": [],
         "externalConsole": true
       },
-      {
-        "name": "Run C/C++",
-        "type": "cppvsdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
-        "args": [],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}",
-        "environment": [],
-        "externalConsole": true,
-        
-        "preLaunchTask": "build & run file"
-      },
-      {
-        "name": "Debug C/C++",
-        "type": "cppvsdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/${fileBasenameNoExtension}.exe",
-        "args": [],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}",
-        "environment": [],
-        "externalConsole": true,
-        
-        "preLaunchTask": "build & debug file"
-      }
     ]
   }

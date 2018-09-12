@@ -1,34 +1,17 @@
 {
   "version": "2.0.0",
   "tasks": [
-    {
-      "label": "build & debug file",
-      "type": "shell",
-      "command": "build.bat",
-      "args": [
-        "-g",
-        "-o",
-        "${fileBasenameNoExtension}",
-        "${file}"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
+      {
+          "label": "build hello world",
+          "type": "shell",
+          "command": "g++",
+          "args": [
+              "-g", "C++\\test1.cpp"
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          }
       }
-    },
-    {
-      "label": "build & run file",
-      "type": "shell",
-      "command": "build.bat",
-      "args": [
-        "-o",
-        "${fileBasenameNoExtension}",
-        "${file}"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-    }
   ]
 }

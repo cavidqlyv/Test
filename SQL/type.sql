@@ -14,6 +14,7 @@ create table Student
 );
 
 
+
 insert into Student
 values('studentname1', 'studentsurname1', '1234', '12345678', '2018-2-2' , 1)
 
