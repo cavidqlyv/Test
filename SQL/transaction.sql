@@ -1,6 +1,6 @@
-CREATE DATABASE db1;
-USE db1;
-
+--CREATE DATABASE db1;
+--USE db1;
+DROP TABLE Student
 CREATE TABLE Student
 (
     id INT identity(1,1),
@@ -55,6 +55,7 @@ CREATE TABLE Lesson
 );
 
 
+
 GO
 CREATE CLUSTERED INDEX index_studnet_name
 ON  Student (name)
@@ -96,6 +97,7 @@ CREATE TABLE employee
     amount INT NOT NULL,
     year INT
 )
+
 GO
 CREATE PROCEDURE insert_employee
     @name VARCHAR(40),
