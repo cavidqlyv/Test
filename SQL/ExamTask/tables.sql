@@ -24,3 +24,5 @@ CREATE TABLE Student
     password VARCHAR(40) NOT NULL,
     status INT default 1
 );
+
+
