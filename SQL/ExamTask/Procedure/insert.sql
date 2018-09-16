@@ -123,21 +123,75 @@ CREATE PROCEDURE dbo.InsertGroup_Student
 AS
 INSERT INTO Group_Student
 VALUES(
-    @studentId,
-    @groupId,
-    @status
+        @studentId,
+        @groupId,
+        @status
 )
 GO
 
 IF EXISTS (
 SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
+FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'InsertStudent_Payments'
 )
 DROP PROCEDURE dbo.InsertStudent_Payments
 GO
 CREATE PROCEDURE dbo.InsertStudent_Payments
+    @studentId INT,
+    @payment DECIMAL(7,2),
+    @status BIT = 1
 AS
-    SELECT @param1, @param2
+INSERT INTO Student_Payments
+VALUES(
+        @studentId,
+        @payment,
+        @status
+    )
+GO
+
+IF EXISTS (
+SELECT *
+FROM INFORMATION_SCHEMA.ROUTINES
+WHERE SPECIFIC_SCHEMA = N'dbo'
+    AND SPECIFIC_NAME = N'Insert_Student_Marks'
+)
+DROP PROCEDURE dbo.Insert_Student_Marks
+GO
+CREATE PROCEDURE dbo.Insert_Student_Marks
+    @studentId INT,
+    @date DATE,
+    @mark INT,
+    @status BIT = 1
+AS
+INSERT INTO Student_Marks
+VALUES(
+        @studentId,
+        @date,
+        @mark,
+        @status
+)
+GO
+
+IF EXISTS (
+SELECT *
+FROM INFORMATION_SCHEMA.ROUTINES
+WHERE SPECIFIC_SCHEMA = N'dbo'
+    AND SPECIFIC_NAME = N'Insert_Student_LessonDay'
+)
+DROP PROCEDURE dbo.Insert_Student_LessonDay
+GO
+CREATE PROCEDURE dbo.Insert_Student_LessonDay
+    @studentId INT,
+    @studentStatus BIT,
+    @date DATE,
+    @status BIT =1
+AS
+INSERT INTO Student_LesssonDays
+VALUES(
+        @studentId,
+        @studentStatus,
+        @date,
+        @status
+)
 GO
