@@ -1,5 +1,15 @@
 USE master
 GO
+IF EXISTS (
+    SELECT name
+    FROM sys.databases
+    WHERE name = N'ExamTask'
+)
+DROP DATABASE ExamTask
+GO
+
+USE master
+GO
 IF NOT EXISTS (
     SELECT name
     FROM sys.databases
@@ -11,30 +21,6 @@ GO
 USE ExamTask
 
 GO
-IF OBJECT_ID('dbo.Student', 'U') IS NOT NULL
-DROP TABLE dbo.Student
-GO
-CREATE TABLE dbo.Student
-(
-    id INT PRIMARY KEY IDENTITY(1,1),
-    [name] VARCHAR(40) NOT NULL,
-    surname VARCHAR(40) NOT NULL,
-    fin VARCHAR(10) NOT NULL UNIQUE,
-    contact VARCHAR(20) NOT NULL,
-    registration_date DATE NOT NULL,
-    username VARCHAR(40) NOT NULL,
-    [password] VARCHAR(40) NOT NULL,
-    [status] BIT default 1
-
-);
-
-SELECT *
-FROM student
-
-CREATE TABLE Teacher
-(
-    id int PRIMARY KEY IDENTITY(1,1)
-);
 
 IF OBJECT_ID('dbo.Student', 'U') IS NOT NULL
 DROP TABLE dbo.Student
@@ -50,7 +36,6 @@ CREATE TABLE dbo.Student
     username VARCHAR(40) NOT NULL,
     [password] VARCHAR(40) NOT NULL,
     [status] BIT DEFAULT 1
-
 );
 GO
 
@@ -88,8 +73,8 @@ CREATE TABLE dbo.[Group]
 (
     id INT PRIMARY KEY IDENTITY(1,1),
     [name] NVARCHAR(50) NOT NULL,
-    teacher_id INT CONSTRAINT fk_teacher_id FOREIGN KEY REFERENCES Teacher(id),
-    lesson_id INT CONSTRAINT fk_lesson_id FOREIGN KEY REFERENCES Lesson(id),    
+    teacher_id INT CONSTRAINT fk_group_teacher_id FOREIGN KEY REFERENCES Teacher(id),
+    lesson_id INT CONSTRAINT fk_group_lesson_id FOREIGN KEY REFERENCES Lesson(id),    
     [status] BIT DEFAULT 1
 );
 GO
@@ -101,8 +86,9 @@ GO
 CREATE TABLE dbo.Group_Student
 (
     id INT PRIMARY KEY IDENTITY(1,1),
-    student_id INT CONSTRAINT fk_student_id FOREIGN KEY REFERENCES Student(id),
-    group_id INT CONSTRAINT fk_group_id FOREIGN KEY REFERENCES [Group](id)
+    student_id INT CONSTRAINT fk_GroupStudent_student_id FOREIGN KEY REFERENCES Student(id),
+    group_id INT CONSTRAINT fk_GroupStudent_group_id FOREIGN KEY REFERENCES [Group](id),
+    [status] BIT DEFAULT 1
 );
 GO
 
@@ -112,8 +98,9 @@ GO
 CREATE TABLE dbo.Student_Payments
 (
     id INT PRIMARY KEY IDENTITY(1,1),
-    student_id INT CONSTRAINT fk_student_id FOREIGN KEY REFERENCES Student(id),
-    payment DECIMAL(7,2) NOT NULL
+    student_id INT CONSTRAINT fk_StudentPayments_student_id FOREIGN KEY REFERENCES Student(id),
+    payment DECIMAL(7,2) NOT NULL,
+    [status] BIT DEFAULT 1
 );
 GO
 
@@ -123,12 +110,23 @@ GO
 CREATE TABLE dbo.Student_Marks
 (
     id INT PRIMARY KEY IDENTITY(1,1),
-    student_id INT CONSTRAINT fk_student_id FOREIGN KEY REFERENCES Student(id),
+    student_id INT CONSTRAINT fk_StudentMarks_student_id FOREIGN KEY REFERENCES Student(id),
     [date] DATE NOT NULL,
-    mark INT NOT NULL
+    mark INT NOT NULL,
+    [status] BIT DEFAULT 1
 );
 GO
 
 
-
-
+IF OBJECT_ID('dbo.Student_LessonDay', 'U') IS NOT NULL
+DROP TABLE dbo.Student_LessonDays
+GO
+CREATE TABLE dbo.Student_LessonDays
+(
+    id INT PRIMARY KEY IDENTITY(1,1),
+    student_id INT CONSTRAINT fk_StudentLessonDays_student_id FOREIGN KEY REFERENCES Student(id),
+    student_status BIT NOT NULL,
+    [date] DATE NOT NULL,
+    [status] BIT DEFAULT 1
+);
+GO
