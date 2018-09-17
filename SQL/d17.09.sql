@@ -45,7 +45,7 @@ ON bank
 after update
 AS
 BEGIN
-    UPDATE bank set kredit = balance-debit WHERE id = @@
+    UPDATE bank set kredit = balance-debit
 END
 GO
 
