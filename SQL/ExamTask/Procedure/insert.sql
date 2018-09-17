@@ -5,12 +5,12 @@ IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'InsertStudent'
+    AND SPECIFIC_NAME = N'Insert_Student'
 )
-DROP PROCEDURE dbo.InsertStudent
+DROP PROCEDURE dbo.Insert_Student
 GO
 
-CREATE PROCEDURE dbo.InsertStudent
+CREATE PROCEDURE dbo.Insert_Student
     @name VARCHAR(40),
     @surname VARCHAR(40),
     @fin VARCHAR(10),
@@ -39,11 +39,11 @@ IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'InsertTeacher'
+    AND SPECIFIC_NAME = N'Insert_Teacher'
 )
-DROP PROCEDURE dbo.InsertTeacher
+DROP PROCEDURE dbo.Insert_Teacher
 GO
-CREATE PROCEDURE dbo.InsertTeacher
+CREATE PROCEDURE dbo.Insert_Teacher
     @name VARCHAR(40),
     @surname VARCHAR(40),
     @contact VARCHAR(20),
@@ -62,16 +62,16 @@ VALUES(
     )
 GO
 
-
+-- Insert Lesson
 IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'InsertLesson'
+    AND SPECIFIC_NAME = N'Insert_Lesson'
 )
-DROP PROCEDURE dbo.InsertLesson
+DROP PROCEDURE dbo.Insert_Lesson
 GO
-CREATE PROCEDURE dbo.InsertLesson
+CREATE PROCEDURE dbo.Insert_Lesson
     @name VARCHAR(40),
     @price INT,
     @status BIT = 1
@@ -84,15 +84,16 @@ VALUES(
     )
 GO
 
+-- Insert Group
 IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'InsertGroup'
+    AND SPECIFIC_NAME = N'Insert_Group'
 )
-DROP PROCEDURE dbo.InsertGroup
+DROP PROCEDURE dbo.Insert_Group
 GO
-CREATE PROCEDURE dbo.InsertGroup
+CREATE PROCEDURE dbo.Insert_Group
     @name VARCHAR(40),
     @teacherId INT,
     @LessonId INT,
@@ -107,16 +108,17 @@ VALUES(
 )
 GO
 
+-- Insert Group_Student
 IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'InsertGroup_Student'
+    AND SPECIFIC_NAME = N'Insert_Group_Student'
 )
-DROP PROCEDURE dbo.InsertGroup_Student
+DROP PROCEDURE dbo.Insert_Group_Student
 
 GO
-CREATE PROCEDURE dbo.InsertGroup_Student
+CREATE PROCEDURE dbo.Insert_Group_Student
     @studentId INT,
     @groupId INT,
     @status BIT = 1
@@ -129,15 +131,17 @@ VALUES(
 )
 GO
 
+
+-- Insert Student_Payments
 IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'InsertStudent_Payments'
+    AND SPECIFIC_NAME = N'Insert_Student_Payments'
 )
-DROP PROCEDURE dbo.InsertStudent_Payments
+DROP PROCEDURE dbo.Insert_Student_Payments
 GO
-CREATE PROCEDURE dbo.InsertStudent_Payments
+CREATE PROCEDURE dbo.Insert_Student_Payments
     @studentId INT,
     @payment DECIMAL(7,2),
     @status BIT = 1
@@ -150,6 +154,8 @@ VALUES(
     )
 GO
 
+
+-- Insert Student_Marks
 IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
@@ -173,6 +179,8 @@ VALUES(
 )
 GO
 
+
+-- Insert Student_LessonDay
 IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
