@@ -1,133 +1,137 @@
-USE ExamTask
+USE examtask 
 
+-- Delete Student 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Delete_Student') 
+  DROP PROCEDURE dbo.delete_student 
 
--- Delete Student
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Delete_Student'
-)
-DROP PROCEDURE dbo.Delete_Student
-GO
-CREATE PROCEDURE dbo.Delete_Student
-    @id INT
-AS
-UPDATE Student SET [status] =0 WHERE id = @id;
-GO
+go 
 
+CREATE PROCEDURE dbo.Delete_student @id INT 
+AS 
+    UPDATE student 
+    SET    [status] = 0 
+    WHERE  id = @id; 
 
--- Delete Teacher
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Delete_Teacher'
-)
-DROP PROCEDURE dbo.Delete_Teacher
-GO
-CREATE PROCEDURE dbo.Delete_Teacher
-    @id INT
-AS
-UPDATE Teacher SET [status] =0 WHERE id = @id;
-GO
+go 
 
+-- Delete Teacher 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Delete_Teacher') 
+  DROP PROCEDURE dbo.delete_teacher 
 
--- Delete Lesson
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Delete_Lesson'
-)
-DROP PROCEDURE dbo.Delete_Lesson
-GO
-CREATE PROCEDURE dbo.Delete_Lesson
-    @id INT
-AS
-UPDATE Lesson SET [status] =0 WHERE id = @id;
-GO
+go 
 
+CREATE PROCEDURE dbo.Delete_teacher @id INT 
+AS 
+    UPDATE teacher 
+    SET    [status] = 0 
+    WHERE  id = @id; 
 
--- Delete Group
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Delete_Group'
-)
-DROP PROCEDURE dbo.Delete_Group
-GO
-CREATE PROCEDURE dbo.Delete_Group
-    @id INT
-AS
-UPDATE dbo.[Group] SET [status] =0 WHERE id = @id;
-GO
+go 
 
+-- Delete Lesson 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Delete_Lesson') 
+  DROP PROCEDURE dbo.delete_lesson 
 
--- Delete Group_Student
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Delete_Group_Student'
-)
-DROP PROCEDURE dbo.Delete_Group_Student
-GO
-CREATE PROCEDURE dbo.Delete_Group_Student
-    @id INT
-AS
-UPDATE Group_Student SET [status] =0 WHERE id = @id;
-GO
+go 
 
+CREATE PROCEDURE dbo.Delete_lesson @id INT 
+AS 
+    UPDATE lesson 
+    SET    [status] = 0 
+    WHERE  id = @id; 
 
--- Delete Student_Payments
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Delete_Student_Payments'
-)
-DROP PROCEDURE dbo.Delete_Student_Payments
-GO
-CREATE PROCEDURE dbo.Delete_Student_Payments
-    @id INT
-AS
-UPDATE Student_Payments SET [status] =0 WHERE id = @id;
-GO
+go 
 
+-- Delete Group 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Delete_Group') 
+  DROP PROCEDURE dbo.delete_group 
 
--- Delete Student_Marks
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Delete_Student_Marks'
-)
-DROP PROCEDURE dbo.Delete_Student_Marks
-GO
-CREATE PROCEDURE dbo.Delete_Student_Marks
-    @id INT
-AS
-UPDATE Student_Marks
-SET [status] =0
-WHERE id = @id;
-GO
+go 
 
+CREATE PROCEDURE dbo.Delete_group @id INT 
+AS 
+    UPDATE dbo.[group] 
+    SET    [status] = 0 
+    WHERE  id = @id; 
 
--- Delete Student_LessonDays
-IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Delete_Student_LessonDays'
-)
-DROP PROCEDURE dbo.Delete_Student_LessonDays
-GO
-CREATE PROCEDURE dbo.Delete_Student_LessonDays
-    @id INT
-AS
-    UPDATE Student_LessonDays
-    SET [status] =0
-    WHERE id = @id;
-GO
+go 
+
+-- Delete Group_Student 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Delete_Group_Student') 
+  DROP PROCEDURE dbo.delete_group_student 
+
+go 
+
+CREATE PROCEDURE dbo.Delete_group_student @id INT 
+AS 
+    UPDATE group_student 
+    SET    [status] = 0 
+    WHERE  id = @id; 
+
+go 
+
+-- Delete Student_Payments 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Delete_Student_Payments') 
+  DROP PROCEDURE dbo.delete_student_payments 
+
+go 
+
+CREATE PROCEDURE dbo.Delete_student_payments @id INT 
+AS 
+    UPDATE student_payments 
+    SET    [status] = 0 
+    WHERE  id = @id; 
+
+go 
+
+-- Delete Student_Marks 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Delete_Student_Marks') 
+  DROP PROCEDURE dbo.delete_student_marks 
+
+go 
+
+CREATE PROCEDURE dbo.Delete_student_marks @id INT 
+AS 
+    UPDATE student_marks 
+    SET    [status] = 0 
+    WHERE  id = @id; 
+
+go 
+
+-- Delete Student_LessonDays 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Delete_Student_LessonDays') 
+  DROP PROCEDURE dbo.delete_student_lessondays 
+
+go 
+
+CREATE PROCEDURE dbo.Delete_student_lessondays @id INT 
+AS 
+    UPDATE student_lessondays 
+    SET    [status] = 0 
+    WHERE  id = @id; 
+
+go 

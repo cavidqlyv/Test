@@ -1,209 +1,183 @@
-USE ExamTask
+USE examtask 
 
+-- Insert Rows Student 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Insert_Student') 
+  DROP PROCEDURE dbo.insert_student 
 
--- Insert Rows Student
-IF EXISTS (
-    SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
-    WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Student'
-)
-DROP PROCEDURE dbo.Insert_Student
-GO
+go 
 
-CREATE PROCEDURE dbo.Insert_Student
-    @name VARCHAR(40),
-    @surname VARCHAR(40),
-    @fin VARCHAR(10),
-    @contact VARCHAR(20),
-    @registration_date DATE,
-    @username VARCHAR(40),
-    @password VARCHAR(40),
-    @status BIT = 1
-AS
-    INSERT INTO Student
-    VALUES(
-        @name,
-        @surname,
-        @fin,
-        @contact,
-        @registration_date,
-        @username,
-        @password,
-        @status
-        );
-GO
+CREATE PROCEDURE dbo.Insert_student @name              VARCHAR(40), 
+                                    @surname           VARCHAR(40), 
+                                    @fin               VARCHAR(10), 
+                                    @contact           VARCHAR(20), 
+                                    @registration_date DATE, 
+                                    @username          VARCHAR(40), 
+                                    @password          VARCHAR(40), 
+                                    @status            BIT = 1 
+AS 
+    INSERT INTO student 
+    VALUES     ( @name, 
+                 @surname, 
+                 @fin, 
+                 @contact, 
+                 @registration_date, 
+                 @username, 
+                 @password, 
+                 @status ); 
 
+go 
 
--- Insert Rows Teacher
-IF EXISTS (
-    SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
-    WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Teacher'
-)
-DROP PROCEDURE dbo.Insert_Teacher
-GO
-CREATE PROCEDURE dbo.Insert_Teacher
-    @name VARCHAR(40),
-    @surname VARCHAR(40),
-    @contact VARCHAR(20),
-    @username VARCHAR(40),
-    @password VARCHAR(40),
-    @status BIT = 1
-AS
-    INSERT INTO Teacher
-    VALUES(
-        @name,
-        @surname,
-        @contact,
-        @username,
-        @password,
-        @status
-    );
-GO
+-- Insert Rows Teacher 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Insert_Teacher') 
+  DROP PROCEDURE dbo.insert_teacher 
 
+go 
 
--- Insert Lesson
-IF EXISTS (
-    SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
-    WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Lesson'
-)
-DROP PROCEDURE dbo.Insert_Lesson
-GO
-CREATE PROCEDURE dbo.Insert_Lesson
-    @name VARCHAR(40),
-    @price INT,
-    @status BIT = 1
-AS
-    INSERT INTO Lesson
-    VALUES(
-        @name,
-        @price,
-        @status
-    );
-GO
+CREATE PROCEDURE dbo.Insert_teacher @name     VARCHAR(40), 
+                                    @surname  VARCHAR(40), 
+                                    @contact  VARCHAR(20), 
+                                    @username VARCHAR(40), 
+                                    @password VARCHAR(40), 
+                                    @status   BIT = 1 
+AS 
+    INSERT INTO teacher 
+    VALUES     ( @name, 
+                 @surname, 
+                 @contact, 
+                 @username, 
+                 @password, 
+                 @status ); 
 
+go 
 
--- Insert Group
-IF EXISTS (
-    SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
-    WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Group'
-)
-DROP PROCEDURE dbo.Insert_Group
-GO
-CREATE PROCEDURE dbo.Insert_Group
-    @name VARCHAR(40),
-    @teacherId INT,
-    @LessonId INT,
-    @status BIT = 1
-AS
-    INSERT INTO [Group]
-    VALUES(
-        @name,
-        @teacherId,
-        @lessonId,
-        @status
-    );
-GO
+-- Insert Lesson 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Insert_Lesson') 
+  DROP PROCEDURE dbo.insert_lesson 
 
+go 
 
--- Insert Group_Student
-IF EXISTS (
-    SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
-    WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Group_Student'
-)
-DROP PROCEDURE dbo.Insert_Group_Student
+CREATE PROCEDURE dbo.Insert_lesson @name   VARCHAR(40), 
+                                   @price  INT, 
+                                   @status BIT = 1 
+AS 
+    INSERT INTO lesson 
+    VALUES     ( @name, 
+                 @price, 
+                 @status ); 
 
-GO
-CREATE PROCEDURE dbo.Insert_Group_Student
-    @studentId INT,
-    @groupId INT,
-    @status BIT = 1
-AS
-    INSERT INTO Group_Student
-    VALUES(
-        @studentId,
-        @groupId,
-        @status
-    );
-GO
+go 
 
+-- Insert Group 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Insert_Group') 
+  DROP PROCEDURE dbo.insert_group 
 
--- Insert Student_Payments
-IF EXISTS (
-    SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
-    WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Student_Payments'
-)
-DROP PROCEDURE dbo.Insert_Student_Payments
-GO
-CREATE PROCEDURE dbo.Insert_Student_Payments
-    @studentId INT,
-    @payment DECIMAL(7,2),
-    @status BIT = 1
-AS
-    INSERT INTO Student_Payments
-    VALUES(
-        @studentId,
-        @payment,
-        @status
-    );
-GO
+go 
 
+CREATE PROCEDURE dbo.Insert_group @name      VARCHAR(40), 
+                                  @teacherId INT, 
+                                  @LessonId  INT, 
+                                  @status    BIT = 1 
+AS 
+    INSERT INTO [group] 
+    VALUES     ( @name, 
+                 @teacherId, 
+                 @lessonId, 
+                 @status ); 
 
--- Insert Student_Marks
-IF EXISTS (
-    SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
-    WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Student_Marks'
-)
-DROP PROCEDURE dbo.Insert_Student_Marks
-GO
-CREATE PROCEDURE dbo.Insert_Student_Marks
-    @studentId INT,
-    @date DATE,
-    @mark INT,
-    @status BIT = 1
-AS
-    INSERT INTO Student_Marks
-    VALUES(
-        @studentId,
-        @date,
-        @mark,
-        @status
-    );
-GO
+go 
 
+-- Insert Group_Student 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Insert_Group_Student') 
+  DROP PROCEDURE dbo.insert_group_student 
 
--- Insert Student_LessonDay
-IF EXISTS (
-    SELECT *
-    FROM INFORMATION_SCHEMA.ROUTINES
-    WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Student_LessonDay'
-)
-DROP PROCEDURE dbo.Insert_Student_LessonDay
-GO
-CREATE PROCEDURE dbo.Insert_Student_LessonDay
-    @studentId INT,
-    @studentStatus BIT,
-    @date DATE,
-    @status BIT =1
-AS
-    INSERT INTO Student_LesssonDays
-    VALUES(
-        @studentId,
-        @studentStatus,
-        @date,
-        @status
-    );
-GO
+go 
+
+CREATE PROCEDURE dbo.Insert_group_student @studentId INT, 
+                                          @groupId   INT, 
+                                          @status    BIT = 1 
+AS 
+    INSERT INTO group_student 
+    VALUES     ( @studentId, 
+                 @groupId, 
+                 @status ); 
+
+go 
+
+-- Insert Student_Payments 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Insert_Student_Payments') 
+  DROP PROCEDURE dbo.insert_student_payments 
+
+go 
+
+CREATE PROCEDURE dbo.Insert_student_payments @studentId INT, 
+                                             @payment   DECIMAL(7, 2), 
+                                             @status    BIT = 1 
+AS 
+    INSERT INTO student_payments 
+    VALUES     ( @studentId, 
+                 @payment, 
+                 @status ); 
+
+go 
+
+-- Insert Student_Marks 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Insert_Student_Marks') 
+  DROP PROCEDURE dbo.insert_student_marks 
+
+go 
+
+CREATE PROCEDURE dbo.Insert_student_marks @studentId INT, 
+                                          @date      DATE, 
+                                          @mark      INT, 
+                                          @status    BIT = 1 
+AS 
+    INSERT INTO student_marks 
+    VALUES     ( @studentId, 
+                 @date, 
+                 @mark, 
+                 @status ); 
+
+go 
+
+-- Insert Student_LessonDay 
+IF EXISTS (SELECT * 
+           FROM   information_schema.routines 
+           WHERE  specific_schema = N'dbo' 
+                  AND specific_name = N'Insert_Student_LessonDay') 
+  DROP PROCEDURE dbo.insert_student_lessonday 
+
+go 
+
+CREATE PROCEDURE dbo.Insert_student_lessonday @studentId     INT, 
+                                              @studentStatus BIT, 
+                                              @date          DATE, 
+                                              @status        BIT =1 
+AS 
+    INSERT INTO student_lesssondays 
+    VALUES     ( @studentId, 
+                 @studentStatus, 
+                 @date, 
+                 @status ); 
+
+go USE master
