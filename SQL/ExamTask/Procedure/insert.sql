@@ -180,4 +180,4 @@ AS
                  @date, 
                  @status ); 
 
-go USE master
+go

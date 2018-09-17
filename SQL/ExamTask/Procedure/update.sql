@@ -1,5 +1,5 @@
 USE examtask 
-USE master
+
 -- Update Student 
 IF EXISTS (SELECT * 
            FROM   information_schema.routines 
