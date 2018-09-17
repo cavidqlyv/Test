@@ -1,10 +1,11 @@
 USE ExamTask
 
+
 -- Insert Rows Student
 IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
+    SELECT *
+    FROM INFORMATION_SCHEMA.ROUTINES
+    WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'Insert_Student'
 )
 DROP PROCEDURE dbo.Insert_Student
@@ -20,8 +21,8 @@ CREATE PROCEDURE dbo.Insert_Student
     @password VARCHAR(40),
     @status BIT = 1
 AS
-INSERT INTO Student
-VALUES(
+    INSERT INTO Student
+    VALUES(
         @name,
         @surname,
         @fin,
@@ -29,16 +30,16 @@ VALUES(
         @registration_date,
         @username,
         @password,
-        @status);
+        @status
+        );
 GO
-
 
 
 -- Insert Rows Teacher
 IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
+    SELECT *
+    FROM INFORMATION_SCHEMA.ROUTINES
+    WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'Insert_Teacher'
 )
 DROP PROCEDURE dbo.Insert_Teacher
@@ -51,22 +52,23 @@ CREATE PROCEDURE dbo.Insert_Teacher
     @password VARCHAR(40),
     @status BIT = 1
 AS
-INSERT INTO Teacher
-VALUES(
+    INSERT INTO Teacher
+    VALUES(
         @name,
         @surname,
         @contact,
         @username,
         @password,
         @status
-    )
+    );
 GO
+
 
 -- Insert Lesson
 IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
+    SELECT *
+    FROM INFORMATION_SCHEMA.ROUTINES
+    WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'Insert_Lesson'
 )
 DROP PROCEDURE dbo.Insert_Lesson
@@ -76,19 +78,20 @@ CREATE PROCEDURE dbo.Insert_Lesson
     @price INT,
     @status BIT = 1
 AS
-INSERT INTO Lesson
-VALUES(
+    INSERT INTO Lesson
+    VALUES(
         @name,
         @price,
         @status
-    )
+    );
 GO
+
 
 -- Insert Group
 IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
+    SELECT *
+    FROM INFORMATION_SCHEMA.ROUTINES
+    WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'Insert_Group'
 )
 DROP PROCEDURE dbo.Insert_Group
@@ -99,20 +102,21 @@ CREATE PROCEDURE dbo.Insert_Group
     @LessonId INT,
     @status BIT = 1
 AS
-INSERT INTO [Group]
-VALUES(
+    INSERT INTO [Group]
+    VALUES(
         @name,
         @teacherId,
         @lessonId,
         @status
-)
+    );
 GO
+
 
 -- Insert Group_Student
 IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
+    SELECT *
+    FROM INFORMATION_SCHEMA.ROUTINES
+    WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'Insert_Group_Student'
 )
 DROP PROCEDURE dbo.Insert_Group_Student
@@ -123,20 +127,20 @@ CREATE PROCEDURE dbo.Insert_Group_Student
     @groupId INT,
     @status BIT = 1
 AS
-INSERT INTO Group_Student
-VALUES(
+    INSERT INTO Group_Student
+    VALUES(
         @studentId,
         @groupId,
         @status
-)
+    );
 GO
 
 
 -- Insert Student_Payments
 IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
+    SELECT *
+    FROM INFORMATION_SCHEMA.ROUTINES
+    WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'Insert_Student_Payments'
 )
 DROP PROCEDURE dbo.Insert_Student_Payments
@@ -146,20 +150,20 @@ CREATE PROCEDURE dbo.Insert_Student_Payments
     @payment DECIMAL(7,2),
     @status BIT = 1
 AS
-INSERT INTO Student_Payments
-VALUES(
+    INSERT INTO Student_Payments
+    VALUES(
         @studentId,
         @payment,
         @status
-    )
+    );
 GO
 
 
 -- Insert Student_Marks
 IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
+    SELECT *
+    FROM INFORMATION_SCHEMA.ROUTINES
+    WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'Insert_Student_Marks'
 )
 DROP PROCEDURE dbo.Insert_Student_Marks
@@ -170,21 +174,21 @@ CREATE PROCEDURE dbo.Insert_Student_Marks
     @mark INT,
     @status BIT = 1
 AS
-INSERT INTO Student_Marks
-VALUES(
+    INSERT INTO Student_Marks
+    VALUES(
         @studentId,
         @date,
         @mark,
         @status
-)
+    );
 GO
 
 
 -- Insert Student_LessonDay
 IF EXISTS (
-SELECT *
-FROM INFORMATION_SCHEMA.ROUTINES
-WHERE SPECIFIC_SCHEMA = N'dbo'
+    SELECT *
+    FROM INFORMATION_SCHEMA.ROUTINES
+    WHERE SPECIFIC_SCHEMA = N'dbo'
     AND SPECIFIC_NAME = N'Insert_Student_LessonDay'
 )
 DROP PROCEDURE dbo.Insert_Student_LessonDay
@@ -195,11 +199,11 @@ CREATE PROCEDURE dbo.Insert_Student_LessonDay
     @date DATE,
     @status BIT =1
 AS
-INSERT INTO Student_LesssonDays
-VALUES(
+    INSERT INTO Student_LesssonDays
+    VALUES(
         @studentId,
         @studentStatus,
         @date,
         @status
-)
+    );
 GO

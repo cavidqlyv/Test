@@ -130,78 +130,80 @@ CREATE PROCEDURE dbo.Update_Group_Student
 AS
 UPDATE Group_Student SET
 student_id = @studentId,
-
+group_id = @groupId,
+[status] = @status
+WHERE id =@id
 GO
 
 
--- Insert Student_Payments
+-- Update Student_Payments
 IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'InsertStudent_Payments'
+    AND SPECIFIC_NAME = N'Update_Student_Payments'
 )
-DROP PROCEDURE dbo.InsertStudent_Payments
+DROP PROCEDURE dbo.Update_Student_Payments
 GO
-CREATE PROCEDURE dbo.InsertStudent_Payments
+CREATE PROCEDURE dbo.Update_Student_Payments
+    @id INT,
     @studentId INT,
     @payment DECIMAL(7,2),
     @status BIT = 1
 AS
-INSERT INTO Student_Payments
-VALUES(
-        @studentId,
-        @payment,
-        @status
-    )
+UPDATE Student_Payments SET
+student_id = @studentId,
+payment = @payment,
+[status] = @status
+WHERE id =@id
 GO
 
 
--- Insert Student_Marks
+-- Update Student_Marks
 IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Student_Marks'
+    AND SPECIFIC_NAME = N'Update_Student_Marks'
 )
-DROP PROCEDURE dbo.Insert_Student_Marks
+DROP PROCEDURE dbo.Update_Student_Marks
 GO
-CREATE PROCEDURE dbo.Insert_Student_Marks
+CREATE PROCEDURE dbo.Update_Student_Marks
+    @id INT,
     @studentId INT,
     @date DATE,
     @mark INT,
     @status BIT = 1
 AS
-INSERT INTO Student_Marks
-VALUES(
-        @studentId,
-        @date,
-        @mark,
-        @status
-)
+UPDATE Student_Marks SET
+student_id = @studentId,
+[date] = @date,
+mark = @mark,
+[status] = @status
+WHERE id =@id
 GO
 
 
--- Insert Student_LessonDay
+-- Update Student_LessonDay
 IF EXISTS (
 SELECT *
 FROM INFORMATION_SCHEMA.ROUTINES
 WHERE SPECIFIC_SCHEMA = N'dbo'
-    AND SPECIFIC_NAME = N'Insert_Student_LessonDay'
+    AND SPECIFIC_NAME = N'Update_Student_LessonDay'
 )
-DROP PROCEDURE dbo.Insert_Student_LessonDay
+DROP PROCEDURE dbo.Update_Student_LessonDay
 GO
-CREATE PROCEDURE dbo.Insert_Student_LessonDay
+CREATE PROCEDURE dbo.Update_Student_LessonDay
+    @id INT,
     @studentId INT,
     @studentStatus BIT,
     @date DATE,
     @status BIT =1
 AS
-INSERT INTO Student_LesssonDays
-VALUES(
-        @studentId,
-        @studentStatus,
-        @date,
-        @status
-)
+UPDATE Student_LessonDays SET
+student_id = @studentId,
+student_status = @studentStatus,
+[date] = @date,
+[status] = @status
+WHERE id =@id
 GO
