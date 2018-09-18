@@ -3,6 +3,6 @@ Teacher 20 rows
 Lesson 20 rows
 Group 30 rows
 Group_Student 60 rows
-Student_Payments
-Student_Marks
+Student_Payments 1260 rows
+Student_Marks 1800 rows
 Student_LessonDays

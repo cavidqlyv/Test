@@ -48,4 +48,4 @@ EXECUTE Insert_student_payments 1
 
 select * from student_payments
 
-
+SELECT count(*) FROM student_lessondays
