@@ -126,7 +126,8 @@ CREATE TABLE dbo.student_payments
      student_id INT CONSTRAINT fk_studentpayments_student_id FOREIGN KEY 
      REFERENCES 
      student(id), 
-     payment    DECIMAL(7, 2) NOT NULL, 
+     payment    INT NOT NULL, 
+     [date] DATE NOT NULL,
      [status]   BIT DEFAULT 1 
   ); 
 

@@ -139,7 +139,7 @@ go
 
 CREATE PROCEDURE dbo.Update_student_payments @id        INT, 
                                              @studentId INT, 
-                                             @payment   DECIMAL(7, 2), 
+                                             @payment   INT, 
                                              @status    BIT = 1 
 AS 
     UPDATE student_payments 

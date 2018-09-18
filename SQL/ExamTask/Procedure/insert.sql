@@ -128,12 +128,26 @@ IF EXISTS (SELECT *
 go 
 
 CREATE PROCEDURE dbo.Insert_student_payments @studentId INT, 
-                                             @payment   DECIMAL(7, 2), 
+                                             @payment   INT = -1,
+                                             @date DATE = '01-01-0001',
                                              @status    BIT = 1 
 AS 
+   
+    IF @payment = -1
+    BEGIN
+    SET @payment = (SELECT l.price FROM [group] AS g
+    JOIN group_student gs ON  g.id = gs.group_id 
+    JOIN lesson l ON l.id = g.lesson_id WHERE gs.student_id = @studentId);
+    END
+    
+    IF @date = '0001-01-01'
+    BEGIN
+    Select @date =  GETDATE();
+    END
     INSERT INTO student_payments 
     VALUES     ( @studentId, 
-                 @payment, 
+                 @payment,
+                 @date, 
                  @status ); 
 
 go 
