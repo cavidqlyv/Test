@@ -6,5 +6,5 @@ SELECT * FROM Teacher;
 
 SELECT * FROM Lesson;
 
-SELECT * FROM Group;
+SELECT * FROM [group]
 
