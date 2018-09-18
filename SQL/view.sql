@@ -1,26 +1,35 @@
-use db
+USE db 
 
-select *
-from Lesson
+SELECT * 
+FROM   lesson 
 
-INSERT into Lesson
-VALUES('Lesson5' , 700 , 1);
-GO
-CREATE VIEW dbo.LessonPrice
-as
-    SELECT *
-    from dbo.Lesson
-    WHERE default_price > 300
-GO
-select *
-FROM LessonPrice
+INSERT INTO lesson 
+VALUES     ('Lesson5', 
+            700, 
+            1); 
 
-SELECT *
-FROM Groupc
-GO
-CREATE VIEW GroupDayCountPay
-as
-    SELECT grou_day_count_pay
-    FROM Groupc
-    WHERE grou_day_count_pay>10
-    GO
+go 
+
+CREATE VIEW dbo.lessonprice 
+AS 
+  SELECT * 
+  FROM   dbo.lesson 
+  WHERE  default_price > 300 
+
+go 
+
+SELECT * 
+FROM   lessonprice 
+
+SELECT * 
+FROM   groupc 
+
+go 
+
+CREATE VIEW groupdaycountpay 
+AS 
+  SELECT grou_day_count_pay 
+  FROM   groupc 
+  WHERE  grou_day_count_pay > 10 
+
+go 

@@ -5,6 +5,8 @@ go
 IF EXISTS (SELECT NAME 
            FROM   sys.databases 
            WHERE  NAME = N'ExamTask') 
+ALTER DATABASE examtask SET  SINGLE_USER WITH ROLLBACK IMMEDIATE
+
   DROP DATABASE examtask 
 
 go 
@@ -37,7 +39,7 @@ CREATE TABLE dbo.student
      fin               VARCHAR(10) NOT NULL UNIQUE, 
      contact           VARCHAR(20) NOT NULL, 
      registration_date DATE NOT NULL, 
-     username          VARCHAR(40) NOT NULL, 
+     username          VARCHAR(40) NOT NULL UNIQUE, 
      [password]        VARCHAR(40) NOT NULL, 
      [status]          BIT DEFAULT 1 
   ); 
@@ -85,7 +87,7 @@ go
 CREATE TABLE dbo.[group] 
   ( 
      id         INT PRIMARY KEY IDENTITY(1, 1), 
-     [name]     NVARCHAR(50) NOT NULL, 
+     [name]     NVARCHAR(50) NOT NULL UNIQUE, 
      teacher_id INT CONSTRAINT fk_group_teacher_id FOREIGN KEY REFERENCES 
      teacher(id), 
      lesson_id  INT CONSTRAINT fk_group_lesson_id FOREIGN KEY REFERENCES lesson( 
