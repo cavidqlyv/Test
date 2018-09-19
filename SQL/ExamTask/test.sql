@@ -49,3 +49,22 @@ EXECUTE Insert_student_payments 1
 select * from student_payments
 
 SELECT count(*) FROM student_lessondays
+
+use examtask
+SELECT * FROM student
+
+SELECT * FROM teacher
+
+SELECT * FROM lesson
+
+SELECT * FROM [group]
+
+
+SELECT * FROM group_student
+
+SELECT * FROM student_lessondays
+
+SELECT * FROM student_marks
+
+SELECT * FROM student_payments
+
