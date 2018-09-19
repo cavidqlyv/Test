@@ -68,3 +68,4 @@ SELECT * FROM student_marks
 
 SELECT * FROM student_payments
 
+SELECT  dateadd(YEAR,2,cast(getDate() as date))
