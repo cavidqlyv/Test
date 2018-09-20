@@ -127,7 +127,7 @@ CREATE TABLE dbo.student_payments
      REFERENCES 
      student(id), 
      payment    INT NOT NULL, 
-     [date] DATE NOT NULL,
+     [date]     DATE NOT NULL,
      [status]   BIT DEFAULT 1 
   ); 
 

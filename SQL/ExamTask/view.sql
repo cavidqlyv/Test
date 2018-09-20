@@ -45,6 +45,8 @@ AS
 
 go 
 
+SELECT * FROM dbo.student_teacher_list
+go
 CREATE VIEW dbo.group_income 
 AS 
   SELECT g.NAME          AS GroupName, 
@@ -59,3 +61,7 @@ AS
             sp.[date] 
 
 go 
+
+SELECT * FROM group_income
+
+SELECT * FROM student_payments
