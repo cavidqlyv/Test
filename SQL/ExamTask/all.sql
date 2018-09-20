@@ -26323,3 +26323,147 @@ EXECUTE dbo.Insert_student_marks
   60, 
   '2018-08-30', 
   2 
+GO
+IF EXISTS(SELECT 1 
+          FROM   sys.views 
+          WHERE  NAME = 'student_details' 
+                 AND type = 'v') 
+  DROP VIEW student_details; 
+
+go 
+
+CREATE VIEW student_details 
+AS 
+  SELECT s.NAME      AS StudentName, 
+         g.NAME      AS GroupName, 
+         l.NAME      AS LessonName, 
+         sm.mark     AS Mark, 
+         sl.[status] AS Status, 
+         sl.[date] 
+  FROM   student s 
+         JOIN group_student gs 
+           ON s.id = gs.student_id 
+         JOIN [group] g 
+           ON gs.group_id = g.id 
+         JOIN lesson l 
+           ON g.lesson_id = l.id 
+         JOIN student_lessondays sl 
+           ON sl.student_id = s.id 
+         JOIN student_marks sm 
+           ON sm.student_id = s.id 
+              AND sm.[date] = sl.[date] 
+
+go 
+
+SELECT * 
+FROM   dbo.student_details 
+
+go 
+
+IF EXISTS(SELECT 1 
+          FROM   sys.views 
+          WHERE  NAME = 'student_teacher_list' 
+                 AND type = 'v') 
+  DROP VIEW dbo.student_teacher_list; 
+
+go 
+
+CREATE VIEW dbo.student_teacher_list 
+AS 
+  SELECT s.NAME AS StudentName, 
+         t.NAME AS TEacherName, 
+         g.NAME AS GroupName 
+  FROM   student s 
+         JOIN group_student gs 
+           ON s.id = gs.student_id 
+         JOIN [group] g 
+           ON gs.group_id = g.id 
+         JOIN teacher t 
+           ON t.id = g.teacher_id 
+
+go 
+
+IF EXISTS(SELECT 1 
+          FROM   sys.views 
+          WHERE  NAME = 'group_income' 
+                 AND type = 'v') 
+  DROP VIEW dbo.group_income; 
+
+go 
+
+CREATE VIEW dbo.group_income 
+AS 
+  SELECT g.NAME          AS GroupName, 
+         Sum(sp.payment) AS Income, 
+         sp.[date] 
+  FROM   [group] g 
+         JOIN group_student AS gs 
+           ON g.id = gs.group_id 
+         JOIN student_payments AS sp 
+           ON gs.student_id = sp.student_id 
+  GROUP  BY g.NAME, 
+            sp.[date] 
+
+go 
+
+USE examtask 
+
+IF EXISTS (SELECT * 
+           FROM   sys.objects 
+           WHERE  object_id = Object_id(N'[dbo].[Checkuser]') 
+                  AND type IN ( N'FN', N'IF', N'TF', N'FS', N'FT' )) 
+  DROP FUNCTION [dbo].[Checkuser] 
+
+go 
+
+CREATE FUNCTION dbo.Checkuser (@username VARCHAR(40), 
+                               @password VARCHAR(40)) 
+returns BIT 
+AS 
+  BEGIN 
+      DECLARE @result BIT =0; 
+      DECLARE @student INT=0; 
+      DECLARE @teacher INT=0; 
+
+      SELECT @student = Count(*) 
+      FROM   student 
+      WHERE  username = @username 
+             AND [password] = @password 
+
+      IF @student = 1 
+        BEGIN 
+            RETURN 1; 
+        END 
+
+      SELECT @teacher = Count(*) 
+      FROM   teacher 
+      WHERE  username = @username 
+             AND [password] = @password 
+
+      IF @teacher = 1 
+        BEGIN 
+            RETURN 1; 
+        END 
+
+      RETURN 0; 
+  END 
+
+go 
+SELECT * FROM student
+SELECT dbo.Checkuser('hgawthorp0','X1aILVov5');
+
+go 
+
+CREATE TRIGGER trigger_delete_group 
+ON group_student 
+after UPDATE 
+AS 
+  BEGIN 
+      UPDATE [group] 
+      SET    [status] = 0 
+      WHERE  id NOT IN (SELECT group_id 
+                        FROM   group_student 
+                        WHERE  [status] = 1) 
+  END 
+
+go 
