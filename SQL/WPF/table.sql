@@ -16,18 +16,18 @@ go
 
 CREATE TABLE dbo.student 
   ( 
-     id             INT NOT NULL PRIMARY KEY, 
+     id             INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
      fullname       VARCHAR(40) NOT NULL, 
-     username       VARCHAR(40) NOT NULL, 
+     username       VARCHAR(40) UNIQUE NOT NULL, 
      [password]     VARCHAR(40) NOT NULL, 
      adress         VARCHAR(100), 
      twitter        VARCHAR(50), 
      facebook       VARCHAR(50), 
-     mail           VARCHAR(50), 
-     phone          VARCHAR(50), 
+     mail           VARCHAR(50) NOT NULL, 
+     phone          VARCHAR(20) NOT NULL, 
      birthdate      DATE, 
-     imagepath      VARCHAR(200), 
-     performance    DECIMAL(3, 1), 
+     imagePath      VARCHAR(200), 
+     performance    DECIMAL(3,1), 
      attendance     INT, 
      class          VARCHAR(40), 
      specialization VARCHAR(40), 
@@ -46,9 +46,25 @@ go
 
 CREATE TABLE dbo.teacher 
   ( 
-     teacherid INT NOT NULL PRIMARY KEY, 
-     column1   [NVARCHAR](50) NOT NULL, 
-     column2   [NVARCHAR](50) NOT NULL 
+     id           INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+     [fullname]   VARCHAR(50) NOT NULL, 
+     username     VARCHAR(50) UNIQUE NOT NULL,
+     [password]   VARCHAR(40) NOT NULL,
+     mail         VARCHAR(60) NOT NULL,
+     imagePath    VARCHAR(200),
+     facebook     VARCHAR(40),
+     twitter      VARCHAR(40),
+     phone        VARCHAR(20),
   ); 
 
 go 
+
+IF OBJECT_ID('dbo.Lesson', 'U') IS NOT NULL
+DROP TABLE dbo.Lesson
+GO
+CREATE TABLE dbo.Lesson
+(
+  id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+  [name] VARCHAR(40) NOT NULL,
+);
+GO
