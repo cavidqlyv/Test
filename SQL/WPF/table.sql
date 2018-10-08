@@ -2,6 +2,18 @@ USE master
 
 go 
 
+/*
+* Student
+* Teacher
+* Lesson
+* Homework
+* Group
+* Group_Student
+* GroupLessonTime
+* StudentMarks
+* 
+*/
+
 IF NOT EXISTS (SELECT NAME 
                FROM   sys.databases 
                WHERE  NAME = N'wpftest') 
@@ -34,7 +46,8 @@ CREATE TABLE dbo.student
      points         INT, 
      coin           INT, 
      crystal        INT, 
-     badges         INT 
+     badges         INT,
+     [status]       BIT NOT NULL
   ); 
 
 go 
@@ -55,6 +68,7 @@ CREATE TABLE dbo.teacher
      facebook     VARCHAR(40),
      twitter      VARCHAR(40),
      phone        VARCHAR(20),
+     [status]       BIT NOT NULL
   ); 
 
 go 
@@ -62,9 +76,50 @@ go
 IF OBJECT_ID('dbo.Lesson', 'U') IS NOT NULL
 DROP TABLE dbo.Lesson
 GO
+
 CREATE TABLE dbo.Lesson
 (
   id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
   [name] VARCHAR(40) NOT NULL,
+  [status]       BIT NOT NULL
+);
+GO
+
+IF OBJECT_ID('dbo.Homework', 'U') IS NOT NULL
+DROP TABLE dbo.Homework
+GO
+
+CREATE TABLE dbo.Homework
+(
+  id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+  filePath VARCHAR(200) NOT NULL,
+  comment VARCHAR(200),
+  [status]       BIT NOT NULL
+);
+GO
+
+IF OBJECT_ID('dbo.Group', 'U') IS NOT NULL
+DROP TABLE dbo.[Group]
+GO
+CREATE TABLE dbo.[Group]
+(
+  id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+  [name] VARCHAR(50) NOT NULL,
+  lesson_id INT CONSTRAINT fk_lesson_id FOREIGN KEY REFERENCES Lesson(id),
+  [status] BIT NOT NULL
+);
+GO
+
+
+IF OBJECT_ID('dbo.GroupLessonTime', 'U') IS NOT NULL
+DROP TABLE dbo.GroupLessonTime
+GO
+CREATE TABLE dbo.GroupLessonDate
+(
+  id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+  [date] DATETIME NOT NULL,
+  room INT NOT NULL,
+  group_id INT CONSTRAINT fk_group_id FOREIGN KEY REFERENCES dbo.[Group](id),
+  [status] BIT NOT NULL
 );
 GO
