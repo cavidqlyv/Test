@@ -48,4 +48,4 @@ CREATE TABLE dbo.book
 );
 GO
 
-select * FROM author
+use entityDb
