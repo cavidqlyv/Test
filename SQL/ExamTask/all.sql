@@ -26,6 +26,39 @@ USE examtask
 
 go 
 
+IF OBJECT_ID('dbo.role', 'U') IS NOT NULL
+DROP TABLE dbo.role
+GO
+CREATE TABLE dbo.role
+(
+  id INT NOT NULL PRIMARY KEY,
+  [name] VARCHAR(40) NOT NULL,
+
+);
+GO
+
+IF OBJECT_ID('dbo.action', 'U') IS NOT NULL
+DROP TABLE dbo.action
+GO
+CREATE TABLE dbo.action
+(
+  id INT NOT NULL PRIMARY KEY,
+  [name] VARCHAR(40) NOT NULL,
+);
+GO
+
+IF OBJECT_ID('dbo.role_action', 'U') IS NOT NULL
+DROP TABLE dbo.role_action
+GO
+CREATE TABLE dbo.role_action
+(
+  id INT NOT NULL PRIMARY KEY,
+  role_id INT CONSTRAINT fk_role_id FOREIGN KEY REFERENCES role(id),
+  action_id INT CONSTRAINT fk_action_id FOREIGN KEY REFERENCES action(id)
+);
+GO
+
+
 IF Object_id('dbo.Student', 'U') IS NOT NULL 
   DROP TABLE dbo.student 
 
@@ -36,7 +69,7 @@ CREATE TABLE dbo.student
      id                INT PRIMARY KEY IDENTITY(1, 1), 
      [name]            VARCHAR(40) NOT NULL, 
      surname           VARCHAR(40) NOT NULL, 
-     fin               VARCHAR(10) NOT NULL UNIQUE, 
+    -- fin               VARCHAR(10) NOT NULL UNIQUE,
      contact           VARCHAR(20) NOT NULL, 
      registration_date DATE NOT NULL, 
      username          VARCHAR(40) NOT NULL UNIQUE, 
