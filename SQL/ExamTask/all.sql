@@ -24,47 +24,12 @@ go
 
 USE examtask 
 
-go 
-
-IF OBJECT_ID('dbo.role', 'U') IS NOT NULL
-DROP TABLE dbo.role
-GO
-CREATE TABLE dbo.role
-(
-  id INT NOT NULL PRIMARY KEY,
-  [name] VARCHAR(40) NOT NULL,
-
-);
-GO
-
-IF OBJECT_ID('dbo.action', 'U') IS NOT NULL
-DROP TABLE dbo.action
-GO
-CREATE TABLE dbo.action
-(
-  id INT NOT NULL PRIMARY KEY,
-  [name] VARCHAR(40) NOT NULL,
-);
-GO
-
-IF OBJECT_ID('dbo.role_action', 'U') IS NOT NULL
-DROP TABLE dbo.role_action
-GO
-CREATE TABLE dbo.role_action
-(
-  id INT NOT NULL PRIMARY KEY,
-  role_id INT CONSTRAINT fk_role_id FOREIGN KEY REFERENCES role(id),
-  action_id INT CONSTRAINT fk_action_id FOREIGN KEY REFERENCES action(id)
-);
-GO
-
-
 IF Object_id('dbo.Student', 'U') IS NOT NULL 
-  DROP TABLE dbo.student 
+  DROP TABLE dbo.Student 
 
 go 
 
-CREATE TABLE dbo.student 
+CREATE TABLE dbo.Student 
   ( 
      id                INT PRIMARY KEY IDENTITY(1, 1), 
      [name]            VARCHAR(40) NOT NULL, 
@@ -80,11 +45,11 @@ CREATE TABLE dbo.student
 go 
 
 IF Object_id('dbo.Teacher', 'U') IS NOT NULL 
-  DROP TABLE dbo.teacher 
+  DROP TABLE dbo.Teacher 
 
 go 
 
-CREATE TABLE dbo.teacher 
+CREATE TABLE dbo.Teacher 
   ( 
      id         INT PRIMARY KEY IDENTITY(1, 1), 
      [name]     VARCHAR(40) NOT NULL, 
@@ -97,12 +62,51 @@ CREATE TABLE dbo.teacher
 
 go 
 
+go 
+
+IF OBJECT_ID('dbo.role', 'U') IS NOT NULL
+DROP TABLE dbo.Role
+GO
+CREATE TABLE dbo.Role
+(
+  id INT NOT NULL PRIMARY KEY IDENTITY,
+  [name] VARCHAR(40) NOT NULL,
+  student_id INT NULL CONSTRAINT fk_student_id_role FOREIGN KEY REFERENCES student(id),
+  teacher_id INT NULL CONSTRAINT fk_teacher_id_role FOREIGN KEY REFERENCES teacher(id)
+  
+);
+GO
+
+IF OBJECT_ID('dbo.action', 'U') IS NOT NULL
+DROP TABLE dbo.Action
+GO
+CREATE TABLE dbo.Action
+(
+  id INT NOT NULL PRIMARY KEY IDENTITY,
+  [name] VARCHAR(40) NOT NULL,
+);
+GO
+
+IF OBJECT_ID('dbo.role_action', 'U') IS NOT NULL
+DROP TABLE dbo.Role_action
+GO
+CREATE TABLE dbo.Role_action
+(
+  id INT NOT NULL PRIMARY KEY IDENTITY,
+  role_id INT CONSTRAINT fk_role_id FOREIGN KEY REFERENCES role(id),
+  action_id INT CONSTRAINT fk_action_id FOREIGN KEY REFERENCES action(id)
+);
+GO
+
+
+
+
 IF Object_id('dbo.Lesson', 'U') IS NOT NULL 
-  DROP TABLE dbo.lesson 
+  DROP TABLE dbo.Lesson 
 
 go 
 
-CREATE TABLE dbo.lesson 
+CREATE TABLE dbo.Lesson 
   ( 
      id       INT PRIMARY KEY IDENTITY(1, 1), 
      [name]   NVARCHAR(40) NOT NULL, 
@@ -113,11 +117,11 @@ CREATE TABLE dbo.lesson
 go 
 
 IF Object_id('dbo.Group', 'U') IS NOT NULL 
-  DROP TABLE dbo.[group] 
+  DROP TABLE dbo.[Group] 
 
 go 
 
-CREATE TABLE dbo.[group] 
+CREATE TABLE dbo.[Group] 
   ( 
      id         INT PRIMARY KEY IDENTITY(1, 1), 
      [name]     NVARCHAR(50) NOT NULL UNIQUE, 
@@ -131,11 +135,11 @@ CREATE TABLE dbo.[group]
 go 
 
 IF Object_id('dbo.Group_Student', 'U') IS NOT NULL 
-  DROP TABLE dbo.group_student 
+  DROP TABLE dbo.Group_student 
 
 go 
 
-CREATE TABLE dbo.group_student 
+CREATE TABLE dbo.Group_student 
   ( 
      id         INT PRIMARY KEY IDENTITY(1, 1), 
      student_id INT CONSTRAINT fk_groupstudent_student_id FOREIGN KEY REFERENCES 
@@ -149,11 +153,11 @@ CREATE TABLE dbo.group_student
 go 
 
 IF Object_id('dbo.Student_Payments', 'U') IS NOT NULL 
-  DROP TABLE dbo.student_payments 
+  DROP TABLE dbo.Student_payments 
 
 go 
 
-CREATE TABLE dbo.student_payments 
+CREATE TABLE dbo.Student_payments 
   ( 
      id         INT PRIMARY KEY IDENTITY(1, 1), 
      student_id INT CONSTRAINT fk_studentpayments_student_id FOREIGN KEY 
@@ -167,11 +171,11 @@ CREATE TABLE dbo.student_payments
 go 
 
 IF Object_id('dbo.Student_Marks', 'U') IS NOT NULL 
-  DROP TABLE dbo.student_marks 
+  DROP TABLE dbo.Student_marks 
 
 go 
 
-CREATE TABLE dbo.student_marks 
+CREATE TABLE dbo.Student_marks 
   ( 
      id         INT PRIMARY KEY IDENTITY(1, 1), 
      student_id INT CONSTRAINT fk_studentmarks_student_id FOREIGN KEY REFERENCES 
@@ -184,11 +188,11 @@ CREATE TABLE dbo.student_marks
 go 
 
 IF Object_id('dbo.Student_LessonDay', 'U') IS NOT NULL 
-  DROP TABLE dbo.student_lessondays 
+  DROP TABLE dbo.Student_lessondays 
 
 go 
 
-CREATE TABLE dbo.student_lessondays 
+CREATE TABLE dbo.Student_lessondays 
   ( 
      id             INT PRIMARY KEY IDENTITY(1, 1), 
      student_id     INT CONSTRAINT fk_studentlessondays_student_id FOREIGN KEY 
@@ -225,7 +229,7 @@ AS
     INSERT INTO student 
     VALUES     ( @name, 
                  @surname, 
-                 @fin, 
+              --   @fin, 
                  @contact, 
                  @registration_date, 
                  @username, 
@@ -424,7 +428,7 @@ AS
     UPDATE student 
     SET    [name] = @name, 
            surname = @surname, 
-           fin = @fin, 
+       --    fin = @fin, 
            contact = @contact, 
            registration_date = @registration_date, 
            username = @username, 
@@ -26500,3 +26504,44 @@ AS
   END 
 
 go 
+
+
+select * from student
+
+INSERT into action VALUES('SelectStudent');
+INSERT into action VALUES('InsertStudent');
+INSERT into action VALUES('UpdateStudent');
+INSERT into action VALUES('DeleteStudent');
+
+INSERT into action VALUES('SelectTeacher');
+INSERT into action VALUES('InsertTeacher');
+INSERT into action VALUES('UpdateTeacher');
+INSERT into action VALUES('DeleteTeacher'); 
+
+
+Select * from role
+
+INSERT INTO role
+( 
+ [name], [student_id]
+)
+VALUES
+( 
+ 'role1', 101
+)
+
+SELECT * FROM role_action
+SELECT * FROM Teacher
+
+INSERT into role_action VALUES(2,1);
+INSERT into role_action VALUES(1,2);
+INSERT into role_action VALUES(1,3);
+INSERT into role_action VALUES(1,4);
+INSERT into role_action VALUES(2,5);
+
+INSERT into role_action VALUES(1,6);
+INSERT into role_action VALUES(1,7);
+INSERT into role_action VALUES(1,8);
+
+SELECT * FROM Student
+--INSERT into role VALUES('role1' , 1 , null)
