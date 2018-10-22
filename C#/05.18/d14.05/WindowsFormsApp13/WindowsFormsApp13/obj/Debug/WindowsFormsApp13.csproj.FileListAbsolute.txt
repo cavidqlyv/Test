@@ -1,0 +1,10 @@
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\bin\Debug\WindowsFormsApp13.exe.config
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\bin\Debug\WindowsFormsApp13.exe
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\bin\Debug\WindowsFormsApp13.pdb
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.csprojResolveAssemblyReference.cache
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.Form1.resources
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.Properties.Resources.resources
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.csproj.GenerateResource.Cache
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.csproj.CoreCompileInputs.cache
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.exe
+c:\users\sale_rv37\source\repos\WindowsFormsApp13\WindowsFormsApp13\obj\Debug\WindowsFormsApp13.pdb

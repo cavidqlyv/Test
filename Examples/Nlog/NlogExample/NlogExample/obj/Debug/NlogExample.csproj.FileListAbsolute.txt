@@ -1,0 +1,27 @@
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\bin\Debug\NlogExample.exe.config
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\bin\Debug\NlogExample.exe
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\bin\Debug\NlogExample.pdb
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\bin\Debug\NLog.dll
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\bin\Debug\NLog.xml
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\obj\Debug\NlogExample.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\obj\Debug\NlogExample.csproj.CoreCompileInputs.cache
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\obj\Debug\NlogExample.csproj.CopyComplete
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\obj\Debug\NlogExample.exe
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\obj\Debug\NlogExample.pdb
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\bin\Debug\System.Net.Http.Formatting.dll
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\bin\Debug\System.Net.Http.Formatting.xml
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\bin\Debug\Newtonsoft.Json.dll
+d:\documents\visual studio 2017\Projects\NlogExample\NlogExample\bin\Debug\Newtonsoft.Json.xml
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\bin\Debug\NlogExample.exe.config
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\bin\Debug\NlogExample.exe
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\bin\Debug\NlogExample.pdb
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\bin\Debug\Newtonsoft.Json.dll
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\bin\Debug\NLog.dll
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\bin\Debug\Newtonsoft.Json.xml
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\bin\Debug\NLog.xml
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\bin\Debug\System.Net.Http.Formatting.xml
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\obj\Debug\NlogExample.csprojAssemblyReference.cache
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\obj\Debug\NlogExample.csproj.CoreCompileInputs.cache
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\obj\Debug\NlogExample.csproj.CopyComplete
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\obj\Debug\NlogExample.exe
+\\ITSTEP\students redirection$\aligulur\Desktop\Nlog\NlogExample\NlogExample\obj\Debug\NlogExample.pdb
