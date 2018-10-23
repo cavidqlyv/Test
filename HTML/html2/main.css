@@ -1,4 +1,4 @@
-div {
+/* div {
     height: 300px;
     border: 5px solid violet;
     background-image: url(images/picture.jpg);
@@ -24,8 +24,17 @@ img {
     background-color: orchid;
     width: 200px;
     height: 200px;
-}
+} */
 
 h1 {
     color: plum;
+}
+
+div
+{
+    font-style: italic;
+}
+
+span{
+    background-color: yellow;
 }
