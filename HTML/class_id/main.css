@@ -29,10 +29,14 @@
 }
 
 .star-list li {
-    display: inline-block;
-}
-.star-list {
     background-image: url(images/download.png);
     background-repeat: no-repeat;
     background-size: contain;
+
+    text-indent: 20px;
+
+}
+
+.star-list {
+    
 }
