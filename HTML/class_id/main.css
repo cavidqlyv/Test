@@ -5,12 +5,12 @@
     line-height: 32px;
 } */
 
-.size{
+.size {
     width: 200px;
     height: 200px;
 }
 
-.round{
+.round {
     border: 5px solid black;
     border-radius: 50%;
     background-color: red;
@@ -19,6 +19,15 @@
     line-height: 190px;
 }
 
-#red-text{
-    color: red;    
+#red-text {
+    color: red;
+}
+
+.star-list li img {
+    width: 10px;
+    height: 10px;
+}
+
+.star-list li {
+    display: inline-block;
 }
