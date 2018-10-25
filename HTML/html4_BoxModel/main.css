@@ -30,6 +30,33 @@ span{
 } */
 
 
-ul{
-    
+/* ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li{
+display: inline-block;
+} */
+
+body{
+    background: #34495e;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    margin-top: 100px;
+    background-color: #ecf0f1;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+}
+.navbar ul li{
+    display: inline-block;
 }
