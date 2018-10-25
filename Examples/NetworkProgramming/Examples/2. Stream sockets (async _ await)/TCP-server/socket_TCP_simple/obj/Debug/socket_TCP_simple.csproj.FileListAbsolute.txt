@@ -1,0 +1,10 @@
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\bin\Debug\socket_TCP_simple.exe.config
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\bin\Debug\socket_TCP_simple.exe
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\bin\Debug\socket_TCP_simple.pdb
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\obj\Debug\socket_TCP_simple.csprojAssemblyReference.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\obj\Debug\socket_TCP_simple.Form1.resources
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\obj\Debug\socket_TCP_simple.Properties.Resources.resources
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\obj\Debug\socket_TCP_simple.csproj.GenerateResource.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\obj\Debug\socket_TCP_simple.csproj.CoreCompileInputs.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\obj\Debug\socket_TCP_simple.exe
+\\ITSTEP\students redirection$\sale_rv37\Desktop\NetworkProgramming\Examples\2. Stream sockets (async _ await)\TCP-server\socket_TCP_simple\obj\Debug\socket_TCP_simple.pdb
