@@ -1,0 +1,7 @@
+E:\test\Examples\NetworkProgramming\Test\Client\Client\bin\Debug\Client.exe.config
+E:\test\Examples\NetworkProgramming\Test\Client\Client\bin\Debug\Client.exe
+E:\test\Examples\NetworkProgramming\Test\Client\Client\bin\Debug\Client.pdb
+E:\test\Examples\NetworkProgramming\Test\Client\Client\obj\Debug\Client.csprojAssemblyReference.cache
+E:\test\Examples\NetworkProgramming\Test\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\test\Examples\NetworkProgramming\Test\Client\Client\obj\Debug\Client.exe
+E:\test\Examples\NetworkProgramming\Test\Client\Client\obj\Debug\Client.pdb
