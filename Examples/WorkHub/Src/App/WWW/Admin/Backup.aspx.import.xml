@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PortTrigger xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FromProject>SiteStarter</FromProject>
+  <FromDirectory>src\app\WWW\Admin</FromDirectory>
+  <Pattern>Backup.aspx</Pattern>
+  <Excludes />
+  <ToDirectory>src\app\WWW\Admin</ToDirectory>
+  <Translators>
+    <ReplaceTranslator Type="SoftwareMonkeys.CodePorter.Translators.ReplaceTranslator, SoftwareMonkeys.CodePorter.Translators" FindValue="SiteStarter" ReplaceValue="WorkHub" />
+  </Translators>
+</PortTrigger>

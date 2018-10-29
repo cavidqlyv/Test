@@ -1,0 +1,15 @@
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\SoftwareMonkeys.WorkHub.Data.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\SoftwareMonkeys.WorkHub.Data.pdb
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\NLog.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\SoftwareMonkeys.WorkHub.Configuration.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\SoftwareMonkeys.WorkHub.Diagnostics.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\SoftwareMonkeys.WorkHub.Entities.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\SoftwareMonkeys.WorkHub.State.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.pdb
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\obj\Debug\WorkHub.Data.csprojAssemblyReference.cache
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\obj\Debug\WorkHub.Data.csproj.CoreCompileInputs.cache
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\obj\Debug\WorkHub.Data.csproj.CopyComplete
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\obj\Debug\SoftwareMonkeys.WorkHub.Data.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Data\obj\Debug\SoftwareMonkeys.WorkHub.Data.pdb

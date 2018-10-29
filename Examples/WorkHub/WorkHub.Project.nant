@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<project name="WorkHub.Project" xmlns="http://nant.sf.net/schemas/nant.xsd">
+  <property name="Project.Name" value="WorkHub" />
+  <property name="Project.CompanyName" value="SoftwareMonkeys" />
+  <property name="Project.BaseNamespace" value="SoftwareMonkeys.WorkHub" />
+</project>

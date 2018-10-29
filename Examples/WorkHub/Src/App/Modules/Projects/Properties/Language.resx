@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Archived" xml:space="preserve">
+    <value>Archived</value>
+  </data>
+  <data name="Asc" xml:space="preserve">
+    <value>(asc)</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="CreateProject" xml:space="preserve">
+    <value>Create Project</value>
+  </data>
+  <data name="CreateProjectIntro" xml:space="preserve">
+    <value>Enter the new project details in the form below.</value>
+  </data>
+  <data name="CurrentVersion" xml:space="preserve">
+    <value>Current Version</value>
+  </data>
+  <data name="Desc" xml:space="preserve">
+    <value>(desc)</value>
+  </data>
+  <data name="EditProject" xml:space="preserve">
+    <value>Edit Project</value>
+  </data>
+  <data name="EditProjectIntro" xml:space="preserve">
+    <value>Edit the project details in the form below.</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="MoreInformation" xml:space="preserve">
+    <value>More Information</value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NewProjectDetails" xml:space="preserve">
+    <value>New Project Details</value>
+  </data>
+  <data name="NoProjectSelected" xml:space="preserve">
+    <value>No project selected.</value>
+  </data>
+  <data name="ProjectDetails" xml:space="preserve">
+    <value>Project Details</value>
+  </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>Project Name</value>
+  </data>
+  <data name="ProjectNameTaken" xml:space="preserve">
+    <value>The name of the project is in use, please try a different one.</value>
+  </data>
+  <data name="ProjectSaved" xml:space="preserve">
+    <value>The project was saved successfully.</value>
+  </data>
+  <data name="ProjectUpdated" xml:space="preserve">
+    <value>The project was updated successfully.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="ConfirmCancelCreateProject" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this project?</value>
+  </data>
+  <data name="NoProjects" xml:space="preserve">
+    <value>No projects found.</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Visibility" xml:space="preserve">
+    <value>Visibility</value>
+  </data>
+  <data name="ExternalLink" xml:space="preserve">
+    <value>external link</value>
+  </data>
+  <data name="ProjectsXmlPages" xml:space="preserve">
+    <value>Projects XML Pages</value>
+  </data>
+  <data name="PleaseSelectProject" xml:space="preserve">
+    <value>Please select a project from the "Current Project" list.</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="SelectContributors" xml:space="preserve">
+    <value>Select Contributors</value>
+  </data>
+  <data name="Contributors" xml:space="preserve">
+    <value>Contributors</value>
+  </data>
+  <data name="SelectManagers" xml:space="preserve">
+    <value>Select Managers</value>
+  </data>
+  <data name="Managers" xml:space="preserve">
+    <value>Managers</value>
+  </data>
+  <data name="EditProjectToolTip" xml:space="preserve">
+    <value>Edit this project</value>
+  </data>
+  <data name="ManageProjects" xml:space="preserve">
+    <value>Manage Projects</value>
+  </data>
+  <data name="ManageProjectsIntro" xml:space="preserve">
+    <value>Create and manage projects in the index below.</value>
+  </data>
+  <data name="NoProjectsFound" xml:space="preserve">
+    <value>No projects found.</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="ProjectDeleted" xml:space="preserve">
+    <value>The selected project was deleted successfully.</value>
+  </data>
+  <data name="ProjectID" xml:space="preserve">
+    <value>Project ID</value>
+  </data>
+  <data name="ProjectNameRequired" xml:space="preserve">
+    <value>Please enter a name for this project.</value>
+  </data>
+  <data name="ProjectRequired" xml:space="preserve">
+    <value>You must select a project before you can do that. (Enable the Projects module if it's not already enabled.)</value>
+  </data>
+  <data name="AllProjects" xml:space="preserve">
+    <value>All Projects</value>
+  </data>
+  <data name="ProjectsXml" xml:space="preserve">
+    <value>Projects XML</value>
+  </data>
+  <data name="ProjectsXmlIntro" xml:space="preserve">
+    <value>The links below display projects in XML format.</value>
+  </data>
+  <data name="ActivePublicProjects" xml:space="preserve">
+    <value>Active/Public Projects</value>
+  </data>
+  <data name="ConfirmDeleteProject" xml:space="preserve">
+    <value>Are you sure you wish to delete this project and all related data?</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteProjectToolTip" xml:space="preserve">
+    <value>Delete this project</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Xml" xml:space="preserve">
+    <value>XML</value>
+  </data>
+  <data name="NoSummary" xml:space="preserve">
+    <value>No summary has been provided for this project.</value>
+  </data>
+  <data name="ProjectSummary" xml:space="preserve">
+    <value>Project Summary</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="SelectProjects" xml:space="preserve">
+    <value>Select Projects</value>
+  </data>
+  <data name="RelatedProjects" xml:space="preserve">
+    <value>Related Projects</value>
+  </data>
+  <data name="ParentProjects" xml:space="preserve">
+    <value>Parent Projects</value>
+  </data>
+  <data name="SubProjects" xml:space="preserve">
+    <value>Sub Projects</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="VotesBalance" xml:space="preserve">
+    <value>Votes Balance</value>
+  </data>
+  <data name="TotalVotes" xml:space="preserve">
+    <value>Total Votes</value>
+  </data>
+  <data name="Guide" xml:space="preserve">
+    <value>Guide</value>
+  </data>
+  <data name="DemandVotesBalance" xml:space="preserve">
+    <value>'Demand' Votes Balance</value>
+  </data>
+  <data name="TotalDemandVotes" xml:space="preserve">
+    <value>Total 'Demand' Votes</value>
+  </data>
+  <data name="EffectiveVotesBalance" xml:space="preserve">
+    <value>'Effective' Votes Balance</value>
+  </data>
+  <data name="TotalEffectiveVotes" xml:space="preserve">
+    <value>Total 'Effective' Votes</value>
+  </data>
+  <data name="Needed" xml:space="preserve">
+    <value>Needed</value>
+  </data>
+  <data name="Effective" xml:space="preserve">
+    <value>Effective</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+</root>

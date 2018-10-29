@@ -1,0 +1,5 @@
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Contracts\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Contracts\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.pdb
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Contracts\obj\Debug\WorkHub.Contracts.csproj.CoreCompileInputs.cache
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Contracts\obj\Debug\SoftwareMonkeys.WorkHub.Contracts.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Contracts\obj\Debug\SoftwareMonkeys.WorkHub.Contracts.pdb

@@ -1,0 +1,12 @@
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\bin\Debug\SoftwareMonkeys.WorkHub.Configuration.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\bin\Debug\SoftwareMonkeys.WorkHub.Configuration.pdb
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\bin\Debug\NLog.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\bin\Debug\SoftwareMonkeys.WorkHub.Diagnostics.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\bin\Debug\SoftwareMonkeys.WorkHub.State.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.pdb
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\obj\Debug\WorkHub.Configuration.csprojAssemblyReference.cache
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\obj\Debug\WorkHub.Configuration.csproj.CoreCompileInputs.cache
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\obj\Debug\WorkHub.Configuration.csproj.CopyComplete
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\obj\Debug\SoftwareMonkeys.WorkHub.Configuration.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Configuration\obj\Debug\SoftwareMonkeys.WorkHub.Configuration.pdb

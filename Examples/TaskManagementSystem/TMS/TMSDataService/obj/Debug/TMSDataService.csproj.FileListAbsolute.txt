@@ -4,3 +4,10 @@ c:\TaskManagementSystem\TMS\TMSDataService\bin\Debug\TMSDataService.pdb
 c:\TaskManagementSystem\TMS\TMSDataService\obj\Debug\ResolveAssemblyReference.cache
 c:\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.dll
 c:\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.pdb
+E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\bin\Debug\TMSDataService.dll.config
+E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\bin\Debug\TMSDataService.dll
+E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\bin\Debug\TMSDataService.pdb
+E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.csprojAssemblyReference.cache
+E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.csproj.CoreCompileInputs.cache
+E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.dll
+E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.pdb

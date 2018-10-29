@@ -1,0 +1,16 @@
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\SoftwareMonkeys.WorkHub.Modules.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\SoftwareMonkeys.WorkHub.Modules.pdb
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\NLog.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\SoftwareMonkeys.WorkHub.Configuration.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\SoftwareMonkeys.WorkHub.Data.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\SoftwareMonkeys.WorkHub.Diagnostics.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\SoftwareMonkeys.WorkHub.Entities.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\SoftwareMonkeys.WorkHub.State.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.pdb
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\obj\Debug\WorkHub.Modules.csprojAssemblyReference.cache
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\obj\Debug\WorkHub.Modules.csproj.CoreCompileInputs.cache
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\obj\Debug\WorkHub.Modules.csproj.CopyComplete
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\obj\Debug\SoftwareMonkeys.WorkHub.Modules.dll
+E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.Modules\obj\Debug\SoftwareMonkeys.WorkHub.Modules.pdb

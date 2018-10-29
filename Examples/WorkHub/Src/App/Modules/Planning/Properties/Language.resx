@@ -1,0 +1,1350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="ActionAddedToActor" xml:space="preserve">
+    <value>The selected action was associated with the actor.</value>
+  </data>
+  <data name="ActionDeleted" xml:space="preserve">
+    <value>The action was deleted successfully.</value>
+  </data>
+  <data name="ActionDetails" xml:space="preserve">
+    <value>Action Details</value>
+  </data>
+  <data name="ActionNameRequired" xml:space="preserve">
+    <value>Please enter a name for the action.</value>
+  </data>
+  <data name="ActionNameTaken" xml:space="preserve">
+    <value>The name of the action is already in use. Please try another name.</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="ActionSaved" xml:space="preserve">
+    <value>The action was saved successfully.</value>
+  </data>
+  <data name="ActionsExpectedForFeature" xml:space="preserve">
+    <value>No actions have been created for the '{{FeatureName}}' feature.</value>
+  </data>
+  <data name="ActionStepDeleted" xml:space="preserve">
+    <value>The action step was deleted successfully.</value>
+  </data>
+  <data name="ActionStepDetails" xml:space="preserve">
+    <value>Action Step Details</value>
+  </data>
+  <data name="ActionSteps" xml:space="preserve">
+    <value>Action Steps</value>
+  </data>
+  <data name="ActionStepSaved" xml:space="preserve">
+    <value>The action step was saved successfully.</value>
+  </data>
+  <data name="ActionStepsIntro" xml:space="preserve">
+    <value>The steps required to complete this action are listed below.</value>
+  </data>
+  <data name="ActionStepUpdated" xml:space="preserve">
+    <value>The action step was updated successfully.</value>
+  </data>
+  <data name="ActionUpdated" xml:space="preserve">
+    <value>The action was updated successfully.</value>
+  </data>
+  <data name="Actor" xml:space="preserve">
+    <value>Actor</value>
+  </data>
+  <data name="ActorAddedToAction" xml:space="preserve">
+    <value>The selected actor was assigned to the action.</value>
+  </data>
+  <data name="ActorAddedToGoal" xml:space="preserve">
+    <value>The selected actor was successfully associated with the current goal.</value>
+  </data>
+  <data name="ActorDeleted" xml:space="preserve">
+    <value>The actor was deleted successfully.</value>
+  </data>
+  <data name="ActorDetails" xml:space="preserve">
+    <value>Actor Details</value>
+  </data>
+  <data name="ActorNameRequired" xml:space="preserve">
+    <value>Please enter a name for the actor.</value>
+  </data>
+  <data name="ActorNameTaken" xml:space="preserve">
+    <value>The name of the actor is already in use. Please try another name.</value>
+  </data>
+  <data name="Actors" xml:space="preserve">
+    <value>Actors</value>
+  </data>
+  <data name="ActorSaved" xml:space="preserve">
+    <value>The actor was saved successfully.</value>
+  </data>
+  <data name="ActorUpdated" xml:space="preserve">
+    <value>The actor was updated successfully.</value>
+  </data>
+  <data name="AddAction" xml:space="preserve">
+    <value>Add Action</value>
+  </data>
+  <data name="AddActionIntro" xml:space="preserve">
+    <value>Select an action from the list to add.</value>
+  </data>
+  <data name="AddActor" xml:space="preserve">
+    <value>Add Actor</value>
+  </data>
+  <data name="AddActorIntro" xml:space="preserve">
+    <value>Select an actor to add from the list below.</value>
+  </data>
+  <data name="AddFeature" xml:space="preserve">
+    <value>Add Feature</value>
+  </data>
+  <data name="AddFeatureIntro" xml:space="preserve">
+    <value>Enter the details for the new feature in the form below.</value>
+  </data>
+  <data name="AddGoal" xml:space="preserve">
+    <value>Add Goal</value>
+  </data>
+  <data name="AddGoalIntro" xml:space="preserve">
+    <value>Select a goal to associate with the current feature.</value>
+  </data>
+  <data name="AddPrerequisite" xml:space="preserve">
+    <value>Add Prerequisite</value>
+  </data>
+  <data name="AddPrerequisiteIntro" xml:space="preserve">
+    <value>Select a prerequisite to add to the current goal.</value>
+  </data>
+  <data name="AddTask" xml:space="preserve">
+    <value>Add Task</value>
+  </data>
+  <data name="AddTaskIntro" xml:space="preserve">
+    <value>Select a task to add as part of the current goal.</value>
+  </data>
+  <data name="Asc" xml:space="preserve">
+    <value>(asc)</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="ConfirmCancelCreateAction" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this action?</value>
+  </data>
+  <data name="ConfirmCancelCreateActionStep" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this step?</value>
+  </data>
+  <data name="ConfirmCancelCreateActor" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this actor?</value>
+  </data>
+  <data name="ConfirmCancelCreateFeature" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this feature?</value>
+  </data>
+  <data name="ConfirmCancelCreateGoal" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this goal?</value>
+  </data>
+  <data name="ConfirmCancelCreateProjectEntity" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this entity.</value>
+  </data>
+  <data name="ConfirmCancelCreateProjectEntityProperty" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this property?</value>
+  </data>
+  <data name="ConfirmCancelCreateRestraint" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this restraint?</value>
+  </data>
+  <data name="ConfirmCancelCreateScenario" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this scenario?</value>
+  </data>
+  <data name="ConfirmCancelCreateScenarioStep" xml:space="preserve">
+    <value>Are you sure you want to cancel creating this scenario step?</value>
+  </data>
+  <data name="ConfirmCancelEditAction" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this action?</value>
+  </data>
+  <data name="ConfirmCancelEditActionStep" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this step?</value>
+  </data>
+  <data name="ConfirmCancelEditActor" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this actor?</value>
+  </data>
+  <data name="ConfirmCancelEditFeature" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this feature?</value>
+  </data>
+  <data name="ConfirmCancelEditGoal" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this goal?</value>
+  </data>
+  <data name="ConfirmCancelEditProjectEntity" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this entity?</value>
+  </data>
+  <data name="ConfirmCancelEditProjectEntityProperty" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this property?</value>
+  </data>
+  <data name="ConfirmCancelEditRestraint" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this restraint?</value>
+  </data>
+  <data name="ConfirmCancelEditScenario" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this scenario?</value>
+  </data>
+  <data name="ConfirmCancelEditScenarioStep" xml:space="preserve">
+    <value>Are you sure you want to cancel editing this scenario step?</value>
+  </data>
+  <data name="Contents" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="CreateAction" xml:space="preserve">
+    <value>Create Action</value>
+  </data>
+  <data name="CreateActionIntro" xml:space="preserve">
+    <value>Enter the details of the new action in the form below.</value>
+  </data>
+  <data name="CreateActionStep" xml:space="preserve">
+    <value>Create Action Step</value>
+  </data>
+  <data name="CreateActionStepIntro" xml:space="preserve">
+    <value>Enter the details for the new action step into the form below.</value>
+  </data>
+  <data name="CreateActor" xml:space="preserve">
+    <value>Create Actor</value>
+  </data>
+  <data name="CreateActorIntro" xml:space="preserve">
+    <value>Enter the details for the new actor in the form below.</value>
+  </data>
+  <data name="CreateEntity" xml:space="preserve">
+    <value>Create Entity</value>
+  </data>
+  <data name="CreateFeature" xml:space="preserve">
+    <value>Create Feature</value>
+  </data>
+  <data name="CreateFeatureIntro" xml:space="preserve">
+    <value>Enter the details for the new feature in the form below.</value>
+  </data>
+  <data name="CreateGoal" xml:space="preserve">
+    <value>Create Goal</value>
+  </data>
+  <data name="CreateGoalIntro" xml:space="preserve">
+    <value>Please enter the details of the goal in the form below.</value>
+  </data>
+  <data name="CreateProjectEntity" xml:space="preserve">
+    <value>Create Entity</value>
+  </data>
+  <data name="CreateProjectEntityIntro" xml:space="preserve">
+    <value>Enter the details for the new entity into the form below.</value>
+  </data>
+  <data name="CreateProjectEntityProperty" xml:space="preserve">
+    <value>Create Property</value>
+  </data>
+  <data name="CreateProjectEntityPropertyIntro" xml:space="preserve">
+    <value>Enter the details of the new property into the form below.</value>
+  </data>
+  <data name="CreateProperty" xml:space="preserve">
+    <value>Create Property</value>
+  </data>
+  <data name="CreateRestraint" xml:space="preserve">
+    <value>Create Restraint</value>
+  </data>
+  <data name="CreateRestraintIntro" xml:space="preserve">
+    <value>Enter the details of the new restraint into the form below.</value>
+  </data>
+  <data name="CreateScenario" xml:space="preserve">
+    <value>Create Scenario</value>
+  </data>
+  <data name="CreateScenarioIntro" xml:space="preserve">
+    <value>Enter the details of the new scenario in the form below.</value>
+  </data>
+  <data name="CreateScenarioStep" xml:space="preserve">
+    <value>Create Scenario Step</value>
+  </data>
+  <data name="CreateScenarioStepIntro" xml:space="preserve">
+    <value>Enter the details of the new scenario step into the form below.</value>
+  </data>
+  <data name="CustomText" xml:space="preserve">
+    <value>Custom Text</value>
+  </data>
+  <data name="DateTime" xml:space="preserve">
+    <value>Date/Time</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteActionStepToolTip" xml:space="preserve">
+    <value>Delete this step</value>
+  </data>
+  <data name="DeleteActionToolTip" xml:space="preserve">
+    <value>Delete this action</value>
+  </data>
+  <data name="DeleteActorToolTip" xml:space="preserve">
+    <value>Delete this actor</value>
+  </data>
+  <data name="DeleteGoalToolTip" xml:space="preserve">
+    <value>Delete this goal</value>
+  </data>
+  <data name="DeleteProjectEntityPropertyToolTip" xml:space="preserve">
+    <value>Delete this property</value>
+  </data>
+  <data name="DeleteProjectEntityToolTip" xml:space="preserve">
+    <value>Delete this entity</value>
+  </data>
+  <data name="DeleteRestraintToolTip" xml:space="preserve">
+    <value>Delete this restraint</value>
+  </data>
+  <data name="DeleteScenarioStepToolTip" xml:space="preserve">
+    <value>Delete this scenario step</value>
+  </data>
+  <data name="DeleteScenarioToolTip" xml:space="preserve">
+    <value>Delete this scenario</value>
+  </data>
+  <data name="Desc" xml:space="preserve">
+    <value>(desc)</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditAction" xml:space="preserve">
+    <value>Edit Action</value>
+  </data>
+  <data name="EditActionIntro" xml:space="preserve">
+    <value>Edit the details of the action in the form below.</value>
+  </data>
+  <data name="EditActionStep" xml:space="preserve">
+    <value>Edit Action Step</value>
+  </data>
+  <data name="EditActionStepIntro" xml:space="preserve">
+    <value>Edit the details of the action step in the form below.</value>
+  </data>
+  <data name="EditActionStepToolTip" xml:space="preserve">
+    <value>Edit this step</value>
+  </data>
+  <data name="EditActionToolTip" xml:space="preserve">
+    <value>Edit this action</value>
+  </data>
+  <data name="EditActor" xml:space="preserve">
+    <value>Edit Actor</value>
+  </data>
+  <data name="EditActorIntro" xml:space="preserve">
+    <value>Edit the details of the actor in the form below.</value>
+  </data>
+  <data name="EditActorToolTip" xml:space="preserve">
+    <value>Edit this actor</value>
+  </data>
+  <data name="EditFeature" xml:space="preserve">
+    <value>Edit Feature</value>
+  </data>
+  <data name="EditFeatureIntro" xml:space="preserve">
+    <value>Edit the details of the feature in the form below.</value>
+  </data>
+  <data name="EditGoal" xml:space="preserve">
+    <value>Edit Goal</value>
+  </data>
+  <data name="EditGoalIntro" xml:space="preserve">
+    <value>Please edit the details of the goal in the form below.</value>
+  </data>
+  <data name="EditGoalToolTip" xml:space="preserve">
+    <value>Edit this goal</value>
+  </data>
+  <data name="EditProjectEntity" xml:space="preserve">
+    <value>Edit Entity</value>
+  </data>
+  <data name="EditProjectEntityIntro" xml:space="preserve">
+    <value>Edit the details of the entity in the form below.</value>
+  </data>
+  <data name="EditProjectEntityProperty" xml:space="preserve">
+    <value>Edit Property</value>
+  </data>
+  <data name="EditProjectEntityPropertyIntro" xml:space="preserve">
+    <value>Edit the details of the property in the form below.</value>
+  </data>
+  <data name="EditProjectEntityPropertyToolTip" xml:space="preserve">
+    <value>Edit this property</value>
+  </data>
+  <data name="EditProjectEntityToolTip" xml:space="preserve">
+    <value>Edit this entity</value>
+  </data>
+  <data name="EditRestraint" xml:space="preserve">
+    <value>Edit Restraint</value>
+  </data>
+  <data name="EditRestraintIntro" xml:space="preserve">
+    <value>Edit the details of the restraint in the form below.</value>
+  </data>
+  <data name="EditRestraintToolTip" xml:space="preserve">
+    <value>Edit this restraint</value>
+  </data>
+  <data name="EditScenario" xml:space="preserve">
+    <value>Edit Scenario</value>
+  </data>
+  <data name="EditScenarioIntro" xml:space="preserve">
+    <value>Edit the details of this scenario in the form below.</value>
+  </data>
+  <data name="EditScenarioStep" xml:space="preserve">
+    <value>Edit Scenario Step</value>
+  </data>
+  <data name="EditScenarioStepIntro" xml:space="preserve">
+    <value>Edit the details of the scenario step in the form below.</value>
+  </data>
+  <data name="EditScenarioStepToolTip" xml:space="preserve">
+    <value>Edit this scenario step</value>
+  </data>
+  <data name="EditScenarioToolTip" xml:space="preserve">
+    <value>Edit this scenario</value>
+  </data>
+  <data name="Entities" xml:space="preserve">
+    <value>Entities</value>
+  </data>
+  <data name="EntitiesExpectedForFeature" xml:space="preserve">
+    <value>No entities have been created yet for the '{{FeatureName}}' feature.</value>
+  </data>
+  <data name="EntityProjectEntityToolTip" xml:space="preserve">
+    <value>Edit this entity</value>
+  </data>
+  <data name="EntityProperties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="EntityPropertiesIntro" xml:space="preserve">
+    <value>Create and manage properties for this entity in the form below.</value>
+  </data>
+  <data name="ExistingAction" xml:space="preserve">
+    <value>Existing Action</value>
+  </data>
+  <data name="Feature" xml:space="preserve">
+    <value>Feature</value>
+  </data>
+  <data name="FeatureAddedToAction" xml:space="preserve">
+    <value>The selected feature was associated with the action.</value>
+  </data>
+  <data name="FeatureDetails" xml:space="preserve">
+    <value>Feature Details</value>
+  </data>
+  <data name="FeatureNameRequired" xml:space="preserve">
+    <value>Please enter a name for the feature.</value>
+  </data>
+  <data name="FeatureNameTaken" xml:space="preserve">
+    <value>The name of the feature is already in use. Please try another name.</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="FeatureSaved" xml:space="preserve">
+    <value>The feature was saved successfully.</value>
+  </data>
+  <data name="FeaturesExpectedForProject" xml:space="preserve">
+    <value>No features have been created for the '{{ProjectName}}' project.</value>
+  </data>
+  <data name="FeatureUpdated" xml:space="preserve">
+    <value>The feature was updated successfully.</value>
+  </data>
+  <data name="Goal" xml:space="preserve">
+    <value>Goal</value>
+  </data>
+  <data name="GoalAddedToActor" xml:space="preserve">
+    <value>The selected goal was successfully associated with the current actor.</value>
+  </data>
+  <data name="GoalAddedToFeature" xml:space="preserve">
+    <value>The goal was succesfully associated with the current feature.</value>
+  </data>
+  <data name="GoalDetails" xml:space="preserve">
+    <value>Goal Details</value>
+  </data>
+  <data name="Goals" xml:space="preserve">
+    <value>Goals</value>
+  </data>
+  <data name="GoalSaved" xml:space="preserve">
+    <value>The goal was saved successfully.</value>
+  </data>
+  <data name="GoalTitleRequired" xml:space="preserve">
+    <value>Please enter a title for the goal.</value>
+  </data>
+  <data name="GoalTitleTaken" xml:space="preserve">
+    <value>The title of the goal is already in use. Please try another title.</value>
+  </data>
+  <data name="GoalUpdated" xml:space="preserve">
+    <value>The goal was updated successfully.</value>
+  </data>
+  <data name="Guide" xml:space="preserve">
+    <value>Guide</value>
+  </data>
+  <data name="Introduction" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="LongText" xml:space="preserve">
+    <value>Long Text</value>
+  </data>
+  <data name="ManageActions" xml:space="preserve">
+    <value>Manage Actions</value>
+  </data>
+  <data name="ManageActionsIntro" xml:space="preserve">
+    <value>Create and manage the actions in the project with the index below.</value>
+  </data>
+  <data name="ManageActors" xml:space="preserve">
+    <value>Manage Actors</value>
+  </data>
+  <data name="ManageActorsIntro" xml:space="preserve">
+    <value>Create and manage the actors in the project below.</value>
+  </data>
+  <data name="ManageProjectEntities" xml:space="preserve">
+    <value>Manage Entities</value>
+  </data>
+  <data name="ManageProjectEntitiesIntro" xml:space="preserve">
+    <value>Create and manage the entities in this project in the index below.</value>
+  </data>
+  <data name="ManageRestraints" xml:space="preserve">
+    <value>Manage Restraints</value>
+  </data>
+  <data name="ManageRestraintsIntro" xml:space="preserve">
+    <value>Create and manage the restraints of this project in the index below.</value>
+  </data>
+  <data name="ManageScenarios" xml:space="preserve">
+    <value>Manage Scenarios</value>
+  </data>
+  <data name="ManageScenariosIntro" xml:space="preserve">
+    <value>Create and manage the scenarios of the current project in the index below.</value>
+  </data>
+  <data name="MoveActionStepDownToolTip" xml:space="preserve">
+    <value>Move this step down one position</value>
+  </data>
+  <data name="MoveActionStepUpToolTip" xml:space="preserve">
+    <value>Move this step up one position</value>
+  </data>
+  <data name="MoveScenarioStepDownToolTip" xml:space="preserve">
+    <value>Move this step down one position</value>
+  </data>
+  <data name="MoveScenarioStepUpToolTip" xml:space="preserve">
+    <value>Move this step up one position</value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NewAction" xml:space="preserve">
+    <value>New Action</value>
+  </data>
+  <data name="NewActionDetails" xml:space="preserve">
+    <value>New Action Details</value>
+  </data>
+  <data name="NewActionStepDetails" xml:space="preserve">
+    <value>New Action Step</value>
+  </data>
+  <data name="NewActorDetails" xml:space="preserve">
+    <value>New Actor Details</value>
+  </data>
+  <data name="NewFeatureDetails" xml:space="preserve">
+    <value>New Feature Details</value>
+  </data>
+  <data name="NewGoalDetails" xml:space="preserve">
+    <value>New Goal Details</value>
+  </data>
+  <data name="NewProjectEntityDetails" xml:space="preserve">
+    <value>New Entity Details</value>
+  </data>
+  <data name="NewProjectEntityPropertyDetails" xml:space="preserve">
+    <value>New Property Details</value>
+  </data>
+  <data name="NewRestraintDetails" xml:space="preserve">
+    <value>New Restraint Details</value>
+  </data>
+  <data name="NewScenarioDetails" xml:space="preserve">
+    <value>New Scenario Details</value>
+  </data>
+  <data name="NewScenarioStepDetails" xml:space="preserve">
+    <value>New Scenario Step Details</value>
+  </data>
+  <data name="NoActions" xml:space="preserve">
+    <value>No Actions</value>
+  </data>
+  <data name="NoActionsForFeature" xml:space="preserve">
+    <value>No actions have been created for this feature.</value>
+  </data>
+  <data name="NoActionsFound" xml:space="preserve">
+    <value>No Actions Found</value>
+  </data>
+  <data name="NoActionStepsFound" xml:space="preserve">
+    <value>No steps have been defined for this action.</value>
+  </data>
+  <data name="NoActors" xml:space="preserve">
+    <value>No Actors</value>
+  </data>
+  <data name="NoActorsFound" xml:space="preserve">
+    <value>No actors found.</value>
+  </data>
+  <data name="NoEntities" xml:space="preserve">
+    <value>No Entities</value>
+  </data>
+  <data name="NoEntitiesForFeature" xml:space="preserve">
+    <value>No entities have been associated with this feature.</value>
+  </data>
+  <data name="NoEntitiesFound" xml:space="preserve">
+    <value>No entities found.</value>
+  </data>
+  <data name="NoFeatures" xml:space="preserve">
+    <value>No Features</value>
+  </data>
+  <data name="NoFeaturesForProject" xml:space="preserve">
+    <value>No features have been created for this project.</value>
+  </data>
+  <data name="NoFeaturesFound" xml:space="preserve">
+    <value>No features found.</value>
+  </data>
+  <data name="NoGoals" xml:space="preserve">
+    <value>No goals found.</value>
+  </data>
+  <data name="NoGoalsForProject" xml:space="preserve">
+    <value>No goals have been created for this project.</value>
+  </data>
+  <data name="NoGoalsFound" xml:space="preserve">
+    <value>No goals found.</value>
+  </data>
+  <data name="NoIntroductionForProject" xml:space="preserve">
+    <value>No introduction has been provided for this project.</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="NoPrerequisites" xml:space="preserve">
+    <value>No Prerequisites</value>
+  </data>
+  <data name="NoPrerequisitesFound" xml:space="preserve">
+    <value>No prerequisites found.</value>
+  </data>
+  <data name="NoProjectEntitiesFound" xml:space="preserve">
+    <value>No entities found.</value>
+  </data>
+  <data name="NoProjectEntityPropertiesFound" xml:space="preserve">
+    <value>No properties have been added yet.</value>
+  </data>
+  <data name="NoProjects" xml:space="preserve">
+    <value>No Projects</value>
+  </data>
+  <data name="NoProjectSelected" xml:space="preserve">
+    <value>You must select a project before you can do that. (Enable the Projects module if it's not already enabled.)</value>
+  </data>
+  <data name="NoRestraintsForProject" xml:space="preserve">
+    <value>No restraints have been created for this project.</value>
+  </data>
+  <data name="NoRestraintsFound" xml:space="preserve">
+    <value>No restraints found.</value>
+  </data>
+  <data name="NoScenariosForProject" xml:space="preserve">
+    <value>No scenarios have been created for this project.</value>
+  </data>
+  <data name="NoScenariosFound" xml:space="preserve">
+    <value>No scenarios found.</value>
+  </data>
+  <data name="NoStepsForScenario" xml:space="preserve">
+    <value>No steps have been defined for this scenario.</value>
+  </data>
+  <data name="NoSummaryForAction" xml:space="preserve">
+    <value>No summary has been provided for this action.</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="OtherType" xml:space="preserve">
+    <value>Other Type</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PlanningGuide" xml:space="preserve">
+    <value>Planning Guide</value>
+  </data>
+  <data name="PlanningGuideIntro" xml:space="preserve">
+    <value>The guide below will help you to figure out what to do next.</value>
+  </data>
+  <data name="PlanningOverviewIntro" xml:space="preserve">
+    <value>The following is an overview of the requirements planning specifications for this project.</value>
+  </data>
+  <data name="PlanningWalkthrough" xml:space="preserve">
+    <value>Planning Walkthrough</value>
+  </data>
+  <data name="PlanningWalkthroughIntro" xml:space="preserve">
+    <value>To get started planning your project simply follow the steps below. The features can be used in any order so feel free to come back and update any existing information as the project evolves.</value>
+  </data>
+  <data name="PrerequisiteAddedToGoal" xml:space="preserve">
+    <value>The prerequisite was successfully added to the current goal.</value>
+  </data>
+  <data name="PrerequisiteDetails" xml:space="preserve">
+    <value>Prerequisite Details</value>
+  </data>
+  <data name="Prerequisites" xml:space="preserve">
+    <value>Prerequisites</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="ProjectEntities" xml:space="preserve">
+    <value>Entities</value>
+  </data>
+  <data name="ProjectEntity" xml:space="preserve">
+    <value>Entity</value>
+  </data>
+  <data name="ProjectEntityDeleted" xml:space="preserve">
+    <value>The entity was deleted successfully.</value>
+  </data>
+  <data name="ProjectEntityDetails" xml:space="preserve">
+    <value>Entity Details</value>
+  </data>
+  <data name="ProjectEntityNameRequired" xml:space="preserve">
+    <value>Please enter a name for the entity.</value>
+  </data>
+  <data name="ProjectEntityNameTaken" xml:space="preserve">
+    <value>The name of the entity is already in use. Please try another name.</value>
+  </data>
+  <data name="ProjectEntityProperties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="ProjectEntityPropertyDeleted" xml:space="preserve">
+    <value>The entity property was deleted successfully.</value>
+  </data>
+  <data name="ProjectEntityPropertyDetails" xml:space="preserve">
+    <value>Property Details</value>
+  </data>
+  <data name="ProjectEntityPropertyNameRequired" xml:space="preserve">
+    <value>Please enter a name for this property.</value>
+  </data>
+  <data name="ProjectEntityPropertyNameTaken" xml:space="preserve">
+    <value>The name of the property is already in use. Please try another name.</value>
+  </data>
+  <data name="ProjectEntityPropertySaved" xml:space="preserve">
+    <value>The property was saved successfully.</value>
+  </data>
+  <data name="ProjectEntityPropertyTypeRequired" xml:space="preserve">
+    <value>Please enter a type for this property.</value>
+  </data>
+  <data name="ProjectEntityPropertyUpdated" xml:space="preserve">
+    <value>The property was updated successfully.</value>
+  </data>
+  <data name="ProjectEntitySaved" xml:space="preserve">
+    <value>The entity was saved successfully.</value>
+  </data>
+  <data name="ProjectEntityUpdated" xml:space="preserve">
+    <value>The entity was updated successfully.</value>
+  </data>
+  <data name="ProjectVersion" xml:space="preserve">
+    <value>Project Version</value>
+  </data>
+  <data name="PropertiesExpectedForEntity" xml:space="preserve">
+    <value>No properties have been created for the '{{EntityName}}' entity.</value>
+  </data>
+  <data name="Restraint" xml:space="preserve">
+    <value>Restraint</value>
+  </data>
+  <data name="RestraintDeleted" xml:space="preserve">
+    <value>The restraint was deleted successfully.</value>
+  </data>
+  <data name="RestraintDetails" xml:space="preserve">
+    <value>Restraint Details</value>
+  </data>
+  <data name="Restraints" xml:space="preserve">
+    <value>Restraints</value>
+  </data>
+  <data name="RestraintSaved" xml:space="preserve">
+    <value>The restraint was saved successfully.</value>
+  </data>
+  <data name="RestraintTitleRequired" xml:space="preserve">
+    <value>Please enter a title for the restraint.</value>
+  </data>
+  <data name="RestraintTitleTaken" xml:space="preserve">
+    <value>The title of the restraint is already in use. Please try another title.</value>
+  </data>
+  <data name="RestraintUpdated" xml:space="preserve">
+    <value>The restraint was updated successfully.</value>
+  </data>
+  <data name="ReturnToGuide" xml:space="preserve">
+    <value>Return me to the guide after each action.</value>
+  </data>
+  <data name="ReturnToGuideDisabled" xml:space="preserve">
+    <value>You will no longer be returned to the guide after each operation.</value>
+  </data>
+  <data name="ReturnToGuideEnabled" xml:space="preserve">
+    <value>You will now be returned to the guide after each operation.</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="ReviewIntro" xml:space="preserve">
+    <value>This page automatically reviews the plans and makes suggestions as to what else can be done. (This page needs improvement.)</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Scenario" xml:space="preserve">
+    <value>Scenario</value>
+  </data>
+  <data name="ScenarioDeleted" xml:space="preserve">
+    <value>The scenario was deleted successfully.</value>
+  </data>
+  <data name="ScenarioDetails" xml:space="preserve">
+    <value>Scenario Details</value>
+  </data>
+  <data name="ScenarioNameRequired" xml:space="preserve">
+    <value>Please enter a name for the scenario.</value>
+  </data>
+  <data name="ScenarioNameTaken" xml:space="preserve">
+    <value>The name of the scenario is already in use. Please try another name.</value>
+  </data>
+  <data name="Scenarios" xml:space="preserve">
+    <value>Scenarios</value>
+  </data>
+  <data name="ScenarioSaved" xml:space="preserve">
+    <value>The scenario was saved successfully.</value>
+  </data>
+  <data name="ScenarioStepDeleted" xml:space="preserve">
+    <value>The scenario step was deleted successfully.</value>
+  </data>
+  <data name="ScenarioStepDetails" xml:space="preserve">
+    <value>Scenario Step Details</value>
+  </data>
+  <data name="ScenarioSteps" xml:space="preserve">
+    <value>Scenario Steps</value>
+  </data>
+  <data name="ScenarioStepSaved" xml:space="preserve">
+    <value>The scenario step was saved successfully.</value>
+  </data>
+  <data name="ScenarioStepsIntro" xml:space="preserve">
+    <value>Create and manage the steps of this scenario in the index below.</value>
+  </data>
+  <data name="ScenarioStepUpdated" xml:space="preserve">
+    <value>The scenario step was updated successfully.</value>
+  </data>
+  <data name="ScenarioUpdated" xml:space="preserve">
+    <value>The scenario was updated successfully.</value>
+  </data>
+  <data name="SecurityConstraints" xml:space="preserve">
+    <value>Security Constraints</value>
+  </data>
+  <data name="SelectAction" xml:space="preserve">
+    <value>Select Action</value>
+  </data>
+  <data name="SelectActor" xml:space="preserve">
+    <value>Select Actor</value>
+  </data>
+  <data name="SelectFeature" xml:space="preserve">
+    <value>Select Feature</value>
+  </data>
+  <data name="SelectGoal" xml:space="preserve">
+    <value>Select Goal</value>
+  </data>
+  <data name="SelectPrerequisite" xml:space="preserve">
+    <value>Select Prerequisite</value>
+  </data>
+  <data name="SelectProject" xml:space="preserve">
+    <value>Select Project</value>
+  </data>
+  <data name="SelectTask" xml:space="preserve">
+    <value>Select Task</value>
+  </data>
+  <data name="Specifications" xml:space="preserve">
+    <value>Specifications</value>
+  </data>
+  <data name="Steps" xml:space="preserve">
+    <value>Steps</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Summary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="TaskAddedToGoal" xml:space="preserve">
+    <value>The task was successfully added to the current goal.</value>
+  </data>
+  <data name="TaskDetails" xml:space="preserve">
+    <value>Task Details</value>
+  </data>
+  <data name="Tasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="NoProjectGoals" xml:space="preserve">
+    <value>No goals found for this project.</value>
+  </data>
+  <data name="Options" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="NoProjectActions" xml:space="preserve">
+    <value>No actions found for this project.</value>
+  </data>
+  <data name="NoProjectActors" xml:space="preserve">
+    <value>No actors found for this project.</value>
+  </data>
+  <data name="NoProjectFeatures" xml:space="preserve">
+    <value>No features found for this project.</value>
+  </data>
+  <data name="NoProjectEntities" xml:space="preserve">
+    <value>No entities found for this project.</value>
+  </data>
+  <data name="NoProjectRestraints" xml:space="preserve">
+    <value>No restraints found for this project.</value>
+  </data>
+  <data name="NoProjectScenarios" xml:space="preserve">
+    <value>No scenarios found for this project.</value>
+  </data>
+  <data name="NoRestraints" xml:space="preserve">
+    <value>No Restraints</value>
+  </data>
+  <data name="SelectGoals" xml:space="preserve">
+    <value>Select Goals</value>
+  </data>
+  <data name="SelectFeatures" xml:space="preserve">
+    <value>Select Features</value>
+  </data>
+  <data name="SelectActions" xml:space="preserve">
+    <value>Select Actions</value>
+  </data>
+  <data name="SelectActors" xml:space="preserve">
+    <value>Select Actors</value>
+  </data>
+  <data name="SelectRestraints" xml:space="preserve">
+    <value>Select Restraints</value>
+  </data>
+  <data name="SelectEntities" xml:space="preserve">
+    <value>Select Entities</value>
+  </data>
+  <data name="GoalsXml" xml:space="preserve">
+    <value>Goals XML</value>
+  </data>
+  <data name="GoalsXmlIntro" xml:space="preserve">
+    <value>The following links render goals in XML format.</value>
+  </data>
+  <data name="AllGoalsInProject" xml:space="preserve">
+    <value>All goals in the current project</value>
+  </data>
+  <data name="ExternalLink" xml:space="preserve">
+    <value>external link</value>
+  </data>
+  <data name="GoalsXmlPages" xml:space="preserve">
+    <value>Goals XML Pages</value>
+  </data>
+  <data name="FeaturesXml" xml:space="preserve">
+    <value>Features XML</value>
+  </data>
+  <data name="FeaturesXmlPages" xml:space="preserve">
+    <value>Features XML Pages</value>
+  </data>
+  <data name="FeaturesXmlIntro" xml:space="preserve">
+    <value>The following links render features data in XML format.</value>
+  </data>
+  <data name="AllFeaturesInProject" xml:space="preserve">
+    <value>All features in the current project</value>
+  </data>
+  <data name="PleaseSelectProject" xml:space="preserve">
+    <value>Please select a project from the "Current Project" list above or from the index below.</value>
+  </data>
+  <data name="NoPrerequisitesForGoal" xml:space="preserve">
+    <value>No prerequisites have been set for this goal.</value>
+  </data>
+  <data name="NoFeaturesForGoal" xml:space="preserve">
+    <value>No features have been associated with this goal.</value>
+  </data>
+  <data name="NoActionsForGoal" xml:space="preserve">
+    <value>No actions have been associated with this goal.</value>
+  </data>
+  <data name="NoActorsForGoal" xml:space="preserve">
+    <value>No actors have been associated with this goal.</value>
+  </data>
+  <data name="NoGoalsForFeature" xml:space="preserve">
+    <value>No goals have been associated with this feature.</value>
+  </data>
+  <data name="NoActorsForFeature" xml:space="preserve">
+    <value>No actors have been associated with this feature.</value>
+  </data>
+  <data name="NoGoalsForActor" xml:space="preserve">
+    <value>No goals have been associated with this actor.</value>
+  </data>
+  <data name="NoActionsForActor" xml:space="preserve">
+    <value>No actions have been associated with this actor.</value>
+  </data>
+  <data name="NoRestraintsForActor" xml:space="preserve">
+    <value>No restraints have been associated with this actor.</value>
+  </data>
+  <data name="NoGoalsForAction" xml:space="preserve">
+    <value>No goals have been associated with this action.</value>
+  </data>
+  <data name="NoFeaturesForAction" xml:space="preserve">
+    <value>No features have been associated with this action.</value>
+  </data>
+  <data name="NoActorsForAction" xml:space="preserve">
+    <value>No actors have been associated with this action.</value>
+  </data>
+  <data name="NoRestraintsForAction" xml:space="preserve">
+    <value>No restraints have been associated with this action.</value>
+  </data>
+  <data name="NoEntitiesForAction" xml:space="preserve">
+    <value>No entities have been associated with this action.</value>
+  </data>
+  <data name="NoActionsForRestraint" xml:space="preserve">
+    <value>No actions have been associated with this restraint.</value>
+  </data>
+  <data name="NoActorsForRestraint" xml:space="preserve">
+    <value>No actors have been associated with this restraint.</value>
+  </data>
+  <data name="NoFeaturesForProjectEntity" xml:space="preserve">
+    <value>No features have been associated with this entity.</value>
+  </data>
+  <data name="NoActionsForProjectEntity" xml:space="preserve">
+    <value>No actions have been associated with this entity.</value>
+  </data>
+  <data name="NoActorsForProject" xml:space="preserve">
+    <value>No actors have been created for this project.</value>
+  </data>
+  <data name="NoActionsForProject" xml:space="preserve">
+    <value>No actions have been created for this project.</value>
+  </data>
+  <data name="NoProjectEntitiesForProject" xml:space="preserve">
+    <value>No entities have been created for this project.</value>
+  </data>
+  <data name="ConfirmDeleteScenarioStep" xml:space="preserve">
+    <value>Are you sure you want to delete the selected step?</value>
+  </data>
+  <data name="ConfirmDeleteScenario" xml:space="preserve">
+    <value>Are you sure you want to delete the selected scenario?</value>
+  </data>
+  <data name="ConfirmDeleteActionStep" xml:space="preserve">
+    <value>Are you sure you want to delete the selected step?</value>
+  </data>
+  <data name="ConfirmDeleteAction" xml:space="preserve">
+    <value>Are you sure you want to delete the selected action?</value>
+  </data>
+  <data name="ConfirmDeleteRestraint" xml:space="preserve">
+    <value>Are you sure you want to delete the selected restraint?</value>
+  </data>
+  <data name="ConfirmDeleteProjectEntity" xml:space="preserve">
+    <value>Are you sure you want to delete the selected entity?</value>
+  </data>
+  <data name="ConfirmDeleteActor" xml:space="preserve">
+    <value>Are you sure you want to delete the selected actor?</value>
+  </data>
+  <data name="SelectProjectToViewGoals" xml:space="preserve">
+    <value>Select a current project (top left) to see the goals.</value>
+  </data>
+  <data name="SelectProjectToViewFeatures" xml:space="preserve">
+    <value>Select a current project (top left) to see the features.</value>
+  </data>
+  <data name="SelectProjectToViewActions" xml:space="preserve">
+    <value>Select a current project (top left) to see the actions.</value>
+  </data>
+  <data name="SelectProjectToViewScenarios" xml:space="preserve">
+    <value>Select a current project (top left) to see the scenarios.</value>
+  </data>
+  <data name="SelectProjectToViewEntities" xml:space="preserve">
+    <value>Select a current project (top left) to see the entities.</value>
+  </data>
+  <data name="SelectProjectToViewRestraints" xml:space="preserve">
+    <value>Select a current project (top left) to see the restraints.</value>
+  </data>
+  <data name="SelectProjectToViewActors" xml:space="preserve">
+    <value>Select a current project (top left) to see the actors.</value>
+  </data>
+  <data name="ActorsXml" xml:space="preserve">
+    <value>Actors XML</value>
+  </data>
+  <data name="ActorsXmlPages" xml:space="preserve">
+    <value>Actors XML Pages</value>
+  </data>
+  <data name="ActorsXmlIntro" xml:space="preserve">
+    <value>The following links render actors in XML format.</value>
+  </data>
+  <data name="AllActorsInProject" xml:space="preserve">
+    <value>All actors in the current project</value>
+  </data>
+  <data name="ActionsXml" xml:space="preserve">
+    <value>Actions XML</value>
+  </data>
+  <data name="RestraintsXml" xml:space="preserve">
+    <value>Restraints XML</value>
+  </data>
+  <data name="ScenariosXml" xml:space="preserve">
+    <value>Scenarios XML</value>
+  </data>
+  <data name="ProjectEntitiesXml" xml:space="preserve">
+    <value>Entities XML</value>
+  </data>
+  <data name="ActionsXmlIntro" xml:space="preserve">
+    <value>The following links render actions in XML format.</value>
+  </data>
+  <data name="RestraintsXmlIntro" xml:space="preserve">
+    <value>The following links render restraints in XML format.</value>
+  </data>
+  <data name="ScenariosXmlIntro" xml:space="preserve">
+    <value>The following links render scenarios in XML format.</value>
+  </data>
+  <data name="ProjectEntitiesXmlIntro" xml:space="preserve">
+    <value>The following links render entities in XML format.</value>
+  </data>
+  <data name="ActionsXmlPages" xml:space="preserve">
+    <value>Actions XML Pages</value>
+  </data>
+  <data name="RestraintsXmlPages" xml:space="preserve">
+    <value>Restraints XML Pages</value>
+  </data>
+  <data name="ScenariosXmlPages" xml:space="preserve">
+    <value>Scenarios XML Pages</value>
+  </data>
+  <data name="ProjectEntitiesXmlPages" xml:space="preserve">
+    <value>Entities XML Pages</value>
+  </data>
+  <data name="AllActionsInProject" xml:space="preserve">
+    <value>All actions in the current project</value>
+  </data>
+  <data name="AllRestraintsInProject" xml:space="preserve">
+    <value>All restraints in the current project</value>
+  </data>
+  <data name="AllScenariosInProject" xml:space="preserve">
+    <value>All scenarios in the current project</value>
+  </data>
+  <data name="AllProjectEntitiesInProject" xml:space="preserve">
+    <value>All entities in the current project</value>
+  </data>
+  <data name="ConfirmDeleteProjectEntityProperty" xml:space="preserve">
+    <value>Are you sure you want to delete the selected property?</value>
+  </data>
+  <data name="GoalDeleted" xml:space="preserve">
+    <value>The goal was deleted successfully.</value>
+  </data>
+  <data name="FeatureDeleted" xml:space="preserve">
+    <value>The feature was deleted successfully.</value>
+  </data>
+  <data name="ManageFeatures" xml:space="preserve">
+    <value>Manage Features</value>
+  </data>
+  <data name="ManageFeaturesIntro" xml:space="preserve">
+    <value>Create and manage features in the index below.</value>
+  </data>
+  <data name="ManageGoals" xml:space="preserve">
+    <value>Manage Goals</value>
+  </data>
+  <data name="ManageGoalsIntro" xml:space="preserve">
+    <value>Create and manage project goals with the index below.</value>
+  </data>
+  <data name="ManageScenarios" xml:space="preserve">
+    <value>Manage Scenarios</value>
+  </data>
+  <data name="ManageScenariosIntro" xml:space="preserve">
+    <value>Create and manage project scenarios in the index below.</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Xml" xml:space="preserve">
+    <value>XML</value>
+  </data>
+  <data name="ConfirmDeleteGoal" xml:space="preserve">
+    <value>Are you sure you want to delete the selected goal?</value>
+  </data>
+  <data name="ConfirmDeleteScenario" xml:space="preserve">
+    <value>Are you sure you want to delete the selected scenario?</value>
+  </data>
+  <data name="EditFeatureToolTip" xml:space="preserve">
+    <value>Edit this feature</value>
+  </data>
+  <data name="ConfirmDeleteFeature" xml:space="preserve">
+    <value>Are you sure you want to delete the selected feature.</value>
+  </data>
+  <data name="DeleteFeatureToolTip" xml:space="preserve">
+    <value>Delete this feature</value>
+  </data>
+  <data name="ScenarioStep" xml:space="preserve">
+    <value>Scenario Step</value>
+  </data>
+  <data name="ActionStep" xml:space="preserve">
+    <value>Action Step</value>
+  </data>
+  <data name="ProjectEntityProperty" xml:space="preserve">
+    <value>Entity Property</value>
+  </data>
+  <data name="Index" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Planning" xml:space="preserve">
+    <value>Planning</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="ApplyFilter" xml:space="preserve">
+    <value>Apply Filter</value>
+  </data>
+  <data name="Requirements" xml:space="preserve">
+    <value>Requirements</value>
+  </data>
+  <data name="TotalVotes" xml:space="preserve">
+    <value>Total Votes</value>
+  </data>
+  <data name="VotesBalance" xml:space="preserve">
+    <value>Votes Balance</value>
+  </data>
+  <data name="DemandVotesBalance" xml:space="preserve">
+    <value>'Demand' Votes Balance</value>
+  </data>
+  <data name="AchievedVotesBalance" xml:space="preserve">
+    <value>'Achieved' Votes Balance</value>
+  </data>
+  <data name="TotalDemandVotes" xml:space="preserve">
+    <value>Total 'Demand' Votes</value>
+  </data>
+  <data name="TotalAchievedVotes" xml:space="preserve">
+    <value>Total 'Achieved' Votes</value>
+  </data>
+  <data name="EffectiveVotesBalance" xml:space="preserve">
+    <value>'Effective' Votes Balance</value>
+  </data>
+  <data name="TotalEffectiveVotes" xml:space="preserve">
+    <value>Total 'Effective' Votes</value>
+  </data>
+  <data name="Needed" xml:space="preserve">
+    <value>Needed</value>
+  </data>
+  <data name="Achieved" xml:space="preserve">
+    <value>Achieved</value>
+  </data>
+  <data name="Effective" xml:space="preserve">
+    <value>Effective</value>
+  </data>
+</root>

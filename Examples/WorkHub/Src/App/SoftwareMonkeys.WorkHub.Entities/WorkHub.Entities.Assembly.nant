@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<project name="WorkHub2.Entities.Assembly" xmlns="http://nant.sf.net/schemas/nant.xsd">
+  <!-- Global Properties -->
+  		<property name="Assembly.Name" value="WorkHub2.Entities" />
+	    <property name="Assembly.BaseNamespace" value="SoftwareMonkeys.WorkHub.Entities" />
+	  <property name="Assembly.AssemblyName" value="${Assembly.BaseNamespace}.dll" />
+</project>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<project name="WorkHub.Modules.Voting" xmlns="http://nant.sf.net/schemas/nant.xsd">
+  		<property name="Assembly.Name" value="WorkHub.Modules.Voting" />
+	    <property name="Assembly.BaseNamespace" value="SoftwareMonkeys.WorkHub.Modules.Voting" />
+	  <property name="Assembly.AssemblyName" value="${Assembly.BaseNamespace}.dll" />
+</project>

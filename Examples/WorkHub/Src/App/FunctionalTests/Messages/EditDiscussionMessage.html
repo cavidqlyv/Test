@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/WorkHub/" />
+<title>EditDiscussionMessage</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">EditDiscussionMessage</td></tr>
+</thead><tbody>
+<tr>
+	<td>setTimeout</td>
+	<td>1000000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>Admin/tests/testreset.aspx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>openAndWait</td>
+	<td>Admin/QuickSetup.aspx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Exception</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=CreateProjectLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_Body_ctl00_Name</td>
+	<td>Test Project</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ctl00_Body_ctl00_SaveButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Post Message &gt;']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Exception</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_Body_ctl00_Title</td>
+	<td>Test message</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_Body_ctl00_Body</td>
+	<td>Test body</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ctl00_Body_ctl00_SaveButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Reply</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_Body_ctl00_Body</td>
+	<td>Re: Test body</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ctl00_Body_ctl00_SaveButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//span[@id='ctl00_Body_ctl00_ctl03']/span/div/div/p[2]/a[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Exception</td>
+	<td></td>
+</tr>
+<!--Ensure the recipients list is hidden because it's a general discussion-->
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Recipients:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextNotPresent</td>
+	<td>Projects:</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Subject</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_Body_ctl00_Title</td>
+	<td>Re: Test message 2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_Body_ctl00_Body</td>
+	<td>Re: Test body 2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=ctl00_Body_ctl00_UpdateButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Re: Test message 2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTextPresent</td>
+	<td>Re: Test body 2</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

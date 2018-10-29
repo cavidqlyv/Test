@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<project name="Common.Jobs.PortSync" default="Common.Jobs.PortSync" xmlns="http://nant.sf.net/schemas/nant.xsd">
+
+	<target name="Common.Jobs.PortSync">
+		<exec program="lib/ScanAndPortFiles">
+			<arg value="-dir:../" />
+			<arg value="-imports:../${Project.Name}-Imports/" />
+			<arg value="-root:../../../" />
+		</exec>
+	</target>
+
+</project>
+  	

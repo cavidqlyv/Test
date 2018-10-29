@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<project name="WorkHub2.Business.WWW" xmlns="http://nant.sf.net/schemas/nant.xsd">
+  <!-- Global Properties -->
+  		<property name="WWW.Name" value="WorkHub2.WWW" />
+</project>

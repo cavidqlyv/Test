@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<project name="WorkHub2.Modules.Projects" xmlns="http://nant.sf.net/schemas/nant.xsd">
+  		<property name="Assembly.Name" value="WorkHub2.Modules.Projects" />
+	    <property name="Assembly.BaseNamespace" value="SoftwareMonkeys.WorkHub.Modules.Projects" />
+	  <property name="Assembly.AssemblyName" value="${Assembly.BaseNamespace}.dll" />
+</project>

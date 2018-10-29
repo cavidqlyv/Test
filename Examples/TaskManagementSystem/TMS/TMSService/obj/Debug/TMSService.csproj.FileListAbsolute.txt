@@ -6,3 +6,14 @@ c:\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSDataService.pdb
 c:\TaskManagementSystem\TMS\TMSService\obj\Debug\ResolveAssemblyReference.cache
 c:\TaskManagementSystem\TMS\TMSService\obj\Debug\TMSService.dll
 c:\TaskManagementSystem\TMS\TMSService\obj\Debug\TMSService.pdb
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSService.dll.config
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSService.dll
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSService.pdb
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSDataService.dll
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSDataService.pdb
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSDataService.dll.config
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\obj\Debug\TMSService.csprojAssemblyReference.cache
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\obj\Debug\TMSService.csproj.CoreCompileInputs.cache
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\obj\Debug\TMSService.csproj.CopyComplete
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\obj\Debug\TMSService.dll
+E:\test\Examples\TaskManagementSystem\TMS\TMSService\obj\Debug\TMSService.pdb

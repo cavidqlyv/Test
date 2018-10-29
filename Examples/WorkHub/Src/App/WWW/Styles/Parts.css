@@ -1,0 +1,198 @@
+
+.PartZones
+{
+	border-collapse: collapse;
+	width: 100% auto;
+	margin: 3px 0px 0px 0px;
+}
+
+#LeftZone
+{
+	margin-left: 0px;
+}
+
+#CenterZone
+{
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#RightZone
+{
+	margin-right: 0px;
+}
+
+.Zone
+{
+	vertical-align:top;
+	width: 33%;
+	height: 100%;
+}
+
+.Zone .WebPart
+{
+	margin-bottom: 5px;
+}
+
+.Verb A
+{
+	color: red;
+}
+
+#CatalogZone SELECT,
+#CatalogZone INPUT
+{
+	font-size: x-small;
+}
+
+#PartsModeZoneHolder
+{
+	padding: 9px;
+}
+
+#PartsModeZone
+{
+	background-color: #F7F6F3;
+	border: solid 1px #E2DED6;
+	padding: 5px;
+	height: 18px;
+	font-size: 10px;
+	vertical-align: middle;
+}
+
+#LeftPartsMode
+{
+	width: 45%;
+	float: left;
+	height: 18px;
+
+}
+
+#RightPartsMode
+{
+	width: 45%;
+	float:right;
+	text-align: right;
+	padding: 3px;
+	height: 18px;
+}
+
+#PartsModeZone SELECT
+{
+	font-size: 10px;
+}
+
+
+
+.Scrollable
+{
+	overflow: auto;
+	/*border: solid 1px #DEDEDE;
+	border-top: 0px;*/
+	padding: 0px;
+	/*height: 140px;*/
+}
+
+.PartZone
+{
+	border: none;
+}
+
+.PartChrome
+{
+	border: none;
+}
+
+.Part
+{
+	border-bottom: solid 1px #DEDEDE;
+	border-left: solid 1px #DEDEDE;
+	border-right: solid 1px #DEDEDE;
+	width: 100%;
+	padding: 10px;
+}
+
+.PartTitle
+{
+	background-color: #F5F5F5;
+	border-bottom: solid 1px #DEDEDE;
+	border-left: solid 4px #DEDEDE;
+	border-top: solid 1px #DEDEDE;
+	border-right: solid 4px #DEDEDE;
+	color: #515151;
+	font-weight: bold;
+	padding: 4px;
+	width: 100%;
+	
+}
+
+.PartMenuVerb
+{
+	font-size: 10px;
+	font-weight: bold;
+	font-family: verdana;
+}
+
+.PartMenu
+{
+	font-size: 10px;
+	font-weight: bold;
+	font-family: verdana;
+}
+
+.PartTitleVerb
+{
+	font-size: 10px;
+	font-weight: normal;
+	font-family: verdana;
+	color: black;
+}
+
+.Part P
+{
+	margin: 4px 3px 4px 3px;
+	padding: 3px;
+}
+
+.Part H3
+{
+	margin: 3px;
+	padding: 3px;
+	font-size: 12px;
+	font-family: verdana;
+}
+
+.Part H3 A
+{
+	font-weight: normal;
+}
+
+.Part LI
+{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.Part HR
+{
+	border: none 0;
+	border-top: solid 1px #E2DED6;
+	width: 98%;
+}
+
+.Part .Details,
+.Part .Details A
+{
+	font-size: 11px;
+	font-color: gray;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.Part .Links
+{
+	text-align: right;
+}

@@ -3,3 +3,10 @@ c:\TaskManagementSystem\TMS\TMSView\bin\TMSView.pdb
 c:\TaskManagementSystem\TMS\TMSView\obj\Debug\ResolveAssemblyReference.cache
 c:\TaskManagementSystem\TMS\TMSView\obj\Debug\TMSView.dll
 c:\TaskManagementSystem\TMS\TMSView\obj\Debug\TMSView.pdb
+E:\test\Examples\TaskManagementSystem\TMS\TMSView\bin\TMSView.dll.config
+E:\test\Examples\TaskManagementSystem\TMS\TMSView\bin\TMSView.dll
+E:\test\Examples\TaskManagementSystem\TMS\TMSView\bin\TMSView.pdb
+E:\test\Examples\TaskManagementSystem\TMS\TMSView\obj\Debug\TMSView.csprojAssemblyReference.cache
+E:\test\Examples\TaskManagementSystem\TMS\TMSView\obj\Debug\TMSView.csproj.CoreCompileInputs.cache
+E:\test\Examples\TaskManagementSystem\TMS\TMSView\obj\Debug\TMSView.dll
+E:\test\Examples\TaskManagementSystem\TMS\TMSView\obj\Debug\TMSView.pdb
