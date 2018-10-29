@@ -1,0 +1,8 @@
+c:\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSService.dll.config
+c:\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSService.dll
+c:\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSService.pdb
+c:\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSDataService.dll
+c:\TaskManagementSystem\TMS\TMSService\bin\Debug\TMSDataService.pdb
+c:\TaskManagementSystem\TMS\TMSService\obj\Debug\ResolveAssemblyReference.cache
+c:\TaskManagementSystem\TMS\TMSService\obj\Debug\TMSService.dll
+c:\TaskManagementSystem\TMS\TMSService\obj\Debug\TMSService.pdb

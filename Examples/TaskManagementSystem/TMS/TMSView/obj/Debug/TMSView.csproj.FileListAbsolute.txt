@@ -1,0 +1,5 @@
+c:\TaskManagementSystem\TMS\TMSView\bin\TMSView.dll
+c:\TaskManagementSystem\TMS\TMSView\bin\TMSView.pdb
+c:\TaskManagementSystem\TMS\TMSView\obj\Debug\ResolveAssemblyReference.cache
+c:\TaskManagementSystem\TMS\TMSView\obj\Debug\TMSView.dll
+c:\TaskManagementSystem\TMS\TMSView\obj\Debug\TMSView.pdb
