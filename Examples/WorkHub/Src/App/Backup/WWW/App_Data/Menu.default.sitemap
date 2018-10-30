@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap>
+	<siteMapNode title="Home" url="~/Default.aspx" description="" selectable="True" />
+	<siteMapNode title="Getting started" url="~/Guide.aspx" description="" selectable="True" />
+	<siteMapNode title="Administration" url="" description="" selectable="False">
+	  <siteMapNode title="Users" url="~/User-Index.aspx" description="" selectable="True" />
+	  <siteMapNode title="Roles" url="~/UserRole-Index.aspx" description="" selectable="True" />
+	  <siteMapNode title="Utilities" url="~/Admin/Utilities.aspx" description="" selectable="True" />
+	</siteMapNode>
+</siteMap>

@@ -11,3 +11,10 @@ E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataServic
 E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.csproj.CoreCompileInputs.cache
 E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.dll
 E:\test\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.pdb
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\TaskManagementSystem\TMS\TMSDataService\bin\Debug\TMSDataService.dll.config
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\TaskManagementSystem\TMS\TMSDataService\bin\Debug\TMSDataService.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\TaskManagementSystem\TMS\TMSDataService\bin\Debug\TMSDataService.pdb
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.csprojAssemblyReference.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.csproj.CoreCompileInputs.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\TaskManagementSystem\TMS\TMSDataService\obj\Debug\TMSDataService.pdb

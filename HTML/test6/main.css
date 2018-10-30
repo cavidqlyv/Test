@@ -1,0 +1,22 @@
+.MainDiv {
+    margin-left: auto;
+    border:1px solid black;
+    
+    margin-right: auto;
+    width: 960px;
+}
+
+.Image {
+    width:70%;
+    height: 150px;
+    border:1px solid black;
+    display: inline-block;
+}
+h1{
+    display: inline-block;
+    
+}
+
+.login{
+    width: 960;
+}
