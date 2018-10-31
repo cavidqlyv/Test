@@ -1,0 +1,71 @@
+a {
+    font-size: 3rem;
+    color: red;
+    border: 2px solid black;
+    padding: 2px 12px;
+}
+
+/* .pulse {
+    width: 20px;
+    height: 20px;
+    margin: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+    transform: translate(100px, 100px);
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+}
+
+.pulse:after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.8);
+
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0);
+    }
+    to{
+        transform: scale(4);
+    }
+} */
+
+.container {
+    width: 100px;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.container::before {}
+
+.container .dot {
+    float: left;
+    background-color: black;
+    border-radius: 50%;
+    width: 28px;
+    height: 20px;
+    margin: 2px;
+    animation: glow 1s infinite alternate;
+}
+
+.container .dot :nth-child(2n+1) :not {
+    animation: glow .5s linear infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
