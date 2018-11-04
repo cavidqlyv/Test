@@ -1,9 +1,0 @@
-E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.State\bin\Debug\SoftwareMonkeys.WorkHub.State.dll
-E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.State\bin\Debug\SoftwareMonkeys.WorkHub.State.pdb
-E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.State\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.dll
-E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.State\bin\Debug\SoftwareMonkeys.WorkHub.Contracts.pdb
-E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.State\obj\Debug\WorkHub.State.csprojAssemblyReference.cache
-E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.State\obj\Debug\WorkHub.State.csproj.CoreCompileInputs.cache
-E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.State\obj\Debug\WorkHub.State.csproj.CopyComplete
-E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.State\obj\Debug\SoftwareMonkeys.WorkHub.State.dll
-E:\test\Examples\WorkHub\Src\App\SoftwareMonkeys.WorkHub.State\obj\Debug\SoftwareMonkeys.WorkHub.State.pdb
