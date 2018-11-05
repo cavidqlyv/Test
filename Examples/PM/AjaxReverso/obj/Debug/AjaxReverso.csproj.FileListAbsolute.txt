@@ -1,0 +1,9 @@
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\AjaxReverso\bin\Debug\AjaxReverso.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\AjaxReverso\bin\Debug\AjaxReverso.pdb
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\AjaxReverso\obj\Debug\AjaxReverso.csproj.CoreCompileInputs.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\AjaxReverso\obj\Debug\AjaxReverso.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\AjaxReverso\obj\Debug\AjaxReverso.pdb
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\AjaxReverso\bin\Debug\Newtonsoft.Json.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\AjaxReverso\bin\Debug\Newtonsoft.Json.xml
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\AjaxReverso\obj\Debug\AjaxReverso.csprojAssemblyReference.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\AjaxReverso\obj\Debug\AjaxReverso.csproj.CopyComplete

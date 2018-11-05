@@ -1,0 +1,10 @@
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\bin\Debug\Katapoka.BLL.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\bin\Debug\Katapoka.BLL.pdb
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\bin\Debug\Katapoka.DAO.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\bin\Debug\Katapoka.DAO.pdb
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\bin\Debug\Katapoka.DAO.dll.config
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\obj\Debug\Katapoka.BLL.csprojAssemblyReference.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\obj\Debug\Katapoka.BLL.csproj.CoreCompileInputs.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\obj\Debug\Katapoka.BLL.csproj.CopyComplete
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\obj\Debug\Katapoka.BLL.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.BLL\obj\Debug\Katapoka.BLL.pdb

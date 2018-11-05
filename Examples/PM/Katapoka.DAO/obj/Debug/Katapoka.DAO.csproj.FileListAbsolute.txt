@@ -1,0 +1,12 @@
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\bin\Debug\Katapoka.DAO.dll.config
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\bin\Debug\Katapoka.DAO.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\bin\Debug\Katapoka.DAO.pdb
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\bin\Debug\EntityFramework.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\bin\Debug\EntityFramework.xml
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\obj\Debug\Katapoka.DAO.csprojAssemblyReference.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\obj\Debug\Katapoka.DAO.csproj.CoreCompileInputs.cache
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\obj\Debug\Katapoka.DAO.csproj.CopyComplete
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\obj\Debug\Katapoka.DAO.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\obj\Debug\Katapoka.DAO.pdb
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\bin\Debug\Newtonsoft.Json.dll
+\\ITSTEP\students redirection$\sale_rv37\Desktop\New folder\Examples\PM\Katapoka.DAO\bin\Debug\Newtonsoft.Json.xml

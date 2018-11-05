@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuanticaDAOStoreContainer" CdmEntityContainer="QuanticaEntities">
+    <EntitySetMapping Name="AreaAtuacao_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.AreaAtuacao_Tb">
+        <MappingFragment StoreEntitySet="AreaAtuacao_Tb">
+          <ScalarProperty Name="DsAreaAtuacao" ColumnName="DsAreaAtuacao" />
+          <ScalarProperty Name="IdAreaAtuacao" ColumnName="IdAreaAtuacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Atividade_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Atividade_Tb">
+        <MappingFragment StoreEntitySet="Atividade_Tb">
+          <ScalarProperty Name="FlStatus" ColumnName="FlStatus" />
+          <ScalarProperty Name="IdAtividadePredecessora" ColumnName="IdAtividadePredecessora" />
+          <ScalarProperty Name="IdTipoAtividade" ColumnName="IdTipoAtividade" />
+          <ScalarProperty Name="DtCriacao" ColumnName="DtCriacao" />
+          <ScalarProperty Name="IdUsuarioCriacao" ColumnName="IdUsuarioCriacao" />
+          <ScalarProperty Name="DsAtividade" ColumnName="DsAtividade" />
+          <ScalarProperty Name="DtTermino" ColumnName="DtTermino" />
+          <ScalarProperty Name="DtInicio" ColumnName="DtInicio" />
+          <ScalarProperty Name="VrCompletoPorcentagem" ColumnName="VrCompletoPorcentagem" />
+          <ScalarProperty Name="QtTempoExecutado" ColumnName="QtTempoExecutado" />
+          <ScalarProperty Name="QtTempoEstimado" ColumnName="QtTempoEstimado" />
+          <ScalarProperty Name="DsTituloAtividade" ColumnName="DsTituloAtividade" />
+          <ScalarProperty Name="IdProjeto" ColumnName="IdProjeto" />
+          <ScalarProperty Name="IdAtividade" ColumnName="IdAtividade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AtividadeApontamentoTempo_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.AtividadeApontamentoTempo_Tb">
+        <MappingFragment StoreEntitySet="AtividadeApontamentoTempo_Tb">
+          <ScalarProperty Name="DtTermino" ColumnName="DtTermino" />
+          <ScalarProperty Name="DtInicio" ColumnName="DtInicio" />
+          <ScalarProperty Name="IdAtividade" ColumnName="IdAtividade" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdAtividadeApontamentoTempo" ColumnName="IdAtividadeApontamentoTempo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AtividadeLog_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.AtividadeLog_Tb">
+        <MappingFragment StoreEntitySet="AtividadeLog_Tb">
+          <ScalarProperty Name="DtAlteracao" ColumnName="DtAlteracao" />
+          <ScalarProperty Name="IdUsuarioAlteracao" ColumnName="IdUsuarioAlteracao" />
+          <ScalarProperty Name="DsMotivo" ColumnName="DsMotivo" />
+          <ScalarProperty Name="DtTerminoNovo" ColumnName="DtTerminoNovo" />
+          <ScalarProperty Name="DtInicioNovo" ColumnName="DtInicioNovo" />
+          <ScalarProperty Name="DtTerminoAntigo" ColumnName="DtTerminoAntigo" />
+          <ScalarProperty Name="DtInicioAntigo" ColumnName="DtInicioAntigo" />
+          <ScalarProperty Name="IdAtividade" ColumnName="IdAtividade" />
+          <ScalarProperty Name="IdAtividadeLog" ColumnName="IdAtividadeLog" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AtividadeUsuario_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.AtividadeUsuario_Tb">
+        <MappingFragment StoreEntitySet="AtividadeUsuario_Tb">
+          <ScalarProperty Name="DtCriacao" ColumnName="DtCriacao" />
+          <ScalarProperty Name="IdUsuarioCriacao" ColumnName="IdUsuarioCriacao" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdAtividade" ColumnName="IdAtividade" />
+          <ScalarProperty Name="IdAtividadeUsuario" ColumnName="IdAtividadeUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bairro_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Bairro_Tb">
+        <MappingFragment StoreEntitySet="Bairro_Tb">
+          <ScalarProperty Name="DsNome" ColumnName="DsNome" />
+          <ScalarProperty Name="IdCidade" ColumnName="IdCidade" />
+          <ScalarProperty Name="IdBairro" ColumnName="IdBairro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargo_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Cargo_Tb">
+        <MappingFragment StoreEntitySet="Cargo_Tb">
+          <ScalarProperty Name="DsCargo" ColumnName="DsCargo" />
+          <ScalarProperty Name="IdCargo" ColumnName="IdCargo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CargoTipoAtividade_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.CargoTipoAtividade_Tb">
+        <MappingFragment StoreEntitySet="CargoTipoAtividade_Tb">
+          <ScalarProperty Name="IdTipoAtividade" ColumnName="IdTipoAtividade" />
+          <ScalarProperty Name="IdCargo" ColumnName="IdCargo" />
+          <ScalarProperty Name="IdCargoTipoAtividade" ColumnName="IdCargoTipoAtividade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cidade_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Cidade_Tb">
+        <MappingFragment StoreEntitySet="Cidade_Tb">
+          <ScalarProperty Name="DsNome" ColumnName="DsNome" />
+          <ScalarProperty Name="CdUF" ColumnName="CdUF" />
+          <ScalarProperty Name="IdCidade" ColumnName="IdCidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contato_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Contato_Tb">
+        <MappingFragment StoreEntitySet="Contato_Tb">
+          <ScalarProperty Name="DsObservacaoContato" ColumnName="DsObservacaoContato" />
+          <ScalarProperty Name="DsFax" ColumnName="DsFax" />
+          <ScalarProperty Name="DsTelefoneComercial" ColumnName="DsTelefoneComercial" />
+          <ScalarProperty Name="DsTelefoneCelular" ColumnName="DsTelefoneCelular" />
+          <ScalarProperty Name="DsTelefoneResidencial" ColumnName="DsTelefoneResidencial" />
+          <ScalarProperty Name="IdContato" ColumnName="IdContato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empresa_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Empresa_Tb">
+        <MappingFragment StoreEntitySet="Empresa_Tb">
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="DsMotivoRejeicao" ColumnName="DsMotivoRejeicao" />
+          <ScalarProperty Name="IdUsuarioAprovacao" ColumnName="IdUsuarioAprovacao" />
+          <ScalarProperty Name="DtAprovacao" ColumnName="DtAprovacao" />
+          <ScalarProperty Name="FlAprovada" ColumnName="FlAprovada" />
+          <ScalarProperty Name="DtCadastro" ColumnName="DtCadastro" />
+          <ScalarProperty Name="DsSite" ColumnName="DsSite" />
+          <ScalarProperty Name="FlAceiteTermo" ColumnName="FlAceiteTermo" />
+          <ScalarProperty Name="DsSumarioEmpresa" ColumnName="DsSumarioEmpresa" />
+          <ScalarProperty Name="DsEmail" ColumnName="DsEmail" />
+          <ScalarProperty Name="NrCnpj" ColumnName="NrCnpj" />
+          <ScalarProperty Name="DsRazaoSocial" ColumnName="DsRazaoSocial" />
+          <ScalarProperty Name="DsNomeFantasia" ColumnName="DsNomeFantasia" />
+          <ScalarProperty Name="IdAreaAtuacao" ColumnName="IdAreaAtuacao" />
+          <ScalarProperty Name="IdContato" ColumnName="IdContato" />
+          <ScalarProperty Name="IdEndereco" ColumnName="IdEndereco" />
+          <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Endereco_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Endereco_Tb">
+        <MappingFragment StoreEntitySet="Endereco_Tb">
+          <ScalarProperty Name="DsBairroOutro" ColumnName="DsBairroOutro" />
+          <ScalarProperty Name="IdCidade" ColumnName="IdCidade" />
+          <ScalarProperty Name="IdBairro" ColumnName="IdBairro" />
+          <ScalarProperty Name="DsComplemento" ColumnName="DsComplemento" />
+          <ScalarProperty Name="NrEndereco" ColumnName="NrEndereco" />
+          <ScalarProperty Name="DsEndereco" ColumnName="DsEndereco" />
+          <ScalarProperty Name="NrCep" ColumnName="NrCep" />
+          <ScalarProperty Name="IdEndereco" ColumnName="IdEndereco" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projeto_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Projeto_Tb">
+        <MappingFragment StoreEntitySet="Projeto_Tb">
+          <ScalarProperty Name="IdTipoProjeto" ColumnName="IdTipoProjeto" />
+          <ScalarProperty Name="DtCriacao" ColumnName="DtCriacao" />
+          <ScalarProperty Name="IdUsuarioCriacao" ColumnName="IdUsuarioCriacao" />
+          <ScalarProperty Name="FlStatus" ColumnName="FlStatus" />
+          <ScalarProperty Name="DsCodigoReferencia" ColumnName="DsCodigoReferencia" />
+          <ScalarProperty Name="DtTerminoEstimado" ColumnName="DtTerminoEstimado" />
+          <ScalarProperty Name="DtInicioEstimado" ColumnName="DtInicioEstimado" />
+          <ScalarProperty Name="DsNome" ColumnName="DsNome" />
+          <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
+          <ScalarProperty Name="IdProjeto" ColumnName="IdProjeto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjetoInteracao_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.ProjetoInteracao_Tb">
+        <MappingFragment StoreEntitySet="ProjetoInteracao_Tb">
+          <ScalarProperty Name="IdUsuarioCriacao" ColumnName="IdUsuarioCriacao" />
+          <ScalarProperty Name="DtCriacao" ColumnName="DtCriacao" />
+          <ScalarProperty Name="DsHistorico" ColumnName="DsHistorico" />
+          <ScalarProperty Name="IdProjeto" ColumnName="IdProjeto" />
+          <ScalarProperty Name="IdProjetoInteracao" ColumnName="IdProjetoInteracao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Katapoka.DAO.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoProjeto_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.TipoProjeto_Tb">
+        <MappingFragment StoreEntitySet="TipoProjeto_Tb">
+          <ScalarProperty Name="DsTipo" ColumnName="DsTipo" />
+          <ScalarProperty Name="IdTipoProjeto" ColumnName="IdTipoProjeto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoProjetoTipoAtividade_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.TipoProjetoTipoAtividade_Tb">
+        <MappingFragment StoreEntitySet="TipoProjetoTipoAtividade_Tb">
+          <ScalarProperty Name="IdTipoAtividade" ColumnName="IdTipoAtividade" />
+          <ScalarProperty Name="IdTipoProjeto" ColumnName="IdTipoProjeto" />
+          <ScalarProperty Name="IdTipoProjetoTipoAtividade" ColumnName="IdTipoProjetoTipoAtividade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UF_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.UF_Tb">
+        <MappingFragment StoreEntitySet="UF_Tb">
+          <ScalarProperty Name="DsUF" ColumnName="DsUF" />
+          <ScalarProperty Name="CdUF" ColumnName="CdUF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Usuario_Tb">
+        <MappingFragment StoreEntitySet="Usuario_Tb">
+          <ScalarProperty Name="IdCargo" ColumnName="IdCargo" />
+          <ScalarProperty Name="DsSenha" ColumnName="DsSenha" />
+          <ScalarProperty Name="DsHashLogin" ColumnName="DsHashLogin" />
+          <ScalarProperty Name="DtValidadeLogin" ColumnName="DtValidadeLogin" />
+          <ScalarProperty Name="DsEmail" ColumnName="DsEmail" />
+          <ScalarProperty Name="DsNome" ColumnName="DsNome" />
+          <ScalarProperty Name="IdUsuarioNivel" ColumnName="IdUsuarioNivel" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsuarioNivel_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.UsuarioNivel_Tb">
+        <MappingFragment StoreEntitySet="UsuarioNivel_Tb">
+          <ScalarProperty Name="DsNivel" ColumnName="DsNivel" />
+          <ScalarProperty Name="IdUsuarioNivel" ColumnName="IdUsuarioNivel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AtividadeTag_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.AtividadeTag_Tb">
+        <MappingFragment StoreEntitySet="AtividadeTag_Tb">
+          <ScalarProperty Name="IdTag" ColumnName="IdTag" />
+          <ScalarProperty Name="IdAtividade" ColumnName="IdAtividade" />
+          <ScalarProperty Name="IdAtividadeTag" ColumnName="IdAtividadeTag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tag_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.Tag_Tb">
+        <MappingFragment StoreEntitySet="Tag_Tb">
+          <ScalarProperty Name="DsTag" ColumnName="DsTag" />
+          <ScalarProperty Name="IdTag" ColumnName="IdTag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoAtividade_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.TipoAtividade_Tb">
+        <MappingFragment StoreEntitySet="TipoAtividade_Tb">
+          <ScalarProperty Name="DsAtividade" ColumnName="DsAtividade" />
+          <ScalarProperty Name="QtTempoEstimado" ColumnName="QtTempoEstimado" />
+          <ScalarProperty Name="DsTituloAtividade" ColumnName="DsTituloAtividade" />
+          <ScalarProperty Name="IdTipoAtividade" ColumnName="IdTipoAtividade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoProjetoTipoAtividadePredecessora_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.TipoProjetoTipoAtividadePredecessora_Tb">
+        <MappingFragment StoreEntitySet="TipoProjetoTipoAtividadePredecessora_Tb">
+          <ScalarProperty Name="IdTipoAtividadePredecessora" ColumnName="IdTipoAtividadePredecessora" />
+          <ScalarProperty Name="IdTipoAtividade" ColumnName="IdTipoAtividade" />
+          <ScalarProperty Name="IdTipoProjeto" ColumnName="IdTipoProjeto" />
+          <ScalarProperty Name="IdTipoProjetoTipoAtividadePredecessora" ColumnName="IdTipoProjetoTipoAtividadePredecessora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoAtividadeTag_Tb">
+      <EntityTypeMapping TypeName="Katapoka.DAO.TipoAtividadeTag_Tb">
+        <MappingFragment StoreEntitySet="TipoAtividadeTag_Tb">
+          <ScalarProperty Name="IdTag" ColumnName="IdTag" />
+          <ScalarProperty Name="IdTipoAtividade" ColumnName="IdTipoAtividade" />
+          <ScalarProperty Name="IdTipoAtividadeTag" ColumnName="IdTipoAtividadeTag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
