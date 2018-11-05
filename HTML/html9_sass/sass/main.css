@@ -1,0 +1,32 @@
+body {
+  background-color: red;
+}
+
+.body {
+  color: blue;
+}
+
+.body.bg-red {
+  background-color: red;
+}
+
+.btn {
+  color: black;
+  background-color: white;
+  padding: 5px;
+  margin: 0;
+  -webkit-box-shadow: 0 0 0 red;
+          box-shadow: 0 0 0 red;
+  background-color: red;
+}
+
+.btn.on {
+  display: block;
+}
+
+@media (max-width: 570px) {
+  .modal-opened {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+@import './variable';
+
+@mixin btnBase{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    margin: 0;
+    &.on{
+        display: block;
+    }
+    @content;
+}
+ 
+$color: red;
+
+body{
+    background-color: $color;
+}
+
+.body{
+    color: blue;
+    &.bg-red{
+        background-color: red;
+    }
+}
+ 
+.btn{
+    @include btnBase{
+        box-shadow: 0 0 0 red;
+    }
+    background-color: red;
+}
+
+.modal-opened{
+@media(max-width: 570px){
+    background-color: red;
+}
+}
