@@ -1,0 +1,11 @@
+div a:hover{
+    text-decoration: none;
+}
+
+div{
+    border: 1px solid black;
+}
+
+div:hover{
+    border-color: red;
+}
