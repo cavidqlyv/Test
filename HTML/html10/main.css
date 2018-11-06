@@ -1,11 +1,155 @@
-div a:hover{
+/* div a:hover {
     text-decoration: none;
 }
 
-div{
+div {
     border: 1px solid black;
 }
 
-div:hover{
+div:hover {
     border-color: red;
+}
+
+div:hover a {
+    text-decoration: yellow;
+}
+
+input{
+    text-decoration: none;
+}
+
+.my-check{
+    border: 1px solid black;
+}
+
+.my-check input:checked ~ p{
+    color: violet;
+} */
+
+/* .relative {
+    height: 100px;
+    width: 100px;
+    color: red;
+    padding: 10px;
+    border: 1px solid blue;
+    position: relative;
+}
+
+.item-1 {
+    background-color: turquoise;
+}
+
+.item-2 {
+    top: 0px;
+    left: 300px;
+    right: 0px;
+    z-index: 3;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-color: violet;
+}
+
+.item-3 {
+    background-color: springgreen
+}
+
+.item3 .inner-item{
+
+}
+
+.item-4 {
+    background-color: orchid;
+} */
+
+.relative {
+    height: 100px;
+    width: 100px;
+    color: red;
+    border: 1px solid blue;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+}
+
+.item-2 {
+    /* top: 10px;  */
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    /* left: 20px */
+    position: fixed;
+    z-index: -2;
+}
+
+.item-3 .inner-item-1 {
+    width: 20px;
+    height: 20px;
+    background-color: turquoise;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.item-3 .inner-item-2 {
+    width: 20px;
+    height: 20px;
+    background-color: chartreuse;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.item-3 .inner-item-3 {
+    width: 20px;
+    height: 20px;
+    background-color: turquoise;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.item-3 .inner-item-4 {
+    width: 20px;
+    height: 20px;
+    background-color: turquoise;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.item-3 {
+    /* z-index: 8;z indexi cox olan element uste dusur */
+    background-color: yellowgreen;
+    position: relative;
+    /* top: 50%;
+  left: 50%; 
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute; */
+}
+
+.overlay {
+    width: 200px;
+    height: 200px;
+    color: white;
+    padding: 20px;
+    background-color: #235784;
+    position: relative;
+}
+
+.overlay::before{
+    content: '';
+    display: block;
+    background-color: #f7aa00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+
+.overlay:hover::before{
+    opacity: 0;
 }
