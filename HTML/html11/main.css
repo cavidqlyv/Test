@@ -1,6 +1,9 @@
+/* Header */
+
 .main-header {
     background-color: #343a40;
     color: #fff;
+    user-select: none;
 }
 
 .main-header .header-brand {
@@ -15,9 +18,42 @@
 .main-header .header-hamburger {
     color: #9a9da0;
     background-color: transparent;
-    border: 1px solid #9a9da0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     margin: 10px 0;
     padding: 0px 12px;
     border-radius: 2px;
     cursor: pointer;
+}
+
+/* Greeting */
+
+.greeting-block {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.greeting-block .greeting-wrapper {
+    width: 36%;
+    margin: 0 auto;
+}
+
+.greeting-block h1 {
+    color: #212529;
+    font-weight: 100;
+}
+
+.greeting-block p {
+    color: #9a9da0;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+/* Cards */
+
+.cards{
+    background-color: #f8f9fa;
+}
+
+.cards .col-4{
+    background-color: red
 }
