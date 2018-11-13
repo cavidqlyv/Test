@@ -3,50 +3,35 @@
     height: 20px;
 }
 
-input{
-    width: 100%;
+input {
+    width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
+    background-color: orchid;
     border-radius: 4px;
-    
     box-sizing: border-box;
 }
 
 input[type=radio] {
-    text-align: left;
-    display:inline;
+    width: 20px;
 }
 
-/* input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+input[type=text] {
+    margin-left: auto;
+    margin-right: auto;
 }
-
-input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-} */
 
 body {
     font-family: 'Nunito', sans-serif;
 }
 
 main {
-    width: 400px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
+    background-color: pink;
 }
 
 label {
