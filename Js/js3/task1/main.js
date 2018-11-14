@@ -32,11 +32,9 @@
 
 function checkSpam(str) {
     var res = str.toLowerCase();
-    if (res.indexOf("dirol") != -1)
-        return true;
-    if (res.indexOf("twix") != -1)
-        return true;
-    if (res.indexOf("snickers") != -1)
+
+
+    if (res.indexOf("dirol") != -1 || res.indexOf("twix") != -1 || res.indexOf("snickers") != -1)
         return true;
     return false;
 }
