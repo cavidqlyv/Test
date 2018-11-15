@@ -30,4 +30,37 @@ function Split(a, b) {
     return res;
 }
 
-console.log(Split("alim , elnur , hesen , ", ""));
+//console.log(Split("alim , elnur , hesen , ", ""));
+
+function deleteOnIndex(arr, index) {
+    var res = [];
+    if (index < 0)
+        throw new Error("index error");
+    if (index > arr.length)
+        index = arr.length - 1;
+    for (var i = 0; i < arr.length; i++) {
+        if (i != index) {
+            res.push(arr[i]);
+        }
+    }
+    return res;
+}
+
+console.log(deleteOnIndex([1, 2, 3, 4], 10));
+
+function addOnIndex(arr, index, item) {
+    var res = [];
+    if (index < 0)
+        throw new Error("index error");
+    if (index > arr.length)
+        index = arr.length - 1;
+    for (var i = 0; i < arr.length; i++) {
+        if (i == index) {
+            res.push(item);
+        }
+        res.push(arr[i]);
+    }
+    return res;
+}
+
+console.log(addOnIndex([1, 2, 3, 4], 1, 15));
