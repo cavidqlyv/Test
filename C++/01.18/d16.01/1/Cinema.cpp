@@ -17,11 +17,11 @@ public:
 	{
 		name = cName;
 	}
-	void setYear(int cYear)
+	void setYear(int cYear) noexcept
 	{
 		year = cYear;
 	}
-	void setDuration(int cDuration)
+	void setDuration(int cDuration) noexcept
 	{
 		duration = cDuration;
 	}
@@ -29,11 +29,11 @@ public:
 	{
 		return name;
 	}
-	int getYear()
+	int getYear() noexcept
 	{
 		return year;
 	}
-	int getDuration()
+	int getDuration() noexcept
 	{
 		return duration;
 	}
@@ -46,8 +46,6 @@ public:
 		{
 			std::cout << "Staff Name : aa\t" << staff[i]->getName() << "\n";
 			std::cout << "Staff job : aa\t" << staff[i]->getJob() << "\n";
-
 		}
 	}
 };
-

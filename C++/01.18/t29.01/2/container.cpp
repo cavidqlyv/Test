@@ -3,8 +3,6 @@
 #include"sort.cpp"
 #pragma warning(disable: 4996)
 
-
-
 template <typename T , typename TCallback >
 class Container
 {
@@ -19,12 +17,6 @@ public:
 		arr = new T(num);
 		id = counter++;
 	}
-	//~Container()
-	//{
-	//	for (int i = 0; i < count; i++)
-	//		delete arr[i];
-	//}
-	//template<>
 	void push(T num, TCallback callback)
 	{
 		T * tmp = new T[++count];
@@ -43,7 +35,6 @@ public:
 	{
 		return arr[index];
 	}
-//	template<typename TCallback>
 	void sort(TCallback callback)
 	{
 		for (int i = 0; i < count; i++)
@@ -72,7 +63,6 @@ public:
 
 template<typename T , typename TCallback>
 int Container < T, TCallback  > ::counter = 0;
-
 
 template<typename T, typename TCallback>
 std::ostream& operator << (std::ostream& os, Container<T, TCallback>& num)

@@ -44,7 +44,7 @@ public:
 		int sum = 0;
 		for (int i = 0; i < homeCount; i++)
 		{
-			if (home[])
+			//if (home[])
 		}
 		return sum;
 	}

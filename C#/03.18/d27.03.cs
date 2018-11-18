@@ -134,7 +134,6 @@ namespace ConsoleApp1
             {
                 switch (article)
                 {
-
                     case "aaa":
                         if (flag)
                             Console.WriteLine((100 * quantity * 0.18) + (100 * quantity));
@@ -156,6 +155,5 @@ namespace ConsoleApp1
                 }
             }
         }
-
     }
 }

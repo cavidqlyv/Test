@@ -1,5 +1,5 @@
-#include<iostream>
-#include"container.cpp"
+#include <iostream>
+#include "container.cpp"
 
 int main()
 {
@@ -7,10 +7,9 @@ int main()
 	Greater greater;
 	Less less;
 
-	Container<char , Greater> container('b');
+	Container<char, Greater> container('b');
 	container.push('a', greater);
 	container.push('c', greater);
-
 
 	Container<int, Less> container1(6);
 
@@ -31,8 +30,6 @@ int main()
 
 	container1[2] = 200;
 
-	//container1.sort(greater);
-
 	container.print();
 	std::cout << "\n====================================================================\n\n";
 
@@ -40,19 +37,15 @@ int main()
 	container1.print();
 	std::cout << "\n====================================================================\n\n";
 
-
-
 	std::cout << container.size() << " Byte\n";
 	std::cout << container1.size() << " Byte\n";
 
-	Container<int , Less> container2(6);
+	Container<int, Less> container2(6);
 	Container<int, Less> container3(6);
 
 	Container<char, Less> container4('b');
 	Container<char, Less> container5('b');
 	Container<char, Less> container6('b');
-
-
 
 	std::cout << "Container<char> container('b');\t" << container.getId() << '\n';
 	std::cout << "Container<int> container1(6);\t" << container1.getId() << '\n';
@@ -63,15 +56,12 @@ int main()
 	std::cout << "Container<char> container6('b');\t" << container6.getId() << '\n';
 	std::cout << "\n====================================================================\n\n";
 
-
-	Container<Container<int , Less > , Greater> container7(container1);
+	Container<Container<int, Less>, Greater> container7(container1);
 	container7.push(container2, greater);
 	container7.push(container3, greater);
 	std::cout << "\n====================================================================\n\n";
 
 	container7.print();
-
-
 
 	system("pause");
 	return 0;

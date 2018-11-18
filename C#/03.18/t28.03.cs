@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
@@ -10,7 +8,6 @@ namespace ConsoleApp5
     {
         static void Main(string[] args)
         {
-
             User[] users = new User[5];
             int userCount = 0;
             bool flag = false;
