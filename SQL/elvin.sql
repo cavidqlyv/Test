@@ -2,8 +2,8 @@ USE master
 GO
 IF NOT EXISTS (
     SELECT name
-        FROM sys.databases
-        WHERE name = N'LabIsi'
+FROM sys.databases
+WHERE name = N'LabIsi'
 )
 CREATE DATABASE LabIsi
 GO
@@ -15,7 +15,7 @@ DROP TABLE dbo.Istehlakci
 GO
 CREATE TABLE dbo.Istehlakci
 (
-    IstehlakciId INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    IstehlakciId INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     ad VARCHAR(40),
     soyad VARCHAR(40),
     ata_adi VARCHAR(40),
@@ -31,7 +31,7 @@ DROP TABLE dbo.Teadrukcu
 GO
 CREATE TABLE dbo.Teadrukcu
 (
-    TeadrukcuId INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    TeadrukcuId INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     ad VARCHAR(40),
     soyad VARCHAR(40),
     ata_adi VARCHAR(40),
@@ -64,7 +64,7 @@ DROP TABLE dbo.Alis
 GO
 CREATE TABLE dbo.Alis
 (
-    AlisId INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    AlisId INT NOT NULL PRIMARY KEY IDENTITY(1,1),
     TeadrukcuId INT FOREIGN KEY REFERENCES Teadrukcu(TeadrukcuId),
     alis_qiymeti DECIMAL(10,2),
     alis_tarixi DATE,
@@ -92,3 +92,58 @@ CREATE TABLE dbo.Satis
     qaimenin_nomresi VARCHAR(40)
 );
 GO
+-- 1 --
+SELECT *
+FROM Istehlakci
+WHERE IstehlakciId = id;
+
+-- 2 --
+SELECT *
+FROM Istehlakci
+WHERE [name] = "name" AND surname = "surname";
+
+-- 3 --
+SELECT *
+FROM Teadrukcu
+WHERE IstehlakciId = id;
+
+-- 4 --
+SELECT *
+FROM Teadrukcu
+WHERE [name] = "name" AND surname = "surname";
+
+-- 5 --
+SELECT *
+FROM Teadrukcu
+WHERE hesab_nomresi = "hesab_nomresi";
+
+-- 6 --
+SELECT *
+FROM Istehlakci
+WHERE hesab_nomresi = "hesab_nomresi";
+
+-- 7 --
+
+SELECT *
+FROM Satis
+WHERE satis_tarixi = "satis_tarixi";
+
+-- 8 --
+SELECT *
+FROM Satis
+WHERE alis_tarixi = "alis_tarixi";
+
+-- 9 --
+SELECT *
+FROM Mebel
+WHERE ad = "mebelin adi";
+
+-- 10 --
+SELECT *
+FROM Mebel
+WHERE markasi = "markasi";
+
+-- 9 --
+SELECT *
+FROM Mebel
+WHERE tipi = "tipi";
