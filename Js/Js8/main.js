@@ -15,10 +15,10 @@ var user = {
     }
 }
 
-console.log(user.Age);
+//console.log(user.Age);
 
 user.SetAge(21);
-console.log(user.Age);
+//console.log(user.Age);
 
 var calculator = {
     num1: 0,
@@ -43,7 +43,23 @@ var calculator = {
     }
 }
 
-calculator.read();
-console.log(calculator.sum());
-console.log(calculator.multiply());
+//calculator.read();
+//console.log(calculator.sum());
+//console.log(calculator.multiply());
 
+var pilleken = {
+    value: 0,
+    up: function () {
+        this.value++;
+        return this;
+    },
+    down: function () {
+        this.value--
+        return this;
+    },
+    show: function () {
+        console.log(this.value);
+        return this;
+    }
+}
+pilleken.up().down().show();
