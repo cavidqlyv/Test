@@ -55,4 +55,8 @@ a.setAttribute("target", a.getAttribute("data-target"));
 
 console.log(a);
 
-var atribute 
+var img  = document.getElementsByTagName("img")[0];
+
+console.log(img.getAttribute("src"));
+a.setAttribute("href", img.getAttribute("src"));
+
