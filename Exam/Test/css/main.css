@@ -1,14 +1,27 @@
-input{
+input {
     border: 2px solid red;
     display: inline-block;
-}
-button{
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30px;
 }
 
-body{
-    background-color: aquamarine;
+button {
+    border: 0px solid black;
+    border-radius: 20%;
+
+    background-color: rgb(255, 243, 66)
+}
+
+body {
+    background-color: rgb(255, 162, 66);
+}
+
+.col-12 h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.size{
+    max-width: 100px;
 }
