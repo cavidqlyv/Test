@@ -8,9 +8,6 @@
 //     console.log(reason);
 // })
 
-
-
-
 // var list = document.getElementsByClassName("red");
 
 // for (var i = 0; i < list.length; i++) {
