@@ -55,13 +55,13 @@ function Add(row, type, data) {
 var table = document.createElement("table");
 var tr = document.createElement("tr");
 
-Add(tr , "th" , "b.e");
-Add(tr , "th" , "ch.a");
-Add(tr , "th" , "ch");
-Add(tr , "th" , "c.a");
-Add(tr , "th" , "c");
-Add(tr , "th" , "sh");
-Add(tr , "th" , "b");
+Add(tr, "th", "b.e");
+Add(tr, "th", "ch.a");
+Add(tr, "th", "ch");
+Add(tr, "th", "c.a");
+Add(tr, "th", "c");
+Add(tr, "th", "sh");
+Add(tr, "th", "b");
 
 table.appendChild(tr);
 

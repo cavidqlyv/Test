@@ -1,23 +1,23 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-table{
+table {
     border-collapse: collapse;
     text-align: center;
 }
 
-table th{
+table th {
     padding: 5px;
     background-color: firebrick;
     color: white;
 }
 
-table tr th td{
+table tr th td {
     border: 1px solid black;
 }
 
-.today{
+.today {
     background-color: black;
     color: white;
     font-weight: bold;

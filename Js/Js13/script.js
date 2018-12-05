@@ -17,7 +17,7 @@ myButton.onclick = function () {
     var li = document.createElement("li");
     li.classList.add("item");
     li.appendChild(document.createTextNode(myInput.value));
-    li.onclick=function () {
+    li.onclick = function () {
         li.style.textDecoration = "line-through";
     }
     ul.appendChild(li);
