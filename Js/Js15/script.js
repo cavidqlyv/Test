@@ -50,17 +50,19 @@
 //     return null;
 // }
 
-
 // document.body.appendChild(CreateMenu(menu));
 
+// $(document).ready(function () {
+//     console.log("hello world");
+
+// });
+
+// $(document).click(function () {
+//     alert("clicked");
+// });
 
 
-$(document).ready(function () {
-    console.log("hello world");
-    
-});
+$("#myBtn").css("display: block;");
 
-$(document).click(function()
-{
-    alert("clicked");
-});
+$("#myBtn").addClass("block");
+
