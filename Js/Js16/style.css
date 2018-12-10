@@ -1,0 +1,34 @@
+.loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    border-right: 10px solid red;
+    border-top: 10px solid blue;
+    border-left: 10px solid yellow;
+    border-bottom: 10px solid green;
+    animation: spin .5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
