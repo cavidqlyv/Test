@@ -1,0 +1,56 @@
+.navbar {
+    height: 50px;
+    background-color: darkgray;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.gallery {
+    overflow: hidden;
+    position: relative;
+}
+
+.image {
+    width: 1024px;
+    height: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-gallery-controls {
+
+}
+
+.my-gallery-controls button {
+    background-color: transparent;
+    border: 0px;
+}
+
+.my-gallery-items {
+    width: 5000px;
+    position: relative;
+    left: -40px;
+}
+
+.my-gallery-controls button img {
+    width: 32px;
+    height: 32px;
+}
+
+.my-gallery-controls button {
+    cursor: pointer;
+}
+
+.my-gallery-controls button:focus {
+    outline: none;
+}
+
+.my-gallery-controls button:hover img {
+    transform: scale(1.2);
+}
+
+.left {
+}
