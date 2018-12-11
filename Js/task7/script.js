@@ -10,6 +10,5 @@
 function fn(name) {
     console.log("Hello, " + name);
     this.defer = function (seconds) {
-
     }
 }
