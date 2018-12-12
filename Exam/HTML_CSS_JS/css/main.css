@@ -1,0 +1,82 @@
+/* Menu */
+
+.menu {
+    height: 80px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.logo {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 13px;
+    font-family: "roboto";
+    line-height: 20px;
+    padding: 30px 20px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: none;
+}
+
+.navbar-button{
+
+}
+
+.navbar-home-button{
+    color: #333;
+}
+
+/* Logo */
+
+.logo a {
+    cursor: pointer;
+    font-size: 26px;
+    color: #333;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.logo a span {
+    padding-right: 18px;
+}
+
+.logo-1 {
+    font-weight: 900;
+}
+
+.logo-2 {
+    font-weight: 700;
+}
+
+.logo-3 {
+    font-weight: 400;
+}
+
+.logo-4 {
+    font-weight: 300;
+}
+
+.logo-5 {
+    font-weight: 100;
+}
