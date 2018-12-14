@@ -6,12 +6,12 @@
     searchInput.onfocus = function () {
         this.style.width = "100px";
         if (this.value == "Search")
-        this.value = "";
+            this.value = "";
     }
     searchInput.onblur = function () {
-        this.style.width = "42px"; 
+        this.style.width = "42px";
         if (this.value == "")
-        this.value = "Search";
+            this.value = "Search";
     }
 }())
 
