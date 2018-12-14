@@ -19,6 +19,7 @@
         <header>
             <div class="container clearfix">
                 <div class="menu">
+                    <!-- Logo -->
                     <div class="logo float-left">
                         <a href="index.html">
                             <span class="logo-1">W</span>
@@ -28,9 +29,11 @@
                             <span class="logo-5">E</span>
                         </a>
                     </div>
+                    <!-- Search -->
                     <div class="search float-right">
                         <i class="fas fa-search"></i>
-                        <input type="text" name="Search" id="search-input">
+                        <input type="text" name="Search" id="search-input"
+                            value="Search">
                     </div>
                     <div class="float-right">
                         <nav class="navbar">
@@ -54,12 +57,13 @@
                                     <a href="#contacts">Contacts</a>
                                 </li>
                                 <li class="sub-menu">
-                                    <a href="#"
+                                    <a href="javascript:void(0);"
                                         class="sf-with-ul">Pages</a>
-                                    <ul class="sf-js-enabled sf-arrows">
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Blog Post</a></li>
-                                        <li><a href="#">Portfolio
+                                    <ul class="sf-js-enabled sf-arrows"
+                                        style="display: none;">
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-post.html">Blog Post</a></li>
+                                        <li><a href="portfolio-post.html">Portfolio
                                                 Single Work</a></li>
                                     </ul>
                                 </li>
@@ -75,7 +79,9 @@
         <footer>
 
         </footer>
+        <script src="./js/jquery-3.3.1.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/superfish.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
 </html>
