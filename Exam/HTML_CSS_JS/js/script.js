@@ -4,7 +4,7 @@
     var searchInput = document.getElementById("search-input");
     console.log(searchInput);
     searchInput.onfocus = function () {
-        this.style.width = "100px";
+        this.style.width = "150px";
         if (this.value == "Search")
             this.value = "";
     }
