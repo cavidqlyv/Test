@@ -1,5 +1,10 @@
 /* Menu */
 
+::selection {
+    background: #000;
+    color: #fff;
+}
+
 .menu {
     height: 80px;
     width: 100%;
@@ -9,7 +14,7 @@
     z-index: 9999;
     position: fixed;
     background-color: #fff;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -24,7 +29,7 @@ a {
 /* Navbar */
 
 .navbar {
-    margin-top: 20px;
+    line-height: 60px;
 }
 
 .navbar ul li {
@@ -38,7 +43,11 @@ a {
     font-size: 13px;
     font-family: "roboto";
     line-height: 20px;
-    padding: 30px 20px;
+    padding: 20px 20px;
+}
+
+.active a {
+    color: #333 !important;
 }
 
 .navbar ul li a:hover {
@@ -46,13 +55,9 @@ a {
     color: #333;
 }
 
-.navbar-button a {}
-
-.navbar-home-button a {
-    color: #333 !important;
-}
-
 /* Navbar Sub Menu*/
+
+
 
 .sub-menu ul {
     display: none;
@@ -62,7 +67,7 @@ a {
     left: 50%;
     top: 100%;
     padding: 0;
-    margin: 0 0 0 -90px;
+    margin: 0 0 0 210px;
 }
 
 .sub-menu.last ul {
@@ -95,6 +100,7 @@ a {
     margin: 0;
     padding: 15px 5px 14px 21px;
     font-weight: 400;
+    display: block;
     text-align: left;
     font-size: 12px;
     color: #999 !important;
@@ -111,63 +117,18 @@ a {
     background: #161616;
 }
 
-a.menu_toggler {
-    display: none;
-}
-
-.sub-menu ul {
-    display: block;
-    position: static;
-    width: 100%;
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sub-menu ul:before {
-    display: none !important;
-}
-
-.navbar li.sub-menu:hover, .navbar li.sub-menu.active_page {
-    background: none;
-}
-
-.sub-menu ul li a {
-    background: none;
-    border: 0;
-    padding-left: 30px;
-}
-
-.sub-menu ul li a:hover, .sub-menu ul li.active a {
-    background: none !important;
-    color: #333 !Important;
-}
-
-.sub-menu ul li a:before {
-    content: '-';
-    position: absolute;
-    z-index: 10;
-    left: 17px;
-    top: 4px;
-    color: #666;
-}
-
 /* Logo */
 
 .logo {
     font-family: 'Roboto', sans-serif;
-    margin-top: 20px;
-}
-
-.logo::selection {
-    background-color: #000;
-    color: #fff;
+    /* margin-top: 20px; */
 }
 
 .logo a {
     cursor: pointer;
     font-size: 26px;
     color: #333;
+    line-height: 80px;
 }
 
 .logo a:hover {
@@ -175,7 +136,7 @@ a.menu_toggler {
 }
 
 .logo a span {
-    padding-right: 18px;
+    padding-right: 12px;
     box-sizing: border-box;
     display: inline-block;
 }
@@ -204,11 +165,11 @@ a.menu_toggler {
 
 .search {
     border-left: 1px solid #ccc;
-    margin: 20px 0 20px 19px;
-    padding-left: 49px;
-}
+    margin: 20px 0 20px 10px;
+    padding-left: 20px;
+}       
 
-.search input {
+.search i input {
     font-size: 13px;
     color: #999;
     border: 0;
@@ -222,6 +183,7 @@ a.menu_toggler {
     width: 42px;
     margin: 0;
     padding: 11px 0;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .fa-search {

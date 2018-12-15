@@ -1,4 +1,8 @@
 //#region Search input
+if ($(window).width() >= 768) {
+    $('.navbar ul').superfish();
+}
+
 
 (function () {
     var searchInput = document.getElementById("search-input");

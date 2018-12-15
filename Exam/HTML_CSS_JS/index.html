@@ -13,7 +13,9 @@
             crossorigin="anonymous">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/superfish.css">
+        <link rel="stylesheet" href="./css/animate.css">
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/mobile.css">
         <title>Document</title>
     </head>
     <body>
@@ -32,40 +34,30 @@
                     </div>
                     <!-- Search -->
                     <div class="search float-right">
-                        <i class="fas fa-search"></i>
-                        <input type="text" name="Search" id="search-input"
-                            value="Search">
+                        <i class="fas fa-search">
+                            <input type="text" name="Search" id="search-input"
+                                value="Search">
+                        </i>
                     </div>
                     <div class="float-right">
                         <nav class="navbar">
                             <ul class="sf-js-enabled sf-arrows">
-                                <li class="navbar-button active">
+                                <li class="active">
                                     <a href="#home">Home</a>
                                 </li>
-                                <li class="navbar-button">
-                                    <a href="#about">About Us</a>
-                                </li>
-                                <li class="navbar-button">
-                                    <a href="#projects">Projects</a>
-                                </li>
-                                <li class="navbar-button">
-                                    <a href="#team">Team</a>
-                                </li>
-                                <li class="navbar-button">
-                                    <a href="#news">News</a>
-                                </li>
-                                <li class="navbar-button">
-                                    <a href="#contacts">Contacts</a>
-                                </li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#news">News</a></li>
+                                <li class="last"><a href="#contacts">Contacts</a></li>
                                 <li class="sub-menu">
                                     <a href="javascript:void(0);"
                                         class="sf-with-ul">Pages</a>
                                     <ul class="sf-js-enabled sf-arrows"
                                         style="display: none;">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-post.html">Blog Post</a></li>
-                                        <li><a href="portfolio-post.html">Portfolio
-                                                Single Work</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Blog Post</a></li>
+                                        <li><a href="#">Portfolio Single Work</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -82,9 +74,7 @@
         </footer>
         <script src="./js/jquery-3.3.1.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
-
         <script src="./js/superfish.js"></script>
-
         <script src="./js/script.js"></script>
     </body>
 </html>
