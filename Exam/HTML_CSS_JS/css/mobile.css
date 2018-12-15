@@ -1,16 +1,88 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .navbar ul li a {
-        padding-left: 13px;
-        padding-right: 13px;
-    }
-    .container{
-        /* max-width: 970px; */
+        padding-left: 9px;
+        padding-right: 9px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
     .navbar ul li a {
-        padding-left: 4px;
-        padding-right: 4px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .search i input {
+        width: 42px !important;
+    }
+    .container {
+        min-width: 785px;
     }
 }
+
+@media (max-width: 767px) {
+    .container {padding-left:15px; padding-right:15px;}
+    a.menu_toggler {
+        display: inline-block;
+        float: right;
+        margin: 20px 0 0 20px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 38px;
+        font-size: 23px;
+        color: #fff;
+        background-color: #333;
+    }
+    a.menu_toggler:hover {
+        background-color: #333;
+    }
+    .navbar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        background-color: #fff;
+    }
+    .navbar ul {
+        padding: 10px 0;
+    }
+    .navbar ul li {
+        display: block;
+        text-align: left;
+    }
+    .navbar ul li a {
+        padding: 4px 20px;
+    }
+    .sub-menu ul {
+        display: block;
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sub-menu ul:before {
+        display: none !important;
+    }
+    .navbar li.sub-menu:hover, .navmenu li.sub-menu.active_page {
+        background: none;
+    }
+    .sub-menu ul li a {
+        background: none;
+        border: 0;
+        padding-left: 30px;
+    }
+    .sub-menu ul li a:hover, .sub-menu ul li.active a {
+        background: none !important;
+        color: #333 !Important;
+    }
+    .sub-menu ul li a:before {
+        content: '-';
+        position: absolute;
+        z-index: 10;
+        left: 17px;
+        top: 4px;
+        color: #666;
+    }
+}
+
+@media (max-width: 479px) {}
