@@ -19,7 +19,10 @@
 }
 
 @media (max-width: 767px) {
-    .container {padding-left:15px; padding-right:15px;}
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     a.menu_toggler {
         display: inline-block;
         float: right;
@@ -82,6 +85,16 @@
         left: 17px;
         top: 4px;
         color: #666;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .parallax, .cleancode_block, #team, .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {
+        background-attachment: scroll !important;
+        background-position: 0 0;
+    }
+    .top_slider .slide1, .top_slider .slide2, .top_slider .slide3 {
+        background-size: cover !important;
     }
 }
 
