@@ -1,5 +1,4 @@
 var searchInput = document.getElementById("search-input");
-console.log(searchInput);
 searchInput.onfocus = function () {
     this.style.width = "150px";
     if (this.value == "Search")
@@ -14,14 +13,6 @@ jQuery(document).ready(function () {
     if ($(window).width() >= 768) {
         $('.navbar ul').superfish();
     }
-
-    var width = $(window).width();
-    $(window).on('resize', function () {
-        if ($(this).width() != width) {
-            width = $(this).width();
-            console.log(width);
-        }
-    });
 
     function changeWiev() {
         "use strict";
@@ -45,5 +36,57 @@ jQuery(document).ready(function () {
         }
     };
     changeWiev();
-    $(window).resize(changeWiev);
+    // $(window).resize(changeWiev);
 });
+
+jQuery(window).load(function () {
+    //Top Slider
+    $('.flexslider.top_slider').flexslider({
+        animation: "fade",
+        controlNav: false,
+        directionNav: true,
+        animationLoop: false,
+        slideshow: false,
+        prevText: "",
+        nextText: "",
+        sync: "#carousel"
+    });
+    $('#carousel').flexslider({
+        animation: "fade",
+        controlNav: false,
+        animationLoop: false,
+        directionNav: false,
+        slideshow: false,
+        itemWidth: 100,
+        itemMargin: 5,
+        asNavFor: '.top_slider'
+    });
+
+    homeHeight();
+
+
+    // jQuery('.flexslider.top_slider .flex-direction-nav').addClass('container');
+
+
+    // //Vision Slider
+    // $('.flexslider.portfolio_single_slider').flexslider({
+    //     animation: "fade",
+    //     controlNav: true,
+    //     directionNav: true,
+    //     animationLoop: false,
+    //     slideshow: false,
+    // });
+
+
+});
+
+jQuery(window).resize(function () {
+    homeHeight();
+
+    changeWiev();
+});
+
+function homeHeight() {
+    var wh = jQuery(window).height() - 80;
+    jQuery('.top_slider, .top_slider .slides li').css('height', wh);
+}
