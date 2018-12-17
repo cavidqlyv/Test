@@ -11,6 +11,7 @@
             href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
             integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
             crossorigin="anonymous">
+            <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/superfish.css">
         <link rel="stylesheet" href="./css/animate.css">
@@ -70,64 +71,50 @@
         <main>
             <!-- Home -->
             <section id="home" class="padbot0">
-
-                <!-- TOP SLIDER -->
-                <div class="flexslider top_slider">
-                    <ul class="slides">
-                        <li class="slide1">
-                            <div class="flex_caption1">
-                                <p class="title1 captionDelay2 FromTop">Creative</p>
-                                <p class="title2 captionDelay4 FromTop">White</p>
-                                <p class="title3 captionDelay6 FromTop">Templates</p>
-                                <p class="title4 captionDelay7 FromBottom">The
-                                    template is suitable for any company and the
-                                    direction that appreciates style, purity and
-                                    quality of the web site.</p>
-                            </div>
-                            <a class="slide_btn FromRight"
-                                href="javascript:void(0);">Read More</a>
-                            <li class="slide2">
+				
+                    <!-- TOP SLIDER -->
+                    <div class="flexslider top_slider" style="height: 138px;">
+                        <ul class="slides">
+                            <li class="slide1 flex-active-slide" style="height: 138px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+                                <div class="flex_caption1">
+                                    <p class="title1 captionDelay2 FromTop">Creative</p>
+                                    <p class="title2 captionDelay4 FromTop">White</p>
+                                    <p class="title3 captionDelay6 FromTop">Templates</p>
+                                    <p class="title4 captionDelay7 FromBottom">The template is suitable for any company and the direction that appreciates style, purity and quality of the web site.</p>
+                                </div>
+                                <a class="slide_btn FromRight" href="javascript:void(0);">Read More</a>
+                            </li><li class="slide2" style="height: 138px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
                                 <div class="flex_caption1">
                                     <p class="title1 captionDelay6 FromLeft">Responsive</p>
                                     <p class="title2 captionDelay4 FromLeft">Design</p>
                                     <p class="title3 captionDelay2 FromLeft">Theme</p>
-                                    <p class="title4 captionDelay7 FromLeft">The
-                                        template is suitable for any company and
-                                        the direction that appreciates style,
-                                        purity and quality of the web site.</p>
+                                    <p class="title4 captionDelay7 FromLeft">The template is suitable for any company and the direction that appreciates style, purity and quality of the web site.</p>
                                 </div>
-                                <a class="slide_btn FromRight"
-                                    href="javascript:void(0);">Read More</a>
+                                <a class="slide_btn FromRight" href="javascript:void(0);">Read More</a>
                             </li>
-                            <li class="slide3">
+                            <li class="slide3" style="height: 138px; width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
                                 <div class="flex_caption1">
                                     <p class="title1 captionDelay1 FromBottom">Amazing</p>
                                     <p class="title2 captionDelay2 FromBottom">Video</p>
                                     <p class="title3 captionDelay3 FromBottom">Background</p>
-                                    <p class="title4 captionDelay5 FromBottom">The
-                                        template is suitable for any company and
-                                        the direction that appreciates style,
-                                        purity and quality of the web site.</p>
+                                    <p class="title4 captionDelay5 FromBottom">The template is suitable for any company and the direction that appreciates style, purity and quality of the web site.</p>
                                 </div>
-                                <a class="slide_btn FromRight"
-                                    href="javascript:void(0);">Read More</a>
+                                <a class="slide_btn FromRight" href="javascript:void(0);">Read More</a>
+                                
                                 <!-- VIDEO BACKGROUND -->
-                                <a id="P2" class="player"
-                                    data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider
-                                    .slide3',autoPlay:true, mute:true,
-                                    startAt:0, opacity:1}"></a>
+                                <a id="P2" class="player" data-property="{videoURL:'tDvBwPzJ7dY',containment:'.top_slider .slide3',autoPlay:true, mute:true, startAt:0, opacity:1}"></a>
                                 <!-- //VIDEO BACKGROUND -->
                             </li>
                         </ul>
-                    </div>
+                    <ul class="flex-direction-nav container"><li><a class="flex-prev flex-disabled" href="#" tabindex="-1"></a></li><li><a class="flex-next" href="#"></a></li></ul></div>
                     <div id="carousel">
                         <ul class="slides">
-                            <li><img src="img/slider/slide1_bg.jpg" alt="" /></li>
-                            <li><img src="img/slider/slide2_bg.jpg" alt="" /></li>
-                            <li><img src="img/slider/slide3_bg.jpg" alt="" /></li>
+                            <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"><img src="img/slider/slide1_bg.jpg" alt="" draggable="false"></li>
+                            <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><img src="img/slider/slide2_bg.jpg" alt="" draggable="false"></li>
+                            <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><img src="img/slider/slide3_bg.jpg" alt="" draggable="false"></li>
                         </ul>
                     </div><!-- //TOP SLIDER -->
-                </section><!-- //HOME -->
+                </section>
             </main>
             <footer>
 
