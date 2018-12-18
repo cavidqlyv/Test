@@ -1,6 +1,6 @@
 /* Menu */
 
-body{
+body {
     font-family: "roboto";
 }
 
@@ -193,9 +193,10 @@ a {
     color: #ccc !important;
 }
 
-.home{
+.home {
     position: relative;
 }
-.padbot0{
+
+.padbot0 {
     padding-bottom: 0;
-} 
+}
