@@ -96,3 +96,21 @@ function homeHeight(){
 	var wh = jQuery(window).height() - 80;
 	jQuery('.top_slider, .top_slider .slides li').css('height', wh);
 }
+function calculateScroll() {
+	var contentTop      =   [];
+	var contentBottom   =   [];
+	var winTop      =   $(window).scrollTop();
+	var rangeTop    =   200;
+	var rangeBottom =   500;
+	$('.navmenu').find('.scroll_btn a').each(function(){
+		contentTop.push( $( $(this).attr('href') ).offset().top );
+		contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
+	})
+	$.each( contentTop, function(i){
+		if ( winTop > contentTop[i] - rangeTop && winTop < contentBottom[i] - rangeBottom ){
+			$('.navmenu li.scroll_btn')
+			.removeClass('active')
+			.eq(i).addClass('active');			
+		}
+	})
+};
