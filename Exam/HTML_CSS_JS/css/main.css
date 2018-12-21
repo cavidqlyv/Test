@@ -280,7 +280,7 @@ a {
 
 .cleancode_block {
     padding: 96px 0 78px;
-    background-image: url(../img/clean_code_bg.jpg);
+    background-image: url(../img/cleanCode/clean_code_bg.jpg);
     background-size: cover;
     background-position: 0 0;
     background-attachment: fixed !important;
@@ -374,27 +374,27 @@ a {
 }
 
 .cleancode_block .nav-tabs li a.i1 i {
-    background-image: url(../img/i1.png);
+    background-image: url(../img/cleanCode/i1.png);
 }
 
 .cleancode_block .nav-tabs li a.i2 i {
-    background-image: url(../img/i2.png);
+    background-image: url(../img/cleanCode/i2.png);
 }
 
 .cleancode_block .nav-tabs li a.i3 i {
-    background-image: url(../img/i3.png);
+    background-image: url(../img/cleanCode/i3.png);
 }
 
 .cleancode_block .nav-tabs li a.i4 i {
-    background-image: url(../img/i4.png);
+    background-image: url(../img/cleanCode/i4.png);
 }
 
 .cleancode_block .nav-tabs li a.i5 i {
-    background-image: url(../img/i5.png);
+    background-image: url(../img/cleanCode/i5.png);
 }
 
 .cleancode_block .nav-tabs li a.i6 i {
-    background-image: url(../img/i6.png);
+    background-image: url(../img/cleanCode/i6.png);
 }
 
 .cleancode_block .nav-tabs li a span {
