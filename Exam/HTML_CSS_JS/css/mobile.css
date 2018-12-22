@@ -86,6 +86,15 @@
         top: 4px;
         color: #666;
     }
+
+    .cleancode_block p.title {font-size:70px; line-height:70px;}
+	.cleancode_block .nav-tabs li a {width:136px; height:136px; padding-top:35px;}
+	.cleancode_block .nav-tabs li a i {width:45px; height:45px;}
+	.cleancode_block .nav-tabs li a span {font-size:16px;}
+	.cleancode_block .nav-tabs li a i {background-position:0 -45px;}
+	.nav-tabs li a:hover i {background-position:0 -90px; transform:translateY(-5px); -o-transform:translateY(-5px); -ms-transform:translateY(-5px); -webkit-transform:translateY(-5px);}
+	.nav-tabs li.active a i {background-position:0 0; transform:translateY(-10px); -o-transform:translateY(-10px); -ms-transform:translateY(-10px); -webkit-transform:translateY(-10px);}
+	
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
