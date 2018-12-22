@@ -35,7 +35,7 @@ jQuery(document).ready(function () {
         }
     };
     changeWiev();
-    // $(window).resize(changeWiev);
+     $(window).resize(changeWiev);
 });
 // $(window).load(function(){
 // 	//Top Slider
@@ -83,7 +83,6 @@ $(window).on('load',function () {
 jQuery(window).resize(function(){
 	homeHeight();
 	
-	white_mobile_menu();
 	
 });
 
